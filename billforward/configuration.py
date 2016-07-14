@@ -60,7 +60,7 @@ class Configuration(object):
         Constructor
         """
         # Default Base url
-        self.host = "https://localhost:8080/RestAPI"
+        self.host = "https://api-sandbox.billforward.net:443/v1"
         # Default api client
         self.api_client = None
         # Temp file folder for downloading files

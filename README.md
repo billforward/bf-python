@@ -49,17 +49,18 @@ import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
-# create an instance of the API class
-api_instance = billforward.AccountsApi
-account_id = 'account_id_example' # str | ID of the account.
-credit_note = billforward.CreditAccountRequest() # CreditAccountRequest | The credit-note request
+
+# Create an API client
+api_client = billforward.ApiClient('https://api-sandbox.billforward.net:443/v1', 'Authorization', 'Bearer INSERT-PRIVATE-TOKEN-HERE')
+
+# Using your API client, create an instance of the API class
+accounts_api = billforward.AccountsApi(api_client)
 
 try:
-    # Creates a credit-note which may be used by any subscription of this account.
-    api_response = api_instance.add_credit_note_to_account(account_id, credit_note)
+	api_response = accounts_api.get_account_by_id('ACC-8900EF22-8222-495A-BAF8-F0ABB6B8')
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling AccountsApi->add_credit_note_to_account: %s\n" % e
+    print "Exception when calling AccountsApi->get_account_by_id: %s\n" % e
 
 ```
 
