@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.amendment_discard_amendment import AmendmentDiscardAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.amendment_discard_amendment import AmendmentDiscardAmendment
 
 
 class TestAmendmentDiscardAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAmendmentDiscardAmendment(unittest.TestCase):
         """
         Test AmendmentDiscardAmendment
         """
-        model = swagger_client.models.amendment_discard_amendment.AmendmentDiscardAmendment()
+        model = billforward.models.amendment_discard_amendment.AmendmentDiscardAmendment()
 
 
 if __name__ == '__main__':

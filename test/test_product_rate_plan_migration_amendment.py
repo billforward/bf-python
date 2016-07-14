@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.product_rate_plan_migration_amendment import ProductRatePlanMigrationAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.product_rate_plan_migration_amendment import ProductRatePlanMigrationAmendment
 
 
 class TestProductRatePlanMigrationAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestProductRatePlanMigrationAmendment(unittest.TestCase):
         """
         Test ProductRatePlanMigrationAmendment
         """
-        model = swagger_client.models.product_rate_plan_migration_amendment.ProductRatePlanMigrationAmendment()
+        model = billforward.models.product_rate_plan_migration_amendment.ProductRatePlanMigrationAmendment()
 
 
 if __name__ == '__main__':

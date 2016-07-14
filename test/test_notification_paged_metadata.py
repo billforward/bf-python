@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.notification_paged_metadata import NotificationPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.notification_paged_metadata import NotificationPagedMetadata
 
 
 class TestNotificationPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestNotificationPagedMetadata(unittest.TestCase):
         """
         Test NotificationPagedMetadata
         """
-        model = swagger_client.models.notification_paged_metadata.NotificationPagedMetadata()
+        model = billforward.models.notification_paged_metadata.NotificationPagedMetadata()
 
 
 if __name__ == '__main__':

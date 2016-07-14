@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.compound_usage import CompoundUsage
+import billforward
+from billforward.rest import ApiException
+from billforward.models.compound_usage import CompoundUsage
 
 
 class TestCompoundUsage(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCompoundUsage(unittest.TestCase):
         """
         Test CompoundUsage
         """
-        model = swagger_client.models.compound_usage.CompoundUsage()
+        model = billforward.models.compound_usage.CompoundUsage()
 
 
 if __name__ == '__main__':

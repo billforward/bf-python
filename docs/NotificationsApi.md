@@ -1,4 +1,4 @@
-# swagger_client.NotificationsApi
+# billforward.NotificationsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,12 +22,12 @@ Acknowledge a newly recevied notification.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = billforward.NotificationsApi()
 notification_id = 'notification_id_example' # str | ID of the notification.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -71,12 +71,12 @@ Returns a collection of all notifications. By default 10 values are returned. Re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = billforward.NotificationsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first Subscription to return. (optional) (default to 0)
 records = 10 # int | The maximum number of Subscriptions to return. (optional) (default to 10)
@@ -128,12 +128,12 @@ Returns a collection of notifications, specified by the entity-ID parameter. By 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = billforward.NotificationsApi()
 entity_id = 'entity_id_example' # str | The string entity-ID of the notification.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first notification to return. (optional) (default to 0)
@@ -187,12 +187,12 @@ Returns a single notification, specified by the notification-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = billforward.NotificationsApi()
 notification_id = 'notification_id_example' # str | ID of the notification.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -236,12 +236,12 @@ Returns a collection of notification objects with created times within the perio
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = billforward.NotificationsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 webhook_id = 'webhook_id_example' # str | The id of the webhook.
@@ -301,12 +301,12 @@ Returns a collection of notification objects with created times within the perio
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.NotificationsApi()
+api_instance = billforward.NotificationsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)

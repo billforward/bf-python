@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.data_synchronisation_configuration import DataSynchronisationConfiguration
+import billforward
+from billforward.rest import ApiException
+from billforward.models.data_synchronisation_configuration import DataSynchronisationConfiguration
 
 
 class TestDataSynchronisationConfiguration(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestDataSynchronisationConfiguration(unittest.TestCase):
         """
         Test DataSynchronisationConfiguration
         """
-        model = swagger_client.models.data_synchronisation_configuration.DataSynchronisationConfiguration()
+        model = billforward.models.data_synchronisation_configuration.DataSynchronisationConfiguration()
 
 
 if __name__ == '__main__':

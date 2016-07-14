@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.add_charge_request import AddChargeRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.add_charge_request import AddChargeRequest
 
 
 class TestAddChargeRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAddChargeRequest(unittest.TestCase):
         """
         Test AddChargeRequest
         """
-        model = swagger_client.models.add_charge_request.AddChargeRequest()
+        model = billforward.models.add_charge_request.AddChargeRequest()
 
 
 if __name__ == '__main__':

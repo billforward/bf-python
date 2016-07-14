@@ -1,4 +1,4 @@
-# swagger_client.UsagesessionsApi
+# billforward.UsagesessionsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,12 +20,12 @@ Get active by subscription
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsagesessionsApi()
+api_instance = billforward.UsagesessionsApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the subscription whose active sessions you wish to GET.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
@@ -77,12 +77,12 @@ Retrieve by subscription
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsagesessionsApi()
+api_instance = billforward.UsagesessionsApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the subscription whose sessions you wish to GET.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
@@ -134,13 +134,13 @@ Start a new session
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsagesessionsApi()
-usage_sessions = swagger_client.CompoundUsageSession() # CompoundUsageSession | An array of 'Usage Session' objects whose sessions you wish to start.
+api_instance = billforward.UsagesessionsApi()
+usage_sessions = billforward.CompoundUsageSession() # CompoundUsageSession | An array of 'Usage Session' objects whose sessions you wish to start.
 
 try: 
     # Start a new session
@@ -181,13 +181,13 @@ Stop a specified session
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsagesessionsApi()
-usage_sessions = swagger_client.CompoundUsageSession() # CompoundUsageSession | An array of 'Usage Session' objects whose sessions you wish to stop.
+api_instance = billforward.UsagesessionsApi()
+usage_sessions = billforward.CompoundUsageSession() # CompoundUsageSession | An array of 'Usage Session' objects whose sessions you wish to stop.
 
 try: 
     # Stop a specified session

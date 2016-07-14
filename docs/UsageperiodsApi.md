@@ -1,4 +1,4 @@
-# swagger_client.UsageperiodsApi
+# billforward.UsageperiodsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -19,12 +19,12 @@ Retrieve by subscription and period
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageperiodsApi()
+api_instance = billforward.UsageperiodsApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the usage.
 period_id = 56 # int | The periodID of the usage.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -78,12 +78,12 @@ Retrieve by subscription
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageperiodsApi()
+api_instance = billforward.UsageperiodsApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the usage.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
@@ -135,12 +135,12 @@ Retrieve by invoice)
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageperiodsApi()
+api_instance = billforward.UsageperiodsApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the usage.
 invoice_id = 'invoice_id_example' # str | The invoiceID of the usage.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)

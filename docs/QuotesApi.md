@@ -1,4 +1,4 @@
-# swagger_client.QuotesApi
+# billforward.QuotesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -17,13 +17,13 @@ Returns a quote.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.QuotesApi()
-quote_request = swagger_client.QuoteRequest() # QuoteRequest | A quote request
+api_instance = billforward.QuotesApi()
+quote_request = billforward.QuoteRequest() # QuoteRequest | A quote request
 
 try: 
     # Returns a quote.

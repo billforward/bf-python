@@ -1,4 +1,4 @@
-# swagger_client.CouponruleApi
+# billforward.CouponruleApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,13 +21,13 @@ Create a coupon-rule.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponruleApi()
-coupon_rule = swagger_client.CouponRule() # CouponRule | The coupon-rule object to be created.
+api_instance = billforward.CouponruleApi()
+coupon_rule = billforward.CouponRule() # CouponRule | The coupon-rule object to be created.
 
 try: 
     # Create a coupon-rule.
@@ -68,12 +68,12 @@ Retire a coupon-rule, specified by the coupon-rule-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponruleApi()
+api_instance = billforward.CouponruleApi()
 coupon_rule_id = 'coupon_rule_id_example' # str | ID of the coupon-rule.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -117,12 +117,12 @@ Returns a collection of coupon-rules. By default 10 values are returned. Records
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponruleApi()
+api_instance = billforward.CouponruleApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
 records = 10 # int | The maximum number of product-rate-plans to return. (optional) (default to 10)
@@ -172,12 +172,12 @@ Returns a single coupon-definition, specified by the coupon-definition-ID parame
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponruleApi()
+api_instance = billforward.CouponruleApi()
 coupon_definition_id = 'coupon_definition_id_example' # str | ID of the coupon-definition.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -221,12 +221,12 @@ Returns a single coupon-rule, specified by the coupon-rule-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponruleApi()
+api_instance = billforward.CouponruleApi()
 coupon_rule_id = 'coupon_rule_id_example' # str | ID of the coupon-rule.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

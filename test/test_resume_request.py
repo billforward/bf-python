@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.resume_request import ResumeRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.resume_request import ResumeRequest
 
 
 class TestResumeRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestResumeRequest(unittest.TestCase):
         """
         Test ResumeRequest
         """
-        model = swagger_client.models.resume_request.ResumeRequest()
+        model = billforward.models.resume_request.ResumeRequest()
 
 
 if __name__ == '__main__':

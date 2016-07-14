@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.create_profile_address_request import CreateProfileAddressRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.create_profile_address_request import CreateProfileAddressRequest
 
 
 class TestCreateProfileAddressRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCreateProfileAddressRequest(unittest.TestCase):
         """
         Test CreateProfileAddressRequest
         """
-        model = swagger_client.models.create_profile_address_request.CreateProfileAddressRequest()
+        model = billforward.models.create_profile_address_request.CreateProfileAddressRequest()
 
 
 if __name__ == '__main__':

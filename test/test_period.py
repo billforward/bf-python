@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.period import Period
+import billforward
+from billforward.rest import ApiException
+from billforward.models.period import Period
 
 
 class TestPeriod(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPeriod(unittest.TestCase):
         """
         Test Period
         """
-        model = swagger_client.models.period.Period()
+        model = billforward.models.period.Period()
 
 
 if __name__ == '__main__':

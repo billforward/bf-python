@@ -1,4 +1,4 @@
-# swagger_client.AccountsApi
+# billforward.AccountsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -34,14 +34,14 @@ Creates a credit-note which may be used by any subscription of this account.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | ID of the account.
-credit_note = swagger_client.CreditAccountRequest() # CreditAccountRequest | The credit-note request
+credit_note = billforward.CreditAccountRequest() # CreditAccountRequest | The credit-note request
 
 try: 
     # Creates a credit-note which may be used by any subscription of this account.
@@ -83,12 +83,12 @@ Add a role to the account
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | ID of the account.
 role = 'role_example' # str | ID or name of the role.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -134,13 +134,13 @@ Create an Account.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
-request = swagger_client.CreateAccountRequest() # CreateAccountRequest | The account object to be created.
+api_instance = billforward.AccountsApi()
+request = billforward.CreateAccountRequest() # CreateAccountRequest | The account object to be created.
 
 try: 
     # Create an Account.
@@ -181,12 +181,12 @@ Delete the account specified by the account-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | 
 delete_gateway_data = 'delete_gateway_data_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
@@ -232,12 +232,12 @@ Remove any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -281,12 +281,12 @@ Returns a single account, specified by the account-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] |  (optional)
 
@@ -330,12 +330,12 @@ Returns a collection of account objects with created times within the period spe
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -391,12 +391,12 @@ Returns a collection of account objects with updated times within the period spe
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -452,12 +452,12 @@ Returns a collection of accounts, specified by the user-ID parameter. By default
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 user_id = 'user_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first account to return. (optional) (default to 0)
@@ -511,12 +511,12 @@ Returns a collection of all account objects. By default 10 values are returned. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 id = ['id_example'] # list[str] | A list of account IDs used to filter the output. (optional)
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-link to return. (optional) (default to 0)
@@ -574,12 +574,12 @@ Returns all available credit-notes for the specified account. By default 10 valu
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | The ID of the account
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -633,12 +633,12 @@ Retrieve any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -682,12 +682,12 @@ Retrieves a collection of roles, specified by the account-ID parameter. By defau
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -741,12 +741,12 @@ Decrease the amount of credit by the value specified or entirely if no value pro
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | 
 value = 'value_example' # str | <p>Either a credit note ID or a currency value.</p><p>If a credit note ID is provided any remaining credit will be removed from this credit note.</p><p>If a currency value is provided the format should be in the form of valueCurrency, where value is the value to remove. The currency should be an ISO 4217 Currency Code. For example setting the value as 10USD will reduce the credit on this account by $10 or 9.86USD would reduce the credit by $9.86. Note: the value will be reduced from any credit notes with available balance.</p>
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -792,12 +792,12 @@ Revoke the specified role.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
+api_instance = billforward.AccountsApi()
 account_id = 'account_id_example' # str | 
 role = 'role_example' # str | ID or name of the role.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -843,13 +843,13 @@ Remove any existing metadata keys and create the provided data.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.AccountsApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -894,13 +894,13 @@ Update an Account.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
-account = swagger_client.Account() # Account | The account object to be created.
+api_instance = billforward.AccountsApi()
+account = billforward.Account() # Account | The account object to be created.
 
 try: 
     # Update an Account.
@@ -941,13 +941,13 @@ Update any existing metadata key-values and insert any new key-values, no keys w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AccountsApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.AccountsApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.stripe_ach_token_paged_metadata import StripeACHTokenPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.stripe_ach_token_paged_metadata import StripeACHTokenPagedMetadata
 
 
 class TestStripeACHTokenPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestStripeACHTokenPagedMetadata(unittest.TestCase):
         """
         Test StripeACHTokenPagedMetadata
         """
-        model = swagger_client.models.stripe_ach_token_paged_metadata.StripeACHTokenPagedMetadata()
+        model = billforward.models.stripe_ach_token_paged_metadata.StripeACHTokenPagedMetadata()
 
 
 if __name__ == '__main__':

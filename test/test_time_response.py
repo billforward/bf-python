@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.time_response import TimeResponse
+import billforward
+from billforward.rest import ApiException
+from billforward.models.time_response import TimeResponse
 
 
 class TestTimeResponse(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTimeResponse(unittest.TestCase):
         """
         Test TimeResponse
         """
-        model = swagger_client.models.time_response.TimeResponse()
+        model = billforward.models.time_response.TimeResponse()
 
 
 if __name__ == '__main__':

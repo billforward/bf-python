@@ -1,4 +1,4 @@
-# swagger_client.UnitofmeasureApi
+# billforward.UnitofmeasureApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,13 +20,13 @@ Create a unit-of-measure.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UnitofmeasureApi()
-unit_of_measure = swagger_client.UnitOfMeasure() # UnitOfMeasure | The unit-of-measure object to be created.
+api_instance = billforward.UnitofmeasureApi()
+unit_of_measure = billforward.UnitOfMeasure() # UnitOfMeasure | The unit-of-measure object to be created.
 
 try: 
     # Create a unit-of-measure.
@@ -67,12 +67,12 @@ Returns a collection of all unit-of-measure objects. By default 10 values are re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UnitofmeasureApi()
+api_instance = billforward.UnitofmeasureApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-link to return. (optional) (default to 0)
 records = 10 # int | The maximum number of taxation-links to return. (optional) (default to 10)
@@ -124,12 +124,12 @@ Returns a single unit-of-measure corresponding to the unique id or name specifie
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UnitofmeasureApi()
+api_instance = billforward.UnitofmeasureApi()
 unit_of_measure_identifier = 'unit_of_measure_identifier_example' # str | The unique id or name of the unit-of-measure.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -173,13 +173,13 @@ Update a unit-of-measure.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UnitofmeasureApi()
-unit_of_measure = swagger_client.UnitOfMeasure() # UnitOfMeasure | The unit-of-measure object to be updated.
+api_instance = billforward.UnitofmeasureApi()
+unit_of_measure = billforward.UnitOfMeasure() # UnitOfMeasure | The unit-of-measure object to be updated.
 
 try: 
     # Update a unit-of-measure.

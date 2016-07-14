@@ -1,4 +1,4 @@
-# swagger_client.OrganizationsApi
+# billforward.OrganizationsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -23,13 +23,13 @@ Create an organization.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
-organization = swagger_client.Organization() # Organization | The organization object to be updated.
+api_instance = billforward.OrganizationsApi()
+organization = billforward.Organization() # Organization | The organization object to be updated.
 
 try: 
     # Create an organization.
@@ -70,12 +70,12 @@ Returns a collection of all my asociated organizations. By default 10 values are
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
+api_instance = billforward.OrganizationsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first organization to return. (optional) (default to 0)
 records = 10 # int | The maximum number of organizations to return. (optional) (default to 10)
@@ -127,12 +127,12 @@ Returns a collection of all organizations. By default 10 values are returned. Re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
+api_instance = billforward.OrganizationsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first organization to return. (optional) (default to 0)
 records = 10 # int | The maximum number of organizations to return. (optional) (default to 10)
@@ -184,12 +184,12 @@ Returns a single organization, specified by the customer-code parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
+api_instance = billforward.OrganizationsApi()
 customer_code = 'customer_code_example' # str | The unique customer code of the organization.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -233,12 +233,12 @@ Returns a single Organization, specified by the organization-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
+api_instance = billforward.OrganizationsApi()
 organization_id = 'organization_id_example' # str | ID of the organization.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -282,12 +282,12 @@ Returns a single Organization, specified by the name parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
+api_instance = billforward.OrganizationsApi()
 name = 'name_example' # str | The name of the Organization.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -331,13 +331,13 @@ Update an organization.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.OrganizationsApi()
-organization = swagger_client.Organization() # Organization | The organization object to be updated.
+api_instance = billforward.OrganizationsApi()
+organization = billforward.Organization() # Organization | The organization object to be updated.
 
 try: 
     # Update an organization.

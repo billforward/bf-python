@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.insertable_billing_entity import InsertableBillingEntity
+import billforward
+from billforward.rest import ApiException
+from billforward.models.insertable_billing_entity import InsertableBillingEntity
 
 
 class TestInsertableBillingEntity(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestInsertableBillingEntity(unittest.TestCase):
         """
         Test InsertableBillingEntity
         """
-        model = swagger_client.models.insertable_billing_entity.InsertableBillingEntity()
+        model = billforward.models.insertable_billing_entity.InsertableBillingEntity()
 
 
 if __name__ == '__main__':

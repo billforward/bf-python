@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.service_end_amendment import ServiceEndAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.service_end_amendment import ServiceEndAmendment
 
 
 class TestServiceEndAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestServiceEndAmendment(unittest.TestCase):
         """
         Test ServiceEndAmendment
         """
-        model = swagger_client.models.service_end_amendment.ServiceEndAmendment()
+        model = billforward.models.service_end_amendment.ServiceEndAmendment()
 
 
 if __name__ == '__main__':

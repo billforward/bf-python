@@ -1,4 +1,4 @@
-# swagger_client.EmailsApi
+# billforward.EmailsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -19,12 +19,12 @@ Retrieves a single invoice, specified by the version-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsApi()
+api_instance = billforward.EmailsApi()
 email_id = 'email_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -68,12 +68,12 @@ Retrieves a single invoice, specified by the version-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsApi()
+api_instance = billforward.EmailsApi()
 email_id = 'email_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -117,12 +117,12 @@ Retrieves a single invoice, specified by the version-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsApi()
+api_instance = billforward.EmailsApi()
 email_id = 'email_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

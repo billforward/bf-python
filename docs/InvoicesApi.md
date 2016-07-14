@@ -1,4 +1,4 @@
-# swagger_client.InvoicesApi
+# billforward.InvoicesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -59,14 +59,14 @@ Creates a charge on the specified invoice.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | ID of the invoice.
-charge = swagger_client.AddChargeRequest() # AddChargeRequest | The charge request
+charge = billforward.AddChargeRequest() # AddChargeRequest | The charge request
 
 try: 
     # Creates a charge on the specified invoice.
@@ -108,13 +108,13 @@ Aggregate Invoices into to one parent Invoice
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
-request = swagger_client.BillingEntityBase() # BillingEntityBase | 
+api_instance = billforward.InvoicesApi()
+request = billforward.BillingEntityBase() # BillingEntityBase | 
 
 try: 
     # Aggregate Invoices into to one parent Invoice
@@ -155,14 +155,14 @@ Attempt payment for the outstanding value of an invoice
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | 
-request = swagger_client.BillingEntityBase() # BillingEntityBase | 
+request = billforward.BillingEntityBase() # BillingEntityBase | 
 
 try: 
     # Attempt payment for the outstanding value of an invoice
@@ -204,12 +204,12 @@ Generates InvoiceLinePayments for all existing InvoicePayments.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
 try: 
@@ -251,12 +251,12 @@ Retrieves a collection of all invoices. By default 10 values are returned. Recor
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
 records = 10 # int | The maximum number of invoices to return. (optional) (default to 10)
@@ -312,12 +312,12 @@ Retrieves a collection of all invoices. By default 10 values are returned. Recor
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
 records = 10 # int | The maximum number of invoices to return. (optional) (default to 10)
@@ -369,12 +369,12 @@ Retrieves (as CSV) all attributions of Invoice costs to Invoice lines, bucketed.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which revenue attributions will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which revenue attributions will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -420,12 +420,12 @@ Returns all charges for the specified invoice. By default 10 values are returned
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -483,12 +483,12 @@ Retrieves credit note-paid from InvoicePayments upon line items, in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which credit payments will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which credit payments will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -534,12 +534,12 @@ Retrieves credit note-paid from InvoicePayments upon line items, in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which credit payments will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which credit payments will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -585,12 +585,12 @@ Retrieves received revenue from InvoicePayments upon line items, in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which revenue will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which revenue will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -636,12 +636,12 @@ Retrieves received revenue from InvoicePayments upon line items, in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which revenue will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which revenue will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -687,12 +687,12 @@ Retrieves a single invoice specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 id = 'id_example' # str | The ID of the invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
@@ -754,12 +754,12 @@ Retrieves a single invoice specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 id = 'id_example' # str | The ID of the invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
@@ -825,12 +825,12 @@ Retrieves a single invoice specified by the invoice-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | The ID of the invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
@@ -886,12 +886,12 @@ Retrieves a single invoice specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 id = 'id_example' # str | The ID of the invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -935,12 +935,12 @@ Retrieves a collection of invoices specified by the subscription-ID parameter. B
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
@@ -996,12 +996,12 @@ Retrieves a collection of invoices specified by the subscription-version-ID para
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 subscription_version_id = 'subscription_version_id_example' # str | Version ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
@@ -1057,12 +1057,12 @@ Retrieves a single invoice, specified by the version-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 version_id = 'version_id_example' # str | The version-ID of the invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -1106,12 +1106,12 @@ Retrieves a collection of invoices specified by the account-ID parameter. By def
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 account_id = 'account_id_example' # str | ID of the account.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
@@ -1167,12 +1167,12 @@ Retrieves a collection of invoice objects with period-end times within the perio
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1228,12 +1228,12 @@ Retrieves a collection of invoice objects with period-start times within the per
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1289,12 +1289,12 @@ Retrieves a collection of invoice objects with period-start times within the per
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1350,12 +1350,12 @@ Retrieves a collection of invoices, specified by the state parameter. By default
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 state = 'state_example' # str | The current state of the invoice, either Paid, Pending,  Unpaid or Voided.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1409,12 +1409,12 @@ Retrieves a collection of invoice objects specified by the state parameter and w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 state = 'state_example' # str | The current state of the invoice, either Paid, Pending,  Unpaid or Voided.
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
@@ -1472,12 +1472,12 @@ Retrieves a collection of invoice objects specified by the state parameter and w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 state = 'state_example' # str | The current state of the invoice, either Paid, Pending,  Unpaid or Voided.
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
@@ -1535,12 +1535,12 @@ Retrieves a collection of invoices, specified by the state parameter. By default
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 state = 'state_example' # str | The current state of the invoice, either Paid, Pending,  Unpaid or Voided.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1594,12 +1594,12 @@ Retrieves all InvoiceLine payment attributions.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which line payment attributions will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which line payment attributions will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -1649,12 +1649,12 @@ Retrieves (as CSV) all InvoiceLine payment attributions.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which line payment attributions will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which line payment attributions will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -1704,12 +1704,12 @@ Retrieve any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -1753,12 +1753,12 @@ Retrieves awarded refunds from InvoicePayments upon line items, in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which refunds will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which refunds will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -1804,12 +1804,12 @@ Retrieves awarded refunds from InvoicePayments upon line items, in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which refunds will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which refunds will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -1855,12 +1855,12 @@ Retrieves all attributions of Invoice costs to Invoice lines.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which revenue attributions will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which revenue attributions will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -1906,12 +1906,12 @@ Retrieves (as CSV) all attributions of Invoice costs to Invoice lines.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 recognition_start = 'recognition_start_example' # str | The UTC DateTime specifying the start of the interval within which revenue attributions will be recognised (example input: 2015-09-13T11:50:24). (optional)
 recognition_end = 'recognition_end_example' # str | The UTC DateTime specifying the end of the interval within which revenue attributions will be recognised (example input: 2015-10-13T11:50:24). (optional)
@@ -1957,12 +1957,12 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 query_string = 'query_string_example' # str | The query string used to search.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The starting index of the search results. (optional) (default to 0)
@@ -2016,13 +2016,13 @@ Import an invoice.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
-request = swagger_client.BillingEntityBase() # BillingEntityBase | 
+api_instance = billforward.InvoicesApi()
+request = billforward.BillingEntityBase() # BillingEntityBase | 
 
 try: 
     # Import an invoice.
@@ -2063,14 +2063,14 @@ Re-calculate an Invoice.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | 
-request = swagger_client.InvoiceRecalculationRequest() # InvoiceRecalculationRequest | 
+request = billforward.InvoiceRecalculationRequest() # InvoiceRecalculationRequest | 
 
 try: 
     # Re-calculate an Invoice.
@@ -2112,12 +2112,12 @@ Removes the specified charge from the specified Invoice.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | 
 charge_id = 'charge_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -2163,12 +2163,12 @@ Remove any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -2212,13 +2212,13 @@ Remove any existing metadata keys and create the provided data.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.InvoicesApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 invoice_id = 'invoice_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -2263,13 +2263,13 @@ Update an Invoice.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
-invoice = swagger_client.Invoice() # Invoice | The invoice object to be updated.
+api_instance = billforward.InvoicesApi()
+invoice = billforward.Invoice() # Invoice | The invoice object to be updated.
 
 try: 
     # Update an Invoice.
@@ -2310,13 +2310,13 @@ Update any existing metadata key-values and insert any new key-values, no keys w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.InvoicesApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 invoice_id = 'invoice_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -2361,12 +2361,12 @@ Voids the invoice specified by the invoice identifier parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.InvoicesApi()
+api_instance = billforward.InvoicesApi()
 invoice_id = 'invoice_id_example' # str | ID of the invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 

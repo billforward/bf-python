@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.flat_pricing_component import FlatPricingComponent
+import billforward
+from billforward.rest import ApiException
+from billforward.models.flat_pricing_component import FlatPricingComponent
 
 
 class TestFlatPricingComponent(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestFlatPricingComponent(unittest.TestCase):
         """
         Test FlatPricingComponent
         """
-        model = swagger_client.models.flat_pricing_component.FlatPricingComponent()
+        model = billforward.models.flat_pricing_component.FlatPricingComponent()
 
 
 if __name__ == '__main__':

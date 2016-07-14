@@ -1,4 +1,4 @@
-# swagger_client.ChargesApi
+# billforward.ChargesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -23,12 +23,12 @@ Retrieves a collection of all charges. By default 10 values are returned. Record
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ChargesApi()
+api_instance = billforward.ChargesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
 records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
@@ -80,12 +80,12 @@ Retrieves a collection of charges, specified by the account-ID parameter. By def
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ChargesApi()
+api_instance = billforward.ChargesApi()
 account_id = 'account_id_example' # str | The string ID of the account
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -139,12 +139,12 @@ Retrieves a single charge, specified by the charge-id parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ChargesApi()
+api_instance = billforward.ChargesApi()
 charge_id = 'charge_id_example' # str | The unique string-ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -198,12 +198,12 @@ Retrieves a collection of charges, specified by the state parameter. By default 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ChargesApi()
+api_instance = billforward.ChargesApi()
 state = 'state_example' # str | The current state of the charge
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -257,12 +257,12 @@ Retrieves a single charge, specified by the version-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ChargesApi()
+api_instance = billforward.ChargesApi()
 version_id = 'version_id_example' # str | The version-ID of the charge.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -306,14 +306,14 @@ Recalculate a charge.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ChargesApi()
+api_instance = billforward.ChargesApi()
 charge_id = 'charge_id_example' # str | Unique id of the charge.
-charge = swagger_client.RecalculateChargeRequest() # RecalculateChargeRequest | The charge to be re-calculated.
+charge = billforward.RecalculateChargeRequest() # RecalculateChargeRequest | The charge to be re-calculated.
 
 try: 
     # Recalculate a charge.
@@ -355,12 +355,12 @@ Void the charge with the specified charge-ID.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ChargesApi()
+api_instance = billforward.ChargesApi()
 charge_id = 'charge_id_example' # str | Unique id of the charge.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

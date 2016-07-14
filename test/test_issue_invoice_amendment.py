@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.issue_invoice_amendment import IssueInvoiceAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.issue_invoice_amendment import IssueInvoiceAmendment
 
 
 class TestIssueInvoiceAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestIssueInvoiceAmendment(unittest.TestCase):
         """
         Test IssueInvoiceAmendment
         """
-        model = swagger_client.models.issue_invoice_amendment.IssueInvoiceAmendment()
+        model = billforward.models.issue_invoice_amendment.IssueInvoiceAmendment()
 
 
 if __name__ == '__main__':

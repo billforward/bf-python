@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.bank_account_verification_paged_metadata import BankAccountVerificationPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.bank_account_verification_paged_metadata import BankAccountVerificationPagedMetadata
 
 
 class TestBankAccountVerificationPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBankAccountVerificationPagedMetadata(unittest.TestCase):
         """
         Test BankAccountVerificationPagedMetadata
         """
-        model = swagger_client.models.bank_account_verification_paged_metadata.BankAccountVerificationPagedMetadata()
+        model = billforward.models.bank_account_verification_paged_metadata.BankAccountVerificationPagedMetadata()
 
 
 if __name__ == '__main__':

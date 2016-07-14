@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.couponbookdefinition_api import CouponbookdefinitionApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.couponbookdefinition_api import CouponbookdefinitionApi
 
 
 class TestCouponbookdefinitionApi(unittest.TestCase):
     """ CouponbookdefinitionApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.couponbookdefinition_api.CouponbookdefinitionApi()
+        self.api = billforward.apis.couponbookdefinition_api.CouponbookdefinitionApi()
 
     def tearDown(self):
         pass

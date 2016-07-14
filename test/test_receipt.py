@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.receipt import Receipt
+import billforward
+from billforward.rest import ApiException
+from billforward.models.receipt import Receipt
 
 
 class TestReceipt(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestReceipt(unittest.TestCase):
         """
         Test Receipt
         """
-        model = swagger_client.models.receipt.Receipt()
+        model = billforward.models.receipt.Receipt()
 
 
 if __name__ == '__main__':

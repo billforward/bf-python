@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.amendment_price_n_time_paged_metadata import AmendmentPriceNTimePagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.amendment_price_n_time_paged_metadata import AmendmentPriceNTimePagedMetadata
 
 
 class TestAmendmentPriceNTimePagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAmendmentPriceNTimePagedMetadata(unittest.TestCase):
         """
         Test AmendmentPriceNTimePagedMetadata
         """
-        model = swagger_client.models.amendment_price_n_time_paged_metadata.AmendmentPriceNTimePagedMetadata()
+        model = billforward.models.amendment_price_n_time_paged_metadata.AmendmentPriceNTimePagedMetadata()
 
 
 if __name__ == '__main__':

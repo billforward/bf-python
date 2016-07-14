@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.unit_of_measure import UnitOfMeasure
+import billforward
+from billforward.rest import ApiException
+from billforward.models.unit_of_measure import UnitOfMeasure
 
 
 class TestUnitOfMeasure(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestUnitOfMeasure(unittest.TestCase):
         """
         Test UnitOfMeasure
         """
-        model = swagger_client.models.unit_of_measure.UnitOfMeasure()
+        model = billforward.models.unit_of_measure.UnitOfMeasure()
 
 
 if __name__ == '__main__':

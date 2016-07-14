@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.create_subscription_charge_amendment import CreateSubscriptionChargeAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.create_subscription_charge_amendment import CreateSubscriptionChargeAmendment
 
 
 class TestCreateSubscriptionChargeAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCreateSubscriptionChargeAmendment(unittest.TestCase):
         """
         Test CreateSubscriptionChargeAmendment
         """
-        model = swagger_client.models.create_subscription_charge_amendment.CreateSubscriptionChargeAmendment()
+        model = billforward.models.create_subscription_charge_amendment.CreateSubscriptionChargeAmendment()
 
 
 if __name__ == '__main__':

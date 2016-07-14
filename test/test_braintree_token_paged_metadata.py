@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.braintree_token_paged_metadata import BraintreeTokenPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.braintree_token_paged_metadata import BraintreeTokenPagedMetadata
 
 
 class TestBraintreeTokenPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBraintreeTokenPagedMetadata(unittest.TestCase):
         """
         Test BraintreeTokenPagedMetadata
         """
-        model = swagger_client.models.braintree_token_paged_metadata.BraintreeTokenPagedMetadata()
+        model = billforward.models.braintree_token_paged_metadata.BraintreeTokenPagedMetadata()
 
 
 if __name__ == '__main__':

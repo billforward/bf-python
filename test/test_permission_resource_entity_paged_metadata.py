@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.permission_resource_entity_paged_metadata import PermissionResourceEntityPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.permission_resource_entity_paged_metadata import PermissionResourceEntityPagedMetadata
 
 
 class TestPermissionResourceEntityPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPermissionResourceEntityPagedMetadata(unittest.TestCase):
         """
         Test PermissionResourceEntityPagedMetadata
         """
-        model = swagger_client.models.permission_resource_entity_paged_metadata.PermissionResourceEntityPagedMetadata()
+        model = billforward.models.permission_resource_entity_paged_metadata.PermissionResourceEntityPagedMetadata()
 
 
 if __name__ == '__main__':

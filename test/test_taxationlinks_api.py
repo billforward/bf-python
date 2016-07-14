@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.taxationlinks_api import TaxationlinksApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.taxationlinks_api import TaxationlinksApi
 
 
 class TestTaxationlinksApi(unittest.TestCase):
     """ TaxationlinksApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.taxationlinks_api.TaxationlinksApi()
+        self.api = billforward.apis.taxationlinks_api.TaxationlinksApi()
 
     def tearDown(self):
         pass

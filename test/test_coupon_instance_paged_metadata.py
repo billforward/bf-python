@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.coupon_instance_paged_metadata import CouponInstancePagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.coupon_instance_paged_metadata import CouponInstancePagedMetadata
 
 
 class TestCouponInstancePagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCouponInstancePagedMetadata(unittest.TestCase):
         """
         Test CouponInstancePagedMetadata
         """
-        model = swagger_client.models.coupon_instance_paged_metadata.CouponInstancePagedMetadata()
+        model = billforward.models.coupon_instance_paged_metadata.CouponInstancePagedMetadata()
 
 
 if __name__ == '__main__':

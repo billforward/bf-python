@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.update_profile_request import UpdateProfileRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.update_profile_request import UpdateProfileRequest
 
 
 class TestUpdateProfileRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestUpdateProfileRequest(unittest.TestCase):
         """
         Test UpdateProfileRequest
         """
-        model = swagger_client.models.update_profile_request.UpdateProfileRequest()
+        model = billforward.models.update_profile_request.UpdateProfileRequest()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.bf_error import BFError
+import billforward
+from billforward.rest import ApiException
+from billforward.models.bf_error import BFError
 
 
 class TestBFError(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBFError(unittest.TestCase):
         """
         Test BFError
         """
-        model = swagger_client.models.bf_error.BFError()
+        model = billforward.models.bf_error.BFError()
 
 
 if __name__ == '__main__':

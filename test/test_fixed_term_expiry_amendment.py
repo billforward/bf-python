@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.fixed_term_expiry_amendment import FixedTermExpiryAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.fixed_term_expiry_amendment import FixedTermExpiryAmendment
 
 
 class TestFixedTermExpiryAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestFixedTermExpiryAmendment(unittest.TestCase):
         """
         Test FixedTermExpiryAmendment
         """
-        model = swagger_client.models.fixed_term_expiry_amendment.FixedTermExpiryAmendment()
+        model = billforward.models.fixed_term_expiry_amendment.FixedTermExpiryAmendment()
 
 
 if __name__ == '__main__':

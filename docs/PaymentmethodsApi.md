@@ -1,4 +1,4 @@
-# swagger_client.PaymentmethodsApi
+# billforward.PaymentmethodsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -24,13 +24,13 @@ Create a payment-method.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
-payment_method = swagger_client.PaymentMethod() # PaymentMethod | The payment-method object to be updated.
+api_instance = billforward.PaymentmethodsApi()
+payment_method = billforward.PaymentMethod() # PaymentMethod | The payment-method object to be updated.
 
 try: 
     # Create a payment-method.
@@ -71,12 +71,12 @@ Deletes the payment-method specified by the payment-method-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
+api_instance = billforward.PaymentmethodsApi()
 payment_method_id = 'payment_method_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -120,12 +120,12 @@ Returns a collection of all payment-methods. By default 10 values are returned. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
+api_instance = billforward.PaymentmethodsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first payment-method to return. (optional) (default to 0)
 records = 10 # int | The maximum number of payment-methods to return. (optional) (default to 10)
@@ -177,12 +177,12 @@ Returns a collection of payment-methods, specified by the account-ID parameter. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
+api_instance = billforward.PaymentmethodsApi()
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first payment-method to return. (optional) (default to 0)
@@ -238,12 +238,12 @@ Returns a single payment-method, specified by the payment-method-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
+api_instance = billforward.PaymentmethodsApi()
 payment_method_id = 'payment_method_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -287,12 +287,12 @@ Returns a single payment-method, specified by the linkID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
+api_instance = billforward.PaymentmethodsApi()
 link_id = 'link_id_example' # str | The link-id of the payment-method.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -336,12 +336,12 @@ Returns a collection of payment-methods, specified by the gateway parameter. By 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
+api_instance = billforward.PaymentmethodsApi()
 gateway = 'gateway_example' # str | The payment-method gateway which generated the payment-method.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first payment-method to return. (optional) (default to 0)
@@ -395,13 +395,13 @@ Update a payment-method.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsApi()
-payment_method = swagger_client.PaymentMethod() # PaymentMethod | The payment-method object to be updated.
+api_instance = billforward.PaymentmethodsApi()
+payment_method = billforward.PaymentMethod() # PaymentMethod | The payment-method object to be updated.
 
 try: 
     # Update a payment-method.

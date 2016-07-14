@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.email_paged_metadata import EmailPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.email_paged_metadata import EmailPagedMetadata
 
 
 class TestEmailPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestEmailPagedMetadata(unittest.TestCase):
         """
         Test EmailPagedMetadata
         """
-        model = swagger_client.models.email_paged_metadata.EmailPagedMetadata()
+        model = billforward.models.email_paged_metadata.EmailPagedMetadata()
 
 
 if __name__ == '__main__':

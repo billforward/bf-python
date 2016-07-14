@@ -1,4 +1,4 @@
-# swagger_client.CouponmodifierApi
+# billforward.CouponmodifierApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -23,13 +23,13 @@ Create a coupon-modifier.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponmodifierApi()
-coupon_instance = swagger_client.CouponModifierBase() # CouponModifierBase | The coupon-instance object to be created.
+api_instance = billforward.CouponmodifierApi()
+coupon_instance = billforward.CouponModifierBase() # CouponModifierBase | The coupon-instance object to be created.
 
 try: 
     # Create a coupon-modifier.
@@ -70,12 +70,12 @@ Retire a coupon-modifier, specified by the coupon-modifier-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponmodifierApi()
+api_instance = billforward.CouponmodifierApi()
 coupon_modifier_id = 'coupon_modifier_id_example' # str | ID of the coupon-modifier.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -119,12 +119,12 @@ Returns a collection of coupon-modifiers. By default 10 values are returned. Rec
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponmodifierApi()
+api_instance = billforward.CouponmodifierApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
 records = 10 # int | The maximum number of product-rate-plans to return. (optional) (default to 10)
@@ -170,12 +170,12 @@ Returns a collection of coupon-modifiers, specified by the coupon-code parameter
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponmodifierApi()
+api_instance = billforward.CouponmodifierApi()
 coupon_code = 'coupon_code_example' # str | The coupon-code.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
@@ -223,12 +223,12 @@ Returns a collection of coupon-modifiers, specified by the coupon-definition-ID 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponmodifierApi()
+api_instance = billforward.CouponmodifierApi()
 coupon_definition_id = 'coupon_definition_id_example' # str | ID of the coupon-definition.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -272,12 +272,12 @@ Returns a single coupon-modifier, specified by the coupon-modifier-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponmodifierApi()
+api_instance = billforward.CouponmodifierApi()
 coupon_modifier_id = 'coupon_modifier_id_example' # str | ID of the coupon-modifier.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -321,13 +321,13 @@ Update a coupon-instance.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponmodifierApi()
-coupon_instance = swagger_client.CouponModifierBase() # CouponModifierBase | The coupon-instance object to be updated.
+api_instance = billforward.CouponmodifierApi()
+coupon_instance = billforward.CouponModifierBase() # CouponModifierBase | The coupon-instance object to be updated.
 
 try: 
     # Update a coupon-instance.

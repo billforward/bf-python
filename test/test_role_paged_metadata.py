@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.role_paged_metadata import RolePagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.role_paged_metadata import RolePagedMetadata
 
 
 class TestRolePagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestRolePagedMetadata(unittest.TestCase):
         """
         Test RolePagedMetadata
         """
-        model = swagger_client.models.role_paged_metadata.RolePagedMetadata()
+        model = billforward.models.role_paged_metadata.RolePagedMetadata()
 
 
 if __name__ == '__main__':

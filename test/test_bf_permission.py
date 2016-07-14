@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.bf_permission import BFPermission
+import billforward
+from billforward.rest import ApiException
+from billforward.models.bf_permission import BFPermission
 
 
 class TestBFPermission(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBFPermission(unittest.TestCase):
         """
         Test BFPermission
         """
-        model = swagger_client.models.bf_permission.BFPermission()
+        model = billforward.models.bf_permission.BFPermission()
 
 
 if __name__ == '__main__':

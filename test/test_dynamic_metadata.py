@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.dynamic_metadata import DynamicMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.dynamic_metadata import DynamicMetadata
 
 
 class TestDynamicMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestDynamicMetadata(unittest.TestCase):
         """
         Test DynamicMetadata
         """
-        model = swagger_client.models.dynamic_metadata.DynamicMetadata()
+        model = billforward.models.dynamic_metadata.DynamicMetadata()
 
 
 if __name__ == '__main__':

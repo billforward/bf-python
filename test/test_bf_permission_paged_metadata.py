@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.bf_permission_paged_metadata import BFPermissionPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.bf_permission_paged_metadata import BFPermissionPagedMetadata
 
 
 class TestBFPermissionPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBFPermissionPagedMetadata(unittest.TestCase):
         """
         Test BFPermissionPagedMetadata
         """
-        model = swagger_client.models.bf_permission_paged_metadata.BFPermissionPagedMetadata()
+        model = billforward.models.bf_permission_paged_metadata.BFPermissionPagedMetadata()
 
 
 if __name__ == '__main__':

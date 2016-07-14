@@ -1,4 +1,4 @@
-# swagger_client.TaxationlinksApi
+# billforward.TaxationlinksApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationlinksApi()
-taxation_link = swagger_client.MutableBillingEntity() # MutableBillingEntity | The taxation-link object to be updated.
+api_instance = billforward.TaxationlinksApi()
+taxation_link = billforward.MutableBillingEntity() # MutableBillingEntity | The taxation-link object to be updated.
 
 try: 
     # Create
@@ -69,12 +69,12 @@ Returns a collection of all taxation-links. By default 10 values are returned. R
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationlinksApi()
+api_instance = billforward.TaxationlinksApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-link to return. (optional) (default to 0)
 records = 10 # int | The maximum number of taxation-links to return. (optional) (default to 10)
@@ -126,12 +126,12 @@ Returns a single taxation-link, specified by the taxation-link-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationlinksApi()
+api_instance = billforward.TaxationlinksApi()
 taxation_link_id = 'taxation_link_id_example' # str | The unique ID of the Taxation Link.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -175,12 +175,12 @@ Returns a collection of taxation-links, specified by the product-rate-plan-ID pa
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationlinksApi()
+api_instance = billforward.TaxationlinksApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | The ID of the product-rate-plan
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-link to return. (optional) (default to 0)
@@ -234,12 +234,12 @@ Returns a collection of taxation-links, specified by the taxation-strategy-ID pa
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationlinksApi()
+api_instance = billforward.TaxationlinksApi()
 taxation_strategy_id = 'taxation_strategy_id_example' # str | The ID of the taxation-strategy
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-link to return. (optional) (default to 0)
@@ -293,13 +293,13 @@ Update
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationlinksApi()
-taxation_link = swagger_client.MutableBillingEntity() # MutableBillingEntity | The taxation-link object to be updated.
+api_instance = billforward.TaxationlinksApi()
+taxation_link = billforward.MutableBillingEntity() # MutableBillingEntity | The taxation-link object to be updated.
 
 try: 
     # Update

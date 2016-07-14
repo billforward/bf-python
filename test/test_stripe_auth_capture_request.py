@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.stripe_auth_capture_request import StripeAuthCaptureRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.stripe_auth_capture_request import StripeAuthCaptureRequest
 
 
 class TestStripeAuthCaptureRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestStripeAuthCaptureRequest(unittest.TestCase):
         """
         Test StripeAuthCaptureRequest
         """
-        model = swagger_client.models.stripe_auth_capture_request.StripeAuthCaptureRequest()
+        model = billforward.models.stripe_auth_capture_request.StripeAuthCaptureRequest()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.taxation_strategy_paged_metadata import TaxationStrategyPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.taxation_strategy_paged_metadata import TaxationStrategyPagedMetadata
 
 
 class TestTaxationStrategyPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTaxationStrategyPagedMetadata(unittest.TestCase):
         """
         Test TaxationStrategyPagedMetadata
         """
-        model = swagger_client.models.taxation_strategy_paged_metadata.TaxationStrategyPagedMetadata()
+        model = billforward.models.taxation_strategy_paged_metadata.TaxationStrategyPagedMetadata()
 
 
 if __name__ == '__main__':

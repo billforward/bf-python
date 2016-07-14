@@ -1,4 +1,4 @@
-# swagger_client.PricingcomponentsApi
+# billforward.PricingcomponentsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a pricing-component.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentsApi()
-pricing_component = swagger_client.PricingComponent() # PricingComponent | The pricing-component object to be updated.
+api_instance = billforward.PricingcomponentsApi()
+pricing_component = billforward.PricingComponent() # PricingComponent | The pricing-component object to be updated.
 
 try: 
     # Create a pricing-component.
@@ -69,12 +69,12 @@ Returns a collection of pricing-components. By default 10 values are returned. R
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentsApi()
+api_instance = billforward.PricingcomponentsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component to return. (optional) (default to 0)
 records = 10 # int | The maximum number of pricing-components to return. (optional) (default to 10)
@@ -126,12 +126,12 @@ Returns a collection of pricing-components, specified by the pricing-component-I
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentsApi()
+api_instance = billforward.PricingcomponentsApi()
 pricing_component_id = 'pricing_component_id_example' # str | The string ID of the pricing-component.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component to return. (optional) (default to 0)
@@ -185,12 +185,12 @@ Returns a collection of pricing-components, specified by the product-rate-plan-I
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentsApi()
+api_instance = billforward.PricingcomponentsApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | The string product-rate-plan-ID of the pricing-component.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component to return. (optional) (default to 0)
@@ -244,12 +244,12 @@ Retires the pricing-component specified by the pricing-component-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentsApi()
+api_instance = billforward.PricingcomponentsApi()
 pricing_component_id = 'pricing_component_id_example' # str | The string ID of the pricing-component.
 organizations = ['organizations_example'] # list[str] | A list of organization IDs used to restrict the scope of API calls. (optional)
 
@@ -293,13 +293,13 @@ Update a pricing-component.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentsApi()
-pricing_component = swagger_client.PricingComponent() # PricingComponent | The pricing-component object to be updated.
+api_instance = billforward.PricingcomponentsApi()
+pricing_component = billforward.PricingComponent() # PricingComponent | The pricing-component object to be updated.
 
 try: 
     # Update a pricing-component.

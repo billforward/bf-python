@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.role import Role
+import billforward
+from billforward.rest import ApiException
+from billforward.models.role import Role
 
 
 class TestRole(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestRole(unittest.TestCase):
         """
         Test Role
         """
-        model = swagger_client.models.role.Role()
+        model = billforward.models.role.Role()
 
 
 if __name__ == '__main__':

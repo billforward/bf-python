@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.address import Address
+import billforward
+from billforward.rest import ApiException
+from billforward.models.address import Address
 
 
 class TestAddress(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAddress(unittest.TestCase):
         """
         Test Address
         """
-        model = swagger_client.models.address.Address()
+        model = billforward.models.address.Address()
 
 
 if __name__ == '__main__':

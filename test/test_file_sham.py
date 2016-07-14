@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.file_sham import FileSham
+import billforward
+from billforward.rest import ApiException
+from billforward.models.file_sham import FileSham
 
 
 class TestFileSham(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestFileSham(unittest.TestCase):
         """
         Test FileSham
         """
-        model = swagger_client.models.file_sham.FileSham()
+        model = billforward.models.file_sham.FileSham()
 
 
 if __name__ == '__main__':

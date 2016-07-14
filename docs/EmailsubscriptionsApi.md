@@ -1,4 +1,4 @@
-# swagger_client.EmailsubscriptionsApi
+# billforward.EmailsubscriptionsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,13 +21,13 @@ Create an email subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsubscriptionsApi()
-request = swagger_client.BillingEntityBase() # BillingEntityBase | .
+api_instance = billforward.EmailsubscriptionsApi()
+request = billforward.BillingEntityBase() # BillingEntityBase | .
 
 try: 
     # Create an email subscription.
@@ -68,12 +68,12 @@ Unsubscribe from the email specified by the type parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsubscriptionsApi()
+api_instance = billforward.EmailsubscriptionsApi()
 type = 'type_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -117,12 +117,12 @@ Returns a collection of all email-subscriptions. By default 10 values are return
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsubscriptionsApi()
+api_instance = billforward.EmailsubscriptionsApi()
 state = 'state_example' # str | Constrains search to Email Subscriptions of a specific state.
 type = 'type_example' # str | Constrains search to Email Subscriptions of a specific type
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -176,12 +176,12 @@ Retrieves a single email subscription, specified by ID.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsubscriptionsApi()
+api_instance = billforward.EmailsubscriptionsApi()
 email_subscription_id = 'email_subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 include_retired = false # bool | Include deleted email-subscriptions (optional) (default to false)
@@ -227,13 +227,13 @@ Update an email subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailsubscriptionsApi()
-request = swagger_client.BillingEntityBase() # BillingEntityBase | .
+api_instance = billforward.EmailsubscriptionsApi()
+request = billforward.BillingEntityBase() # BillingEntityBase | .
 
 try: 
     # Update an email subscription.

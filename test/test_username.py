@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.username import Username
+import billforward
+from billforward.rest import ApiException
+from billforward.models.username import Username
 
 
 class TestUsername(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestUsername(unittest.TestCase):
         """
         Test Username
         """
-        model = swagger_client.models.username.Username()
+        model = billforward.models.username.Username()
 
 
 if __name__ == '__main__':

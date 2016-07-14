@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.passwords_api import PasswordsApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.passwords_api import PasswordsApi
 
 
 class TestPasswordsApi(unittest.TestCase):
     """ PasswordsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.passwords_api.PasswordsApi()
+        self.api = billforward.apis.passwords_api.PasswordsApi()
 
     def tearDown(self):
         pass

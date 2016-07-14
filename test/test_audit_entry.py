@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.audit_entry import AuditEntry
+import billforward
+from billforward.rest import ApiException
+from billforward.models.audit_entry import AuditEntry
 
 
 class TestAuditEntry(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAuditEntry(unittest.TestCase):
         """
         Test AuditEntry
         """
-        model = swagger_client.models.audit_entry.AuditEntry()
+        model = billforward.models.audit_entry.AuditEntry()
 
 
 if __name__ == '__main__':

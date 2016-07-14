@@ -1,4 +1,4 @@
-# swagger_client.AnalyticsApi
+# billforward.AnalyticsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -27,13 +27,13 @@ Gets outstanding debts per account, within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
-debts_per_account = swagger_client.BillingEntityBase() # BillingEntityBase | The payments-per-account object.
+api_instance = billforward.AnalyticsApi()
+debts_per_account = billforward.BillingEntityBase() # BillingEntityBase | The payments-per-account object.
 
 try: 
     # Gets outstanding debts per account, within a date range.
@@ -74,12 +74,12 @@ Gets an account's life-time value, as of a given end date.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
+api_instance = billforward.AnalyticsApi()
 account_id = 'account_id_example' # str | The id of the account.
 end_datetime = 'end_datetime_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -133,13 +133,13 @@ Gets hourly payments per product, within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
-payments_per_account = swagger_client.BillingEntityBase() # BillingEntityBase | The payments-per-account object.
+api_instance = billforward.AnalyticsApi()
+payments_per_account = billforward.BillingEntityBase() # BillingEntityBase | The payments-per-account object.
 
 try: 
     # Gets hourly payments per product, within a date range.
@@ -180,12 +180,12 @@ Gets all payments managed by BillForward, within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
+api_instance = billforward.AnalyticsApi()
 start_datetime = 'start_datetime_example' # str | The UTC DateTime specifying the start of the result period.
 end_datetime = 'end_datetime_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -239,12 +239,12 @@ Gets churn, within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
+api_instance = billforward.AnalyticsApi()
 start_datetime = 'start_datetime_example' # str | The UTC DateTime specifying the start of the result period.
 end_datetime = 'end_datetime_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -298,12 +298,12 @@ Gets debts within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
+api_instance = billforward.AnalyticsApi()
 start_datetime = 'start_datetime_example' # str | The UTC DateTime specifying the start of the result period.
 end_datetime = 'end_datetime_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -357,12 +357,12 @@ Gets payments within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
+api_instance = billforward.AnalyticsApi()
 start_datetime = 'start_datetime_example' # str | The UTC DateTime specifying the start of the result period.
 end_datetime = 'end_datetime_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -416,13 +416,13 @@ Gets hourly payments per product, within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
-payments_per_product = swagger_client.BillingEntityBase() # BillingEntityBase | The payments-per-product object.
+api_instance = billforward.AnalyticsApi()
+payments_per_product = billforward.BillingEntityBase() # BillingEntityBase | The payments-per-product object.
 
 try: 
     # Gets hourly payments per product, within a date range.
@@ -463,13 +463,13 @@ Gets hourly payments per product, within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
-payments_per_product_rate_plan = swagger_client.BillingEntityBase() # BillingEntityBase | The payments-per-product-rate-plan object.
+api_instance = billforward.AnalyticsApi()
+payments_per_product_rate_plan = billforward.BillingEntityBase() # BillingEntityBase | The payments-per-product-rate-plan object.
 
 try: 
     # Gets hourly payments per product, within a date range.
@@ -510,12 +510,12 @@ Gets a subscription's life-time value, as of a given end date.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
+api_instance = billforward.AnalyticsApi()
 subscription_id = 'subscription_id_example' # str | The id of the subscription.
 end_datetime = 'end_datetime_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -569,12 +569,12 @@ Gets upgrades, within a date range.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AnalyticsApi()
+api_instance = billforward.AnalyticsApi()
 start_datetime = 'start_datetime_example' # str | The UTC DateTime specifying the start of the result period.
 end_datetime = 'end_datetime_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)

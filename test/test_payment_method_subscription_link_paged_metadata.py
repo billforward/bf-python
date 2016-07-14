@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.payment_method_subscription_link_paged_metadata import PaymentMethodSubscriptionLinkPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.payment_method_subscription_link_paged_metadata import PaymentMethodSubscriptionLinkPagedMetadata
 
 
 class TestPaymentMethodSubscriptionLinkPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPaymentMethodSubscriptionLinkPagedMetadata(unittest.TestCase):
         """
         Test PaymentMethodSubscriptionLinkPagedMetadata
         """
-        model = swagger_client.models.payment_method_subscription_link_paged_metadata.PaymentMethodSubscriptionLinkPagedMetadata()
+        model = billforward.models.payment_method_subscription_link_paged_metadata.PaymentMethodSubscriptionLinkPagedMetadata()
 
 
 if __name__ == '__main__':

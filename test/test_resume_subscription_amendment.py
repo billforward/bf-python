@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.resume_subscription_amendment import ResumeSubscriptionAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.resume_subscription_amendment import ResumeSubscriptionAmendment
 
 
 class TestResumeSubscriptionAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestResumeSubscriptionAmendment(unittest.TestCase):
         """
         Test ResumeSubscriptionAmendment
         """
-        model = swagger_client.models.resume_subscription_amendment.ResumeSubscriptionAmendment()
+        model = billforward.models.resume_subscription_amendment.ResumeSubscriptionAmendment()
 
 
 if __name__ == '__main__':

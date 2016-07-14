@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.quote_request_value import QuoteRequestValue
+import billforward
+from billforward.rest import ApiException
+from billforward.models.quote_request_value import QuoteRequestValue
 
 
 class TestQuoteRequestValue(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestQuoteRequestValue(unittest.TestCase):
         """
         Test QuoteRequestValue
         """
-        model = swagger_client.models.quote_request_value.QuoteRequestValue()
+        model = billforward.models.quote_request_value.QuoteRequestValue()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.password import Password
+import billforward
+from billforward.rest import ApiException
+from billforward.models.password import Password
 
 
 class TestPassword(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPassword(unittest.TestCase):
         """
         Test Password
         """
-        model = swagger_client.models.password.Password()
+        model = billforward.models.password.Password()
 
 
 if __name__ == '__main__':

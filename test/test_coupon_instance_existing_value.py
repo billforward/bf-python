@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.coupon_instance_existing_value import CouponInstanceExistingValue
+import billforward
+from billforward.rest import ApiException
+from billforward.models.coupon_instance_existing_value import CouponInstanceExistingValue
 
 
 class TestCouponInstanceExistingValue(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCouponInstanceExistingValue(unittest.TestCase):
         """
         Test CouponInstanceExistingValue
         """
-        model = swagger_client.models.coupon_instance_existing_value.CouponInstanceExistingValue()
+        model = billforward.models.coupon_instance_existing_value.CouponInstanceExistingValue()
 
 
 if __name__ == '__main__':

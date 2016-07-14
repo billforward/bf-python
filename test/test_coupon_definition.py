@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.coupon_definition import CouponDefinition
+import billforward
+from billforward.rest import ApiException
+from billforward.models.coupon_definition import CouponDefinition
 
 
 class TestCouponDefinition(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCouponDefinition(unittest.TestCase):
         """
         Test CouponDefinition
         """
-        model = swagger_client.models.coupon_definition.CouponDefinition()
+        model = billforward.models.coupon_definition.CouponDefinition()
 
 
 if __name__ == '__main__':

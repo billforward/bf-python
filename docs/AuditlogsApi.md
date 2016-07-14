@@ -1,4 +1,4 @@
-# swagger_client.AuditlogsApi
+# billforward.AuditlogsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,12 +21,12 @@ Returns a collection of all audit-log objects. By default 10 values are returned
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuditlogsApi()
+api_instance = billforward.AuditlogsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first audit-log entry to return. (optional) (default to 0)
 records = 10 # int | The maximum number of audit-log entry to return. (optional) (default to 10)
@@ -78,12 +78,12 @@ Returns a collection of audit-log objects with created times within the period s
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuditlogsApi()
+api_instance = billforward.AuditlogsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -139,12 +139,12 @@ Returns a collection of audit-log entries, specified by the entity-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuditlogsApi()
+api_instance = billforward.AuditlogsApi()
 entity_id = 'entity_id_example' # str | The string ID of the entity whose changes are documented by the audit log.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first account to return. (optional) (default to 0)
@@ -198,12 +198,12 @@ Returns a collection of audit-log entries, specified by the entity-type paramete
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuditlogsApi()
+api_instance = billforward.AuditlogsApi()
 entity_type = 'entity_type_example' # str | The type of the entity whose changes are documented by the audit log.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first account to return. (optional) (default to 0)
@@ -257,12 +257,12 @@ Returns a single audit-log entry, specified by the audit-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AuditlogsApi()
+api_instance = billforward.AuditlogsApi()
 audit_id = 'audit_id_example' # str | The string ID of the audit-log entry.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. Multiple organization-IDs may be specified by repeated use of the query parameter. Example: ...&organizations=org1&organizations=org2 (optional)
 

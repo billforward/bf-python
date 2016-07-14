@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.couponinstance_api import CouponinstanceApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.couponinstance_api import CouponinstanceApi
 
 
 class TestCouponinstanceApi(unittest.TestCase):
     """ CouponinstanceApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.couponinstance_api.CouponinstanceApi()
+        self.api = billforward.apis.couponinstance_api.CouponinstanceApi()
 
     def tearDown(self):
         pass

@@ -1,4 +1,4 @@
-# swagger_client.ReceiptsApi
+# billforward.ReceiptsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -23,13 +23,13 @@ Create a receipt.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReceiptsApi()
-receipt = swagger_client.Receipt() # Receipt | The receipt object to be created.
+api_instance = billforward.ReceiptsApi()
+receipt = billforward.Receipt() # Receipt | The receipt object to be created.
 
 try: 
     # Create a receipt.
@@ -70,12 +70,12 @@ Returns a collection of all receipts. By default 10 values are returned. receipt
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReceiptsApi()
+api_instance = billforward.ReceiptsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first receipt to return. (optional) (default to 0)
 records = 10 # int | The maximum number of receipts to return. (optional) (default to 10)
@@ -137,12 +137,12 @@ Returns a single receipt, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReceiptsApi()
+api_instance = billforward.ReceiptsApi()
 receipt_id = 'receipt_id_example' # str | ID of the receipt.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -186,12 +186,12 @@ Returns a receipt for the receipt payment.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReceiptsApi()
+api_instance = billforward.ReceiptsApi()
 invoice_id = 'invoice_id_example' # str | ID of the Invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first receipt to return. (optional) (default to 0)
@@ -243,12 +243,12 @@ Returns a collection of receipts for the payment.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReceiptsApi()
+api_instance = billforward.ReceiptsApi()
 payment_id = 'payment_id_example' # str | ID of the payment.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first receipt to return. (optional) (default to 0)
@@ -300,12 +300,12 @@ Retrieves debit payments in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReceiptsApi()
+api_instance = billforward.ReceiptsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 received_start = 'received_start_example' # str | The UTC DateTime specifying the start of the interval within which payments were received. (optional)
 received_end = 'received_end_example' # str | The UTC DateTime specifying the end of the interval within which payments were received. (optional)
@@ -361,12 +361,12 @@ Retrieves refunded payments in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ReceiptsApi()
+api_instance = billforward.ReceiptsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 completed_start = 'completed_start_example' # str | The UTC DateTime specifying the start of the interval within which payments were received. (optional)
 completed_end = 'completed_end_example' # str | The UTC DateTime specifying the end of the interval within which payments were received. (optional)

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.component_change import ComponentChange
+import billforward
+from billforward.rest import ApiException
+from billforward.models.component_change import ComponentChange
 
 
 class TestComponentChange(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestComponentChange(unittest.TestCase):
         """
         Test ComponentChange
         """
-        model = swagger_client.models.component_change.ComponentChange()
+        model = billforward.models.component_change.ComponentChange()
 
 
 if __name__ == '__main__':

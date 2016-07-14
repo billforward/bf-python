@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.payment_method import PaymentMethod
+import billforward
+from billforward.rest import ApiException
+from billforward.models.payment_method import PaymentMethod
 
 
 class TestPaymentMethod(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPaymentMethod(unittest.TestCase):
         """
         Test PaymentMethod
         """
-        model = swagger_client.models.payment_method.PaymentMethod()
+        model = billforward.models.payment_method.PaymentMethod()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.pricing_component_value_migration_amendment_mapping import PricingComponentValueMigrationAmendmentMapping
+import billforward
+from billforward.rest import ApiException
+from billforward.models.pricing_component_value_migration_amendment_mapping import PricingComponentValueMigrationAmendmentMapping
 
 
 class TestPricingComponentValueMigrationAmendmentMapping(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPricingComponentValueMigrationAmendmentMapping(unittest.TestCase):
         """
         Test PricingComponentValueMigrationAmendmentMapping
         """
-        model = swagger_client.models.pricing_component_value_migration_amendment_mapping.PricingComponentValueMigrationAmendmentMapping()
+        model = billforward.models.pricing_component_value_migration_amendment_mapping.PricingComponentValueMigrationAmendmentMapping()
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# swagger_client.CouponsApi
+# billforward.CouponsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -24,13 +24,13 @@ Create a coupon.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
-code = swagger_client.Coupon() # Coupon | The coupon object to be created.
+api_instance = billforward.CouponsApi()
+code = billforward.Coupon() # Coupon | The coupon object to be created.
 
 try: 
     # Create a coupon.
@@ -71,14 +71,14 @@ Create a list of unique coupon codes that can be applied to a subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
+api_instance = billforward.CouponsApi()
 code = 'code_example' # str | The coupon code to use in the generation of the unique codes.
-request = swagger_client.CouponUniqueCodesRequest() # CouponUniqueCodesRequest | The request object that specifies the number of codes to be created. (optional)
+request = billforward.CouponUniqueCodesRequest() # CouponUniqueCodesRequest | The request object that specifies the number of codes to be created. (optional)
 
 try: 
     # Create a list of unique coupon codes that can be applied to a subscription.
@@ -120,12 +120,12 @@ Returns a collection of all coupons. By default 10 values are returned. Records 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
+api_instance = billforward.CouponsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
 records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
@@ -177,12 +177,12 @@ Returns a list of unique coupons which have been applied.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
+api_instance = billforward.CouponsApi()
 code = 'code_example' # str | The base code to use in the generation of the unique codes.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -236,12 +236,12 @@ Returns a list of available unique coupon codes for the specified parent coupon 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
+api_instance = billforward.CouponsApi()
 code = 'code_example' # str | The base code to use in the generation of the unique codes.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -295,12 +295,12 @@ Returns the coupon for the specified code that can be applied to a subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
+api_instance = billforward.CouponsApi()
 code = 'code_example' # str | The parent coupon code to use in the generation of the unique codes.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -344,12 +344,12 @@ Retrieves a collection of the coupons by this coupon code which have been applie
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
+api_instance = billforward.CouponsApi()
 code = 'code_example' # str | Base code of the coupon.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -403,12 +403,12 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponsApi()
+api_instance = billforward.CouponsApi()
 code = 'code_example' # str | ID of the coupon to remove.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 

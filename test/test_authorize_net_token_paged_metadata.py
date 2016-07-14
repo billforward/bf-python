@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.authorize_net_token_paged_metadata import AuthorizeNetTokenPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.authorize_net_token_paged_metadata import AuthorizeNetTokenPagedMetadata
 
 
 class TestAuthorizeNetTokenPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAuthorizeNetTokenPagedMetadata(unittest.TestCase):
         """
         Test AuthorizeNetTokenPagedMetadata
         """
-        model = swagger_client.models.authorize_net_token_paged_metadata.AuthorizeNetTokenPagedMetadata()
+        model = billforward.models.authorize_net_token_paged_metadata.AuthorizeNetTokenPagedMetadata()
 
 
 if __name__ == '__main__':

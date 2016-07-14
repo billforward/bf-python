@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.dunninglines_api import DunninglinesApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.dunninglines_api import DunninglinesApi
 
 
 class TestDunninglinesApi(unittest.TestCase):
     """ DunninglinesApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.dunninglines_api.DunninglinesApi()
+        self.api = billforward.apis.dunninglines_api.DunninglinesApi()
 
     def tearDown(self):
         pass

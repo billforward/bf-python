@@ -1,4 +1,4 @@
-# swagger_client.MetadataApi
+# billforward.MetadataApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,12 +20,12 @@ Remove any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MetadataApi()
+api_instance = billforward.MetadataApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
 try: 
@@ -67,12 +67,12 @@ Retrieve any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MetadataApi()
+api_instance = billforward.MetadataApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
 try: 
@@ -114,13 +114,13 @@ Remove any existing metadata keys and create the provided data.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MetadataApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.MetadataApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
 try: 
@@ -163,13 +163,13 @@ Update any existing metadata key-values and insert any new key-values, no keys w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.MetadataApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.MetadataApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
 try: 

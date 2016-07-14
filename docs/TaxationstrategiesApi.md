@@ -1,4 +1,4 @@
-# swagger_client.TaxationstrategiesApi
+# billforward.TaxationstrategiesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -25,13 +25,13 @@ Method | HTTP request | Description
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
-taxation_strategy = swagger_client.MutableBillingEntity() # MutableBillingEntity | The taxation-strategy object to be updated.
+api_instance = billforward.TaxationstrategiesApi()
+taxation_strategy = billforward.MutableBillingEntity() # MutableBillingEntity | The taxation-strategy object to be updated.
 
 try: 
     # <p>Add a new tax or schedule changes in an existing tax.</p><p>Add a new tax by providing the location and tax percentage. To schedule a tax change specify the ID of the current Tax. A new version of the will be created <i>validFrom</i> the specified date, the existing tax <i>validTill</i> the start of this new tax.</p>
@@ -72,12 +72,12 @@ Returns a collection of all taxation-strategies. By default 10 values are return
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
+api_instance = billforward.TaxationstrategiesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-strategy to return. (optional) (default to 0)
 records = 10 # int | The maximum number of taxation-strategies to return. (optional) (default to 10)
@@ -129,12 +129,12 @@ Returns the tax currently being applied for the taxation-strategy-ID. To return 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
+api_instance = billforward.TaxationstrategiesApi()
 taxation_strategy_id = 'taxation_strategy_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-strategy to return. (optional) (default to 0)
@@ -188,12 +188,12 @@ Returns a collection of taxation-strategies, specified by the country parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
+api_instance = billforward.TaxationstrategiesApi()
 country = 'country_example' # str | The country
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-strategy to return. (optional) (default to 0)
@@ -247,12 +247,12 @@ Returns a collection of taxation-strategies, specified by the currency parameter
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
+api_instance = billforward.TaxationstrategiesApi()
 currency = 'currency_example' # str | The currency
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-strategy to return. (optional) (default to 0)
@@ -306,12 +306,12 @@ Returns a collection of taxation-strategies, specified by the province parameter
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
+api_instance = billforward.TaxationstrategiesApi()
 province = 'province_example' # str | The province
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first taxation-strategy to return. (optional) (default to 0)
@@ -365,12 +365,12 @@ Returns a single taxation-strategy, specified by the taxation-strategy-ID parame
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
+api_instance = billforward.TaxationstrategiesApi()
 version_id = 'version_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -414,12 +414,12 @@ Retires the taxation-strategy specified by taxation-strategy-ID parameter. Only 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
+api_instance = billforward.TaxationstrategiesApi()
 version_id = 'version_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 
@@ -463,13 +463,13 @@ Update a tax.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TaxationstrategiesApi()
-taxation_strategy = swagger_client.MutableBillingEntity() # MutableBillingEntity | The taxation-strategy object to be updated.
+api_instance = billforward.TaxationstrategiesApi()
+taxation_strategy = billforward.MutableBillingEntity() # MutableBillingEntity | The taxation-strategy object to be updated.
 
 try: 
     # Update a tax.

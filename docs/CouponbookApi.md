@@ -1,4 +1,4 @@
-# swagger_client.CouponbookApi
+# billforward.CouponbookApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -25,13 +25,13 @@ Create a coupon-book.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
-coupon_book = swagger_client.CouponBook() # CouponBook | The coupon-book object to be created.
+api_instance = billforward.CouponbookApi()
+coupon_book = billforward.CouponBook() # CouponBook | The coupon-book object to be created.
 
 try: 
     # Create a coupon-book.
@@ -72,12 +72,12 @@ Retire a coupon-book, specified by the coupon-book-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
+api_instance = billforward.CouponbookApi()
 coupon_book_id = 'coupon_book_id_example' # str | ID of the coupon-book.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -121,12 +121,12 @@ Returns a collection of attachable coupon-books. An attachable coupon-book has a
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
+api_instance = billforward.CouponbookApi()
 attachableness = true # bool | The attachableness of the coupon-book.
 has_code = true # bool | Whether the coupon-books have book codes or not.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -180,12 +180,12 @@ Returns a collection of coupon-books. By default 10 values are returned. Records
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
+api_instance = billforward.CouponbookApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-books to return. (optional) (default to 0)
 records = 10 # int | The maximum number of coupon-books to return. (optional) (default to 10)
@@ -237,12 +237,12 @@ Returns a single coupon-book, specified by the book-code parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
+api_instance = billforward.CouponbookApi()
 book_code = 'book_code_example' # str | The unique coupon-book-code.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -286,12 +286,12 @@ Returns a collection of coupon-books, specified by coupon-book-definition-ID par
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
+api_instance = billforward.CouponbookApi()
 coupon_book_definition_id = 'coupon_book_definition_id_example' # str | The string coupon-book-definition-ID of the coupon-book.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-book to return. (optional) (default to 0)
@@ -345,12 +345,12 @@ Returns a single coupon-book, specified by the coupon-code parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
+api_instance = billforward.CouponbookApi()
 coupon_code = 'coupon_code_example' # str | The unique coupon-code.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -394,12 +394,12 @@ Returns a single coupon-book, specified by the coupon-book-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
+api_instance = billforward.CouponbookApi()
 coupon_book_id = 'coupon_book_id_example' # str | ID of the coupon-book.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -443,13 +443,13 @@ Update a coupon-book.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookApi()
-coupon_book = swagger_client.CouponBook() # CouponBook | The coupon-book object to be updated.
+api_instance = billforward.CouponbookApi()
+coupon_book = billforward.CouponBook() # CouponBook | The coupon-book object to be updated.
 
 try: 
     # Update a coupon-book.

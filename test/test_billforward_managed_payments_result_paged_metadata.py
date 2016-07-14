@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.billforward_managed_payments_result_paged_metadata import BillforwardManagedPaymentsResultPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.billforward_managed_payments_result_paged_metadata import BillforwardManagedPaymentsResultPagedMetadata
 
 
 class TestBillforwardManagedPaymentsResultPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBillforwardManagedPaymentsResultPagedMetadata(unittest.TestCase):
         """
         Test BillforwardManagedPaymentsResultPagedMetadata
         """
-        model = swagger_client.models.billforward_managed_payments_result_paged_metadata.BillforwardManagedPaymentsResultPagedMetadata()
+        model = billforward.models.billforward_managed_payments_result_paged_metadata.BillforwardManagedPaymentsResultPagedMetadata()
 
 
 if __name__ == '__main__':

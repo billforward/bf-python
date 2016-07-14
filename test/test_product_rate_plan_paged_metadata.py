@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.product_rate_plan_paged_metadata import ProductRatePlanPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.product_rate_plan_paged_metadata import ProductRatePlanPagedMetadata
 
 
 class TestProductRatePlanPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestProductRatePlanPagedMetadata(unittest.TestCase):
         """
         Test ProductRatePlanPagedMetadata
         """
-        model = swagger_client.models.product_rate_plan_paged_metadata.ProductRatePlanPagedMetadata()
+        model = billforward.models.product_rate_plan_paged_metadata.ProductRatePlanPagedMetadata()
 
 
 if __name__ == '__main__':

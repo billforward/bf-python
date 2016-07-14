@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.cancel_subscription_request import CancelSubscriptionRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.cancel_subscription_request import CancelSubscriptionRequest
 
 
 class TestCancelSubscriptionRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCancelSubscriptionRequest(unittest.TestCase):
         """
         Test CancelSubscriptionRequest
         """
-        model = swagger_client.models.cancel_subscription_request.CancelSubscriptionRequest()
+        model = billforward.models.cancel_subscription_request.CancelSubscriptionRequest()
 
 
 if __name__ == '__main__':

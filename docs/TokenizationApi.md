@@ -1,4 +1,4 @@
-# swagger_client.TokenizationApi
+# billforward.TokenizationApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Method | HTTP request | Description
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TokenizationApi()
-auth_capture_request = swagger_client.AuthCaptureRequest() # AuthCaptureRequest | The auth capture request.
+api_instance = billforward.TokenizationApi()
+auth_capture_request = billforward.AuthCaptureRequest() # AuthCaptureRequest | The auth capture request.
 
 try: 
     # [Note: this API can be invoked more simply by our client-side card capture library, <a href=\"https://github.com/billforward/billforward-js\">BillForward.js</a>; you should not need to interact with this API manually unless you have particularly bespoke requirements] 
@@ -69,13 +69,13 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TokenizationApi()
-body = swagger_client.BraintreeCaptureRequest() # BraintreeCaptureRequest |  (optional)
+api_instance = billforward.TokenizationApi()
+body = billforward.BraintreeCaptureRequest() # BraintreeCaptureRequest |  (optional)
 
 try: 
     # [Warning: for use only in PCI-compliant environments; for more information, <a href=\"mailto:support@billforward.net\">contact us</a> regarding provisioning of your own on-premise BillForward instance] Captures raw credit card details into Braintree's vault.
@@ -116,12 +116,12 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TokenizationApi()
+api_instance = billforward.TokenizationApi()
 _resource_path = '_resource_path_example' # str |  (optional)
 id = 'id_example' # str |  (optional)
 
@@ -165,13 +165,13 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TokenizationApi()
-pre_auth_request = swagger_client.InsertableBillingEntity() # InsertableBillingEntity | The auth request.
+api_instance = billforward.TokenizationApi()
+pre_auth_request = billforward.InsertableBillingEntity() # InsertableBillingEntity | The auth request.
 
 try: 
     # [Note: this API can be invoked more simply by our client-side card capture library, <a href=\"https://github.com/billforward/billforward-js\">BillForward.js</a>; you should not need to interact with this API manually unless you have particularly bespoke requirements] 
@@ -212,12 +212,12 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TokenizationApi()
+api_instance = billforward.TokenizationApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.Multiple organization-IDs may be specified by repeated use of the queryparameter. Example: ...&organizations=org1&organizations=org2 (optional)
 bill_forward_url_root = 'bill_forward_url_root_example' # str | The URL through which BFJS connected to BillForward. (optional)
 access_token = 'access_token_example' # str | The public token through which BFJS connected to BillForward. (optional)
@@ -285,12 +285,12 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TokenizationApi()
+api_instance = billforward.TokenizationApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.Multiple organization-IDs may be specified by repeated use of the queryparameter. Example: ...&organizations=org1&organizations=org2 (optional)
 s = 's_example' # str |  (optional)
 t = 't_example' # str |  (optional)

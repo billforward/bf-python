@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.synch_app_configs_api import SynchAppConfigsApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.synch_app_configs_api import SynchAppConfigsApi
 
 
 class TestSynchAppConfigsApi(unittest.TestCase):
     """ SynchAppConfigsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.synch_app_configs_api.SynchAppConfigsApi()
+        self.api = billforward.apis.synch_app_configs_api.SynchAppConfigsApi()
 
     def tearDown(self):
         pass

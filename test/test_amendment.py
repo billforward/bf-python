@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.amendment import Amendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.amendment import Amendment
 
 
 class TestAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAmendment(unittest.TestCase):
         """
         Test Amendment
         """
-        model = swagger_client.models.amendment.Amendment()
+        model = billforward.models.amendment.Amendment()
 
 
 if __name__ == '__main__':

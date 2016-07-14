@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.invoice_payment import InvoicePayment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.invoice_payment import InvoicePayment
 
 
 class TestInvoicePayment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestInvoicePayment(unittest.TestCase):
         """
         Test InvoicePayment
         """
-        model = swagger_client.models.invoice_payment.InvoicePayment()
+        model = billforward.models.invoice_payment.InvoicePayment()
 
 
 if __name__ == '__main__':

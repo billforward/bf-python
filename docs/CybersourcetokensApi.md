@@ -1,4 +1,4 @@
-# swagger_client.CybersourcetokensApi
+# billforward.CybersourcetokensApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,13 +21,13 @@ Create a cybersource-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CybersourcetokensApi()
-cybersource_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The cybersource-token object to be created.
+api_instance = billforward.CybersourcetokensApi()
+cybersource_token = billforward.MutableBillingEntity() # MutableBillingEntity | The cybersource-token object to be created.
 
 try: 
     # Create a cybersource-token.
@@ -68,12 +68,12 @@ Returns a single cybersource-token, specified by the token-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CybersourcetokensApi()
+api_instance = billforward.CybersourcetokensApi()
 token_id = 'token_id_example' # str | The unique sting ID of the cybersource token.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -117,12 +117,12 @@ Returns a single cybersource-token, specified by the recurring-subscription-ID p
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CybersourcetokensApi()
+api_instance = billforward.CybersourcetokensApi()
 recurring_subscription_id = 'recurring_subscription_id_example' # str | The recurring-subscription-info-subscription-ID of the cybersource token.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -166,12 +166,12 @@ Retires the cybersource token specified by the token-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CybersourcetokensApi()
+api_instance = billforward.CybersourcetokensApi()
 token_id = 'token_id_example' # str | ID of the cybersource-token.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 
@@ -215,13 +215,13 @@ Update a cybersource-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CybersourcetokensApi()
-cybersource_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The cybersource-token object to be updated.
+api_instance = billforward.CybersourcetokensApi()
+cybersource_token = billforward.MutableBillingEntity() # MutableBillingEntity | The cybersource-token object to be updated.
 
 try: 
     # Update a cybersource-token.

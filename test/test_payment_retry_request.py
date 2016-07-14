@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.payment_retry_request import PaymentRetryRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.payment_retry_request import PaymentRetryRequest
 
 
 class TestPaymentRetryRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPaymentRetryRequest(unittest.TestCase):
         """
         Test PaymentRetryRequest
         """
-        model = swagger_client.models.payment_retry_request.PaymentRetryRequest()
+        model = billforward.models.payment_retry_request.PaymentRetryRequest()
 
 
 if __name__ == '__main__':

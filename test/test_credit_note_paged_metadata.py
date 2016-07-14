@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.credit_note_paged_metadata import CreditNotePagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.credit_note_paged_metadata import CreditNotePagedMetadata
 
 
 class TestCreditNotePagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCreditNotePagedMetadata(unittest.TestCase):
         """
         Test CreditNotePagedMetadata
         """
-        model = swagger_client.models.credit_note_paged_metadata.CreditNotePagedMetadata()
+        model = billforward.models.credit_note_paged_metadata.CreditNotePagedMetadata()
 
 
 if __name__ == '__main__':

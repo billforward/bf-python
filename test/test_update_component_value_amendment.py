@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.update_component_value_amendment import UpdateComponentValueAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.update_component_value_amendment import UpdateComponentValueAmendment
 
 
 class TestUpdateComponentValueAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestUpdateComponentValueAmendment(unittest.TestCase):
         """
         Test UpdateComponentValueAmendment
         """
-        model = swagger_client.models.update_component_value_amendment.UpdateComponentValueAmendment()
+        model = billforward.models.update_component_value_amendment.UpdateComponentValueAmendment()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.product_rate_plan import ProductRatePlan
+import billforward
+from billforward.rest import ApiException
+from billforward.models.product_rate_plan import ProductRatePlan
 
 
 class TestProductRatePlan(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestProductRatePlan(unittest.TestCase):
         """
         Test ProductRatePlan
         """
-        model = swagger_client.models.product_rate_plan.ProductRatePlan()
+        model = billforward.models.product_rate_plan.ProductRatePlan()
 
 
 if __name__ == '__main__':

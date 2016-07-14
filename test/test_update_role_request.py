@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.update_role_request import UpdateRoleRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.update_role_request import UpdateRoleRequest
 
 
 class TestUpdateRoleRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestUpdateRoleRequest(unittest.TestCase):
         """
         Test UpdateRoleRequest
         """
-        model = swagger_client.models.update_role_request.UpdateRoleRequest()
+        model = billforward.models.update_role_request.UpdateRoleRequest()
 
 
 if __name__ == '__main__':

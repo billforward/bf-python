@@ -1,4 +1,4 @@
-# swagger_client.ProfilesApi
+# billforward.ProfilesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,12 +21,12 @@ Returns a collection of all profiles. By default 10 values are returned. Records
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProfilesApi()
+api_instance = billforward.ProfilesApi()
 organizations = ['organizations_example'] # list[str] | A list of organizations used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first profile to return. (optional) (default to 0)
 records = 10 # int | The maximum number of profiles to return. (optional) (default to 10)
@@ -76,12 +76,12 @@ Returns a single profile, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProfilesApi()
+api_instance = billforward.ProfilesApi()
 profile_id = 'profile_id_example' # str | ID of the Profile.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -125,12 +125,12 @@ Returns a collection of profiles, specified by the account-ID parameter. By defa
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProfilesApi()
+api_instance = billforward.ProfilesApi()
 account_id = 'account_id_example' # str | The account-ID of the profile.
 organizations = ['organizations_example'] # list[str] | A list of organizations used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first profile to return. (optional) (default to 0)
@@ -182,12 +182,12 @@ Returns a single profile, specified by the email parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProfilesApi()
+api_instance = billforward.ProfilesApi()
 email = 'email_example' # str | The email address of the profile.
 organizations = ['organizations_example'] # list[str] | A list of organizations used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first profile to return. (optional) (default to 0)
@@ -241,13 +241,13 @@ Update a profile
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProfilesApi()
-request = swagger_client.UpdateProfileRequest() # UpdateProfileRequest | The profile object to be updated.
+api_instance = billforward.ProfilesApi()
+request = billforward.UpdateProfileRequest() # UpdateProfileRequest | The profile object to be updated.
 
 try: 
     # Update a profile

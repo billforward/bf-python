@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.refund_paged_metadata import RefundPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.refund_paged_metadata import RefundPagedMetadata
 
 
 class TestRefundPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestRefundPagedMetadata(unittest.TestCase):
         """
         Test RefundPagedMetadata
         """
-        model = swagger_client.models.refund_paged_metadata.RefundPagedMetadata()
+        model = billforward.models.refund_paged_metadata.RefundPagedMetadata()
 
 
 if __name__ == '__main__':

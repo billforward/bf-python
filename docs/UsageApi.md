@@ -1,4 +1,4 @@
-# swagger_client.UsageApi
+# billforward.UsageApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,13 +21,13 @@ Add usage
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi()
-usage = swagger_client.CompoundUsage() # CompoundUsage | An array of The 'Usage' objects to be created.
+api_instance = billforward.UsageApi()
+usage = billforward.CompoundUsage() # CompoundUsage | An array of The 'Usage' objects to be created.
 
 try: 
     # Add usage
@@ -68,12 +68,12 @@ Retrieve by subscription and period
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi()
+api_instance = billforward.UsageApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the usage.
 period_id = 56 # int | The periodID of the usage.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -127,12 +127,12 @@ Retrieve by subscription
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi()
+api_instance = billforward.UsageApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the subscription whose Usage instances you wish to GET.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
@@ -184,12 +184,12 @@ Retrieve by subscription, period and type
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi()
+api_instance = billforward.UsageApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the usage.
 uom = 'uom_example' # str | The uom of the usage.
 period_id = 56 # int | The periodID of the usage.
@@ -247,13 +247,13 @@ Update usage
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageApi()
-usage = swagger_client.CompoundUsage() # CompoundUsage | An array of The 'Usage' objects to be updated.
+api_instance = billforward.UsageApi()
+usage = billforward.CompoundUsage() # CompoundUsage | An array of The 'Usage' objects to be updated.
 
 try: 
     # Update usage

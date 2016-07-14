@@ -1,4 +1,4 @@
-# swagger_client.SynchConfigsApi
+# billforward.SynchConfigsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a synch configuration.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchConfigsApi()
-synch_config = swagger_client.DataSynchronisationConfiguration() # DataSynchronisationConfiguration | The data synch config object to be created.
+api_instance = billforward.SynchConfigsApi()
+synch_config = billforward.DataSynchronisationConfiguration() # DataSynchronisationConfiguration | The data synch config object to be created.
 
 try: 
     # Create a synch configuration.
@@ -69,12 +69,12 @@ Returns a collection of Users. By default 10 values are returned. Records are re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchConfigsApi()
+api_instance = billforward.SynchConfigsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first synch configuration to return. (optional) (default to 0)
 records = 10 # int | The maximum number of configs to return. (optional) (default to 10)
@@ -124,12 +124,12 @@ Returns a single config, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchConfigsApi()
+api_instance = billforward.SynchConfigsApi()
 synch_configs_id = 'synch_configs_id_example' # str | ID of the Synch Configuration.
 organizations = ['organizations_example'] # list[str] | A list of organization -IDs used to restrict the scope of API calls. (optional)
 
@@ -173,12 +173,12 @@ Returns a collection configurations, specified by the platform parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchConfigsApi()
+api_instance = billforward.SynchConfigsApi()
 platform = 'platform_example' # str | The type of the synch configuration.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -222,12 +222,12 @@ Returns a collection configurations, specified by the username parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchConfigsApi()
+api_instance = billforward.SynchConfigsApi()
 username = 'username_example' # str | The username in the synch configuration.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -271,13 +271,13 @@ Update a synch configuration.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchConfigsApi()
-synch_config = swagger_client.DataSynchronisationConfiguration() # DataSynchronisationConfiguration | The synch configuration object to be updated.
+api_instance = billforward.SynchConfigsApi()
+synch_config = billforward.DataSynchronisationConfiguration() # DataSynchronisationConfiguration | The synch configuration object to be updated.
 
 try: 
     # Update a synch configuration.

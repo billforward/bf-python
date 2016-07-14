@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.client_paged_metadata import ClientPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.client_paged_metadata import ClientPagedMetadata
 
 
 class TestClientPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestClientPagedMetadata(unittest.TestCase):
         """
         Test ClientPagedMetadata
         """
-        model = swagger_client.models.client_paged_metadata.ClientPagedMetadata()
+        model = billforward.models.client_paged_metadata.ClientPagedMetadata()
 
 
 if __name__ == '__main__':

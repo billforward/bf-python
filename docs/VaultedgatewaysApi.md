@@ -1,4 +1,4 @@
-# swagger_client.VaultedgatewaysApi
+# billforward.VaultedgatewaysApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -29,13 +29,13 @@ Create an authorize-net-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-authorize_net_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The authorize-net-token object to be created.
+api_instance = billforward.VaultedgatewaysApi()
+authorize_net_token = billforward.MutableBillingEntity() # MutableBillingEntity | The authorize-net-token object to be created.
 
 try: 
     # Create an authorize-net-token.
@@ -76,13 +76,13 @@ Create a braintree-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-braintree_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The braintree-token object to be created.
+api_instance = billforward.VaultedgatewaysApi()
+braintree_token = billforward.MutableBillingEntity() # MutableBillingEntity | The braintree-token object to be created.
 
 try: 
     # Create a braintree-token.
@@ -123,13 +123,13 @@ Create a stripe-ACH-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-stripe_ach_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The stripe-ACH-token object to be created.
+api_instance = billforward.VaultedgatewaysApi()
+stripe_ach_token = billforward.MutableBillingEntity() # MutableBillingEntity | The stripe-ACH-token object to be created.
 
 try: 
     # Create a stripe-ACH-token.
@@ -170,13 +170,13 @@ Create a stripe-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-stripe_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The stripe-token object to be created.
+api_instance = billforward.VaultedgatewaysApi()
+stripe_token = billforward.MutableBillingEntity() # MutableBillingEntity | The stripe-token object to be created.
 
 try: 
     # Create a stripe-token.
@@ -217,13 +217,13 @@ Create a trust-commerce-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-trust_commerce_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The trust-commerce-token object to be created.
+api_instance = billforward.VaultedgatewaysApi()
+trust_commerce_token = billforward.MutableBillingEntity() # MutableBillingEntity | The trust-commerce-token object to be created.
 
 try: 
     # Create a trust-commerce-token.
@@ -264,12 +264,12 @@ Returns a list of braintree-tokens backing PaymentMethods belonging to the speci
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
+api_instance = billforward.VaultedgatewaysApi()
 account_id = 'account_id_example' # str | The string ID of the account-ID.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.Multiple organization-IDs may be specified by repeated use of the query parameter. Example: ...&organizations=org1&organizations=org2 (optional)
 
@@ -313,12 +313,12 @@ Returns a single stripe-token, specified by the cardDetailsID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
+api_instance = billforward.VaultedgatewaysApi()
 card_details_id = 'card_details_id_example' # str | The card details id of the stripe-token.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -362,12 +362,12 @@ Returns a single stripe-ACH-token, specified by the stripeACHTokenID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
+api_instance = billforward.VaultedgatewaysApi()
 stripe_ach_token_id = 'stripe_ach_token_id_example' # str | The string ID of the stripe-ACH-token.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.Multiple organization-IDs may be specified by repeated use of the query parameter. Example: ...&organizations=org1&organizations=org2 (optional)
 
@@ -411,12 +411,12 @@ Returns a single stripe-token, specified by the stripeTokenID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
+api_instance = billforward.VaultedgatewaysApi()
 stripe_token_id = 'stripe_token_id_example' # str | The string ID of the stripe-token.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.Multiple organization-IDs may be specified by repeated use of the query parameter. Example: ...&organizations=org1&organizations=org2 (optional)
 
@@ -460,13 +460,13 @@ Update a stripe-ACH-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-stripe_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The stripe-ACH-token object to be updated.
+api_instance = billforward.VaultedgatewaysApi()
+stripe_token = billforward.MutableBillingEntity() # MutableBillingEntity | The stripe-ACH-token object to be updated.
 
 try: 
     # Update a stripe-ACH-token.
@@ -507,13 +507,13 @@ Update a stripe-token.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-stripe_token = swagger_client.MutableBillingEntity() # MutableBillingEntity | The stripe-token object to be updated.
+api_instance = billforward.VaultedgatewaysApi()
+stripe_token = billforward.MutableBillingEntity() # MutableBillingEntity | The stripe-token object to be updated.
 
 try: 
     # Update a stripe-token.
@@ -554,13 +554,13 @@ Verify Stripe bank account.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-bank_account_verification = swagger_client.BillingEntityBase() # BillingEntityBase | The Bank-Account-Verification object.
+api_instance = billforward.VaultedgatewaysApi()
+bank_account_verification = billforward.BillingEntityBase() # BillingEntityBase | The Bank-Account-Verification object.
 
 try: 
     # Verify Stripe bank account.
@@ -601,13 +601,13 @@ Receive and handle webhook from Stripe.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.VaultedgatewaysApi()
-event = swagger_client.Event() # Event | The event received.
+api_instance = billforward.VaultedgatewaysApi()
+event = billforward.Event() # Event | The event received.
 
 try: 
     # Receive and handle webhook from Stripe.

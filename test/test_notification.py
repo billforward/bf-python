@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.notification import Notification
+import billforward
+from billforward.rest import ApiException
+from billforward.models.notification import Notification
 
 
 class TestNotification(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestNotification(unittest.TestCase):
         """
         Test Notification
         """
-        model = swagger_client.models.notification.Notification()
+        model = billforward.models.notification.Notification()
 
 
 if __name__ == '__main__':

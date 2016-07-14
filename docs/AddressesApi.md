@@ -1,4 +1,4 @@
-# swagger_client.AddressesApi
+# billforward.AddressesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -18,13 +18,13 @@ Create
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AddressesApi()
-request = swagger_client.CreateAddressRequest() # CreateAddressRequest | The address object to be created.
+api_instance = billforward.AddressesApi()
+request = billforward.CreateAddressRequest() # CreateAddressRequest | The address object to be created.
 
 try: 
     # Create
@@ -65,13 +65,13 @@ Update
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AddressesApi()
-request = swagger_client.UpdateAddressRequest() # UpdateAddressRequest | The address object to be created.
+api_instance = billforward.AddressesApi()
+request = billforward.UpdateAddressRequest() # UpdateAddressRequest | The address object to be created.
 
 try: 
     # Update

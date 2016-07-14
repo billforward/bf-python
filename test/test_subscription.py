@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.subscription import Subscription
+import billforward
+from billforward.rest import ApiException
+from billforward.models.subscription import Subscription
 
 
 class TestSubscription(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestSubscription(unittest.TestCase):
         """
         Test Subscription
         """
-        model = swagger_client.models.subscription.Subscription()
+        model = billforward.models.subscription.Subscription()
 
 
 if __name__ == '__main__':

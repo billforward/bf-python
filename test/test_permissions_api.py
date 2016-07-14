@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.permissions_api import PermissionsApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.permissions_api import PermissionsApi
 
 
 class TestPermissionsApi(unittest.TestCase):
     """ PermissionsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.permissions_api.PermissionsApi()
+        self.api = billforward.apis.permissions_api.PermissionsApi()
 
     def tearDown(self):
         pass

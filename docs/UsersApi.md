@@ -1,4 +1,4 @@
-# swagger_client.UsersApi
+# billforward.UsersApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -27,13 +27,13 @@ Create a user.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-user = swagger_client.User() # User | The user object to be created.
+api_instance = billforward.UsersApi()
+user = billforward.User() # User | The user object to be created.
 
 try: 
     # Create a user.
@@ -74,13 +74,13 @@ Create a user.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-user = swagger_client.UserCreationRequest() # UserCreationRequest | The user object to be created.
+api_instance = billforward.UsersApi()
+user = billforward.UserCreationRequest() # UserCreationRequest | The user object to be created.
 
 try: 
     # Create a user.
@@ -121,12 +121,12 @@ Returns a collection of Users. By default 10 values are returned. Records are re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = billforward.UsersApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first user to return. (optional) (default to 0)
 records = 10 # int | The maximum number of users to return. (optional) (default to 10)
@@ -176,12 +176,12 @@ Returns a single User, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = billforward.UsersApi()
 user_id = 'user_id_example' # str | ID of the User.
 organizations = ['organizations_example'] # list[str] | A list of organization -IDs used to restrict the scope of API calls. (optional)
 
@@ -225,12 +225,12 @@ Returns a single User, specified by the password-reset-code parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = billforward.UsersApi()
 password_reset_code = 'password_reset_code_example' # str | The unique password reset code of the User.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -274,12 +274,12 @@ Returns a single User, specified by the sms-password-reset-code parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = billforward.UsersApi()
 sms_password_reset_code = 'sms_password_reset_code_example' # str | The unique SMS password reset code of the User.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -323,12 +323,12 @@ Returns a single User, specified by the username parameter, this is by default t
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = billforward.UsersApi()
 username = 'username_example' # str | The unique username of the User.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -372,13 +372,13 @@ Create a password reset request.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-request = swagger_client.PasswordResetRequest() # PasswordResetRequest | 
+api_instance = billforward.UsersApi()
+request = billforward.PasswordResetRequest() # PasswordResetRequest | 
 
 try: 
     # Create a password reset request.
@@ -419,12 +419,12 @@ Retires the user with the specified user-ID.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
+api_instance = billforward.UsersApi()
 user_id = 'user_id_example' # str | ID of the User.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 
@@ -468,13 +468,13 @@ Update a user.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-user = swagger_client.User() # User | The user object to be updated.
+api_instance = billforward.UsersApi()
+user = billforward.User() # User | The user object to be updated.
 
 try: 
     # Update a user.
@@ -515,13 +515,13 @@ Update a user's password.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsersApi()
-password_reset = swagger_client.BillingEntityBase() # BillingEntityBase | The password reset object.
+api_instance = billforward.UsersApi()
+password_reset = billforward.BillingEntityBase() # BillingEntityBase | The password reset object.
 
 try: 
     # Update a user's password.

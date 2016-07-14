@@ -1,4 +1,4 @@
-# swagger_client.CouponbookdefinitionApi
+# billforward.CouponbookdefinitionApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a coupon-book-definition.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookdefinitionApi()
-coupon_book_definition = swagger_client.CouponBookDefinition() # CouponBookDefinition | The coupon-book-definition object to be created.
+api_instance = billforward.CouponbookdefinitionApi()
+coupon_book_definition = billforward.CouponBookDefinition() # CouponBookDefinition | The coupon-book-definition object to be created.
 
 try: 
     # Create a coupon-book-definition.
@@ -69,12 +69,12 @@ Retire a coupon-book-definition, specified by the coupon-book-definition-ID para
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookdefinitionApi()
+api_instance = billforward.CouponbookdefinitionApi()
 coupon_book_definition_id = 'coupon_book_definition_id_example' # str | ID of the coupon-definition.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -118,12 +118,12 @@ Returns a collection of coupon-book-definitions. By default 10 values are return
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookdefinitionApi()
+api_instance = billforward.CouponbookdefinitionApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
 records = 10 # int | The maximum number of product-rate-plans to return. (optional) (default to 10)
@@ -175,12 +175,12 @@ Returns a collection of coupon-book-definitions, specified by coupon-definition-
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookdefinitionApi()
+api_instance = billforward.CouponbookdefinitionApi()
 coupon_definition_id = 'coupon_definition_id_example' # str | The string coupon-definition-ID of the coupon-book-definition.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-book-definition to return. (optional) (default to 0)
@@ -234,12 +234,12 @@ Returns a single coupon-book-definition, specified by the coupon-book-definition
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookdefinitionApi()
+api_instance = billforward.CouponbookdefinitionApi()
 coupon_book_definition_id = 'coupon_book_definition_id_example' # str | ID of the coupon-book-definition.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -283,13 +283,13 @@ Update a coupon-book-definition.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponbookdefinitionApi()
-coupon_book_definition = swagger_client.CouponBookDefinition() # CouponBookDefinition | The coupon-book-definition object to be updated.
+api_instance = billforward.CouponbookdefinitionApi()
+coupon_book_definition = billforward.CouponBookDefinition() # CouponBookDefinition | The coupon-book-definition object to be updated.
 
 try: 
     # Update a coupon-book-definition.

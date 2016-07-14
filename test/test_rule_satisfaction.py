@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.rule_satisfaction import RuleSatisfaction
+import billforward
+from billforward.rest import ApiException
+from billforward.models.rule_satisfaction import RuleSatisfaction
 
 
 class TestRuleSatisfaction(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestRuleSatisfaction(unittest.TestCase):
         """
         Test RuleSatisfaction
         """
-        model = swagger_client.models.rule_satisfaction.RuleSatisfaction()
+        model = billforward.models.rule_satisfaction.RuleSatisfaction()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.payment_method_subscription_link import PaymentMethodSubscriptionLink
+import billforward
+from billforward.rest import ApiException
+from billforward.models.payment_method_subscription_link import PaymentMethodSubscriptionLink
 
 
 class TestPaymentMethodSubscriptionLink(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPaymentMethodSubscriptionLink(unittest.TestCase):
         """
         Test PaymentMethodSubscriptionLink
         """
-        model = swagger_client.models.payment_method_subscription_link.PaymentMethodSubscriptionLink()
+        model = billforward.models.payment_method_subscription_link.PaymentMethodSubscriptionLink()
 
 
 if __name__ == '__main__':

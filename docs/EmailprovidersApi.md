@@ -1,4 +1,4 @@
-# swagger_client.EmailprovidersApi
+# billforward.EmailprovidersApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,13 +20,13 @@ Create an email provider.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailprovidersApi()
-request = swagger_client.BillingEntityBase() # BillingEntityBase | .
+api_instance = billforward.EmailprovidersApi()
+request = billforward.BillingEntityBase() # BillingEntityBase | .
 
 try: 
     # Create an email provider.
@@ -67,12 +67,12 @@ Deletes a single email provider, specified by id or name parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailprovidersApi()
+api_instance = billforward.EmailprovidersApi()
 email_provider_id = 'email_provider_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -116,12 +116,12 @@ Returns a collection of all email-providers. By default 10 values are returned. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailprovidersApi()
+api_instance = billforward.EmailprovidersApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first email-provider to return. (optional) (default to 0)
 records = 10 # int | The maximum number of email-provider to return. (optional) (default to 10)
@@ -173,12 +173,12 @@ Retrieves a single email provider, specified by the version-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.EmailprovidersApi()
+api_instance = billforward.EmailprovidersApi()
 email_provider_id = 'email_provider_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 include_retired = false # bool | Include deleted email-providers (optional) (default to false)

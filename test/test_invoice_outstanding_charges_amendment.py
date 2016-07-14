@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.invoice_outstanding_charges_amendment import InvoiceOutstandingChargesAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.invoice_outstanding_charges_amendment import InvoiceOutstandingChargesAmendment
 
 
 class TestInvoiceOutstandingChargesAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestInvoiceOutstandingChargesAmendment(unittest.TestCase):
         """
         Test InvoiceOutstandingChargesAmendment
         """
-        model = swagger_client.models.invoice_outstanding_charges_amendment.InvoiceOutstandingChargesAmendment()
+        model = billforward.models.invoice_outstanding_charges_amendment.InvoiceOutstandingChargesAmendment()
 
 
 if __name__ == '__main__':

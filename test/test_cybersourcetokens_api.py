@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.cybersourcetokens_api import CybersourcetokensApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.cybersourcetokens_api import CybersourcetokensApi
 
 
 class TestCybersourcetokensApi(unittest.TestCase):
     """ CybersourcetokensApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.cybersourcetokens_api.CybersourcetokensApi()
+        self.api = billforward.apis.cybersourcetokens_api.CybersourcetokensApi()
 
     def tearDown(self):
         pass

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.organization import Organization
+import billforward
+from billforward.rest import ApiException
+from billforward.models.organization import Organization
 
 
 class TestOrganization(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestOrganization(unittest.TestCase):
         """
         Test Organization
         """
-        model = swagger_client.models.organization.Organization()
+        model = billforward.models.organization.Organization()
 
 
 if __name__ == '__main__':

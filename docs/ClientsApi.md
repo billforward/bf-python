@@ -1,4 +1,4 @@
-# swagger_client.ClientsApi
+# billforward.ClientsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,13 +20,13 @@ Create a client.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ClientsApi()
-client = swagger_client.Client() # Client | The client object to be updated.
+api_instance = billforward.ClientsApi()
+client = billforward.Client() # Client | The client object to be updated.
 
 try: 
     # Create a client.
@@ -67,12 +67,12 @@ Returns a collection of clients.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ClientsApi()
+api_instance = billforward.ClientsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first client to return. (optional) (default to 0)
 records = 10 # int | The maximum number of clients to return. (optional) (default to 10)
@@ -124,12 +124,12 @@ Returns a single client, specified by the client-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ClientsApi()
+api_instance = billforward.ClientsApi()
 client_id = 'client_id_example' # str | The string ID of the client.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -173,13 +173,13 @@ Update a client.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ClientsApi()
-client = swagger_client.Client() # Client | The client object to be updated.
+api_instance = billforward.ClientsApi()
+client = billforward.Client() # Client | The client object to be updated.
 
 try: 
     # Update a client.

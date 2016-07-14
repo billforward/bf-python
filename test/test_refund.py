@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.refund import Refund
+import billforward
+from billforward.rest import ApiException
+from billforward.models.refund import Refund
 
 
 class TestRefund(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestRefund(unittest.TestCase):
         """
         Test Refund
         """
-        model = swagger_client.models.refund.Refund()
+        model = billforward.models.refund.Refund()
 
 
 if __name__ == '__main__':

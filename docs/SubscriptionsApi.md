@@ -1,4 +1,4 @@
-# swagger_client.SubscriptionsApi
+# billforward.SubscriptionsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -67,14 +67,14 @@ Creates a charge on the specified subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-charge = swagger_client.AddChargeRequest() # AddChargeRequest | The charge request
+charge = billforward.AddChargeRequest() # AddChargeRequest | The charge request
 
 try: 
     # Creates a charge on the specified subscription.
@@ -116,14 +116,14 @@ Applies a coupon to a subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
-request = swagger_client.AddCouponCodeRequest() # AddCouponCodeRequest | Request containing the coupon code.
+request = billforward.AddCouponCodeRequest() # AddCouponCodeRequest | Request containing the coupon code.
 
 try: 
     # Applies a coupon to a subscription.
@@ -165,14 +165,14 @@ Creates a credit-note which may be used by only the specified subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-credit_note = swagger_client.CreditSubscriptionRequest() # CreditSubscriptionRequest | The credit-note request
+credit_note = billforward.CreditSubscriptionRequest() # CreditSubscriptionRequest | The credit-note request
 
 try: 
     # Creates a credit-note which may be used by only the specified subscription.
@@ -214,14 +214,14 @@ Enables the payment method to pay invoices of this subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
-payment_method = swagger_client.AddPaymentMethodRequest() # AddPaymentMethodRequest | 
+payment_method = billforward.AddPaymentMethodRequest() # AddPaymentMethodRequest | 
 
 try: 
     # Enables the payment method to pay invoices of this subscription.
@@ -263,14 +263,14 @@ Advance the subscription through time.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-request = swagger_client.TimeRequest() # TimeRequest | The request
+request = billforward.TimeRequest() # TimeRequest | The request
 
 try: 
     # Advance the subscription through time.
@@ -312,12 +312,12 @@ Returns all available payment methods for the specified subscription. By default
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -369,13 +369,13 @@ Create multiple subscriptions.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-request = swagger_client.CreateSubscriptionBatchRequest() # CreateSubscriptionBatchRequest | 
+api_instance = billforward.SubscriptionsApi()
+request = billforward.CreateSubscriptionBatchRequest() # CreateSubscriptionBatchRequest | 
 
 try: 
     # Create multiple subscriptions.
@@ -416,14 +416,14 @@ Retires the subscription specified by the subscription-ID parameter. Retiring a 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
-subscription_cancellation = swagger_client.CancelSubscriptionRequest() # CancelSubscriptionRequest | The cancellation request
+subscription_cancellation = billforward.CancelSubscriptionRequest() # CancelSubscriptionRequest | The cancellation request
 
 try: 
     # Retires the subscription specified by the subscription-ID parameter. Retiring a subscription causes it to cancel based on the specified retirement settings for the product.
@@ -465,13 +465,13 @@ Create an aggregating subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-request = swagger_client.CreateAggregatingSubscriptionRequest() # CreateAggregatingSubscriptionRequest | 
+api_instance = billforward.SubscriptionsApi()
+request = billforward.CreateAggregatingSubscriptionRequest() # CreateAggregatingSubscriptionRequest | 
 
 try: 
     # Create an aggregating subscription.
@@ -512,13 +512,13 @@ Create a new subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-subscription = swagger_client.Subscription() # Subscription | The subscription object to be updated.
+api_instance = billforward.SubscriptionsApi()
+subscription = billforward.Subscription() # Subscription | The subscription object to be updated.
 
 try: 
     # Create a new subscription.
@@ -559,13 +559,13 @@ Create a subscription (V2).
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-request = swagger_client.CreateSubscriptionRequest() # CreateSubscriptionRequest | 
+api_instance = billforward.SubscriptionsApi()
+request = billforward.CreateSubscriptionRequest() # CreateSubscriptionRequest | 
 
 try: 
     # Create a subscription (V2).
@@ -606,14 +606,14 @@ Create a timer for a subscription event.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
-request = swagger_client.BillingEntityBase() # BillingEntityBase | 
+request = billforward.BillingEntityBase() # BillingEntityBase | 
 
 try: 
     # Create a timer for a subscription event.
@@ -655,12 +655,12 @@ Remove any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -704,14 +704,14 @@ Freeze the subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-request = swagger_client.PauseRequest() # PauseRequest | The request
+request = billforward.PauseRequest() # PauseRequest | The request
 
 try: 
     # Freeze the subscription.
@@ -753,12 +753,12 @@ Retrieves a collection of all subscriptions. By default 10 values are returned. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
 records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
@@ -818,12 +818,12 @@ Retrieves a collection of the coupons which can be applied to this subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -877,12 +877,12 @@ Returns all available credit-notes for the specified subscription. By default 10
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -936,12 +936,12 @@ Returns all charges for the specified subscription. By default 10 values are ret
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -999,12 +999,12 @@ Return all entities whose invoices will be aggregated by the specified subscript
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1058,12 +1058,12 @@ Retrieves a collection of the coupons and the unique codes currently applied to 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1117,12 +1117,12 @@ Retrieves a collection of invoice objects of the specified state for the given s
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | The unique id of the subscription.
 state = 'state_example' # str | The state of the invoices to retrieve.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1176,12 +1176,12 @@ Retrieve any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -1225,12 +1225,12 @@ Return the parent of the given subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -1274,12 +1274,12 @@ Gets the subscription's current pricing-component values.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
 
 try: 
@@ -1321,12 +1321,12 @@ Retrieves a collection of subscriptions, specified by the account-ID parameter. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 account_id = 'account_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1382,12 +1382,12 @@ Retrieves a single subscription, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
@@ -1433,12 +1433,12 @@ Retrieves a collection of subscriptions, specified by the product-ID parameter. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 product_id = 'product_id_example' # str | ID of the product
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1494,12 +1494,12 @@ Retrieves a collection of subscriptions, specified by the product-rate-plan-ID p
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1555,12 +1555,12 @@ Retrieves a collection of subscriptions, specified by the state parameter. By de
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 state = 'state_example' # str | The current state of the subscription, either Provisioned, AwaitingPayment, Paid or Cancelled
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -1616,12 +1616,12 @@ Retrieves a single subscription, specified by the version-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 version_id = 'version_id_example' # str | The version-ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -1665,12 +1665,12 @@ Retrieves a collection of subscription objects with period-end times within the 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1724,12 +1724,12 @@ Retrieves a collection of subscription objects with period-end times within the 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1783,12 +1783,12 @@ Retrieves a collection of subscription objects with period-start times within th
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1842,12 +1842,12 @@ Retrieves a collection of subscription objects whose successful periods count fa
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 lower_threshold = 56 # int | The lower threshold of the range
 upper_threshold = 56 # int | The upper threshold of the range.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -1901,12 +1901,12 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 query_string = 'query_string_example' # str | The query string used to search.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The starting index of the search results. (optional) (default to 0)
@@ -1960,12 +1960,12 @@ Retrieves a collection timer amendments for the specified subscription.. By defa
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -2023,13 +2023,13 @@ Import a subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-request = swagger_client.BillingEntityBase() # BillingEntityBase | The request
+api_instance = billforward.SubscriptionsApi()
+request = billforward.BillingEntityBase() # BillingEntityBase | The request
 
 try: 
     # Import a subscription.
@@ -2070,14 +2070,14 @@ Invoice any outstanding charges for the subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-charge = swagger_client.InvoiceChargeRequest() # InvoiceChargeRequest | The charge request
+charge = billforward.InvoiceChargeRequest() # InvoiceChargeRequest | The charge request
 
 try: 
     # Invoice any outstanding charges for the subscription.
@@ -2119,14 +2119,14 @@ Migrate the subscription to a new plan.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-request = swagger_client.MigrationRequest() # MigrationRequest | The migration request
+request = billforward.MigrationRequest() # MigrationRequest | The migration request
 
 try: 
     # Migrate the subscription to a new plan.
@@ -2168,12 +2168,12 @@ Removes the coupon from the subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 coupon_code = 'coupon_code_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -2219,12 +2219,12 @@ Decrease the amount of credit available to the specified subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 value = 'value_example' # str | <p>Either a credit note ID or a currency value.</p><p>If a credit note ID is provided any remaining credit will be removed.</p><p>If a decimal is provided this value will be removed from any credit available to the subscription. For example if the subscription is in USD setting the value as 10 will reduce credit by $10 (USD), setting 9.86  would reduce the credit by $9.86 (USD). The value will be reduced from any credit available.</p>
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -2270,12 +2270,12 @@ Removes the specified payment method for the given subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 payment_method_id = 'payment_method_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -2321,12 +2321,12 @@ Discards from the subscription any scheduled changes in the value of the specifi
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 pricing_component = 'pricing_component_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -2372,14 +2372,14 @@ Resume the frozen subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-request = swagger_client.ResumeRequest() # ResumeRequest | The request
+request = billforward.ResumeRequest() # ResumeRequest | The request
 
 try: 
     # Resume the frozen subscription.
@@ -2421,14 +2421,14 @@ Revives a cancelled subscription and returns it to its previous state
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
-request = swagger_client.ReviveSubscriptionRequest() # ReviveSubscriptionRequest | The revive request
+request = billforward.ReviveSubscriptionRequest() # ReviveSubscriptionRequest | The revive request
 
 try: 
     # Revives a cancelled subscription and returns it to its previous state
@@ -2470,13 +2470,13 @@ Remove any existing metadata keys and create the provided data.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.SubscriptionsApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -2521,14 +2521,14 @@ Sets upon this subscription a new value for the specified pricing-component with
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
-pricing_component_value = swagger_client.PricingComponentValue() # PricingComponentValue | The pricing-component-value request
+pricing_component_value = billforward.PricingComponentValue() # PricingComponentValue | The pricing-component-value request
 
 try: 
     # Sets upon this subscription a new value for the specified pricing-component without performing an upgrade.
@@ -2570,15 +2570,15 @@ Upgrades/downgrades this subscription to some new value for the specified pricin
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
+api_instance = billforward.SubscriptionsApi()
 subscription_id = 'subscription_id_example' # str | 
 pricing_component = 'pricing_component_example' # str | Name or ID of the pricing-component.
-value = swagger_client.PricingComponentValueRequest() # PricingComponentValueRequest | The pricing-component-value request
+value = billforward.PricingComponentValueRequest() # PricingComponentValueRequest | The pricing-component-value request
 
 try: 
     # Upgrades/downgrades this subscription to some new value for the specified pricing-component.
@@ -2621,13 +2621,13 @@ Update a subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-subscription = swagger_client.Subscription() # Subscription | The subscription object to be updated.
+api_instance = billforward.SubscriptionsApi()
+subscription = billforward.Subscription() # Subscription | The subscription object to be updated.
 
 try: 
     # Update a subscription.
@@ -2668,13 +2668,13 @@ Update a subscription (V2).
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-request = swagger_client.UpdateSubscriptionRequest() # UpdateSubscriptionRequest | 
+api_instance = billforward.SubscriptionsApi()
+request = billforward.UpdateSubscriptionRequest() # UpdateSubscriptionRequest | 
 
 try: 
     # Update a subscription (V2).
@@ -2715,13 +2715,13 @@ Update any existing metadata key-values and insert any new key-values, no keys w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SubscriptionsApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.SubscriptionsApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 subscription_id = 'subscription_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

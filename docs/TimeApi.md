@@ -1,4 +1,4 @@
-# swagger_client.TimeApi
+# billforward.TimeApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -17,13 +17,13 @@ Method | HTTP request | Description
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.TimeApi()
-request = swagger_client.TimeRequest() # TimeRequest | The request
+api_instance = billforward.TimeApi()
+request = billforward.TimeRequest() # TimeRequest | The request
 
 try: 
     # 

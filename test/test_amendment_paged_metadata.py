@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.amendment_paged_metadata import AmendmentPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.amendment_paged_metadata import AmendmentPagedMetadata
 
 
 class TestAmendmentPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAmendmentPagedMetadata(unittest.TestCase):
         """
         Test AmendmentPagedMetadata
         """
-        model = swagger_client.models.amendment_paged_metadata.AmendmentPagedMetadata()
+        model = billforward.models.amendment_paged_metadata.AmendmentPagedMetadata()
 
 
 if __name__ == '__main__':

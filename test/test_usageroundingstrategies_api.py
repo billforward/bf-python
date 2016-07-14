@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.usageroundingstrategies_api import UsageroundingstrategiesApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.usageroundingstrategies_api import UsageroundingstrategiesApi
 
 
 class TestUsageroundingstrategiesApi(unittest.TestCase):
     """ UsageroundingstrategiesApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.usageroundingstrategies_api.UsageroundingstrategiesApi()
+        self.api = billforward.apis.usageroundingstrategies_api.UsageroundingstrategiesApi()
 
     def tearDown(self):
         pass

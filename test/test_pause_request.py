@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.pause_request import PauseRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.pause_request import PauseRequest
 
 
 class TestPauseRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPauseRequest(unittest.TestCase):
         """
         Test PauseRequest
         """
-        model = swagger_client.models.pause_request.PauseRequest()
+        model = billforward.models.pause_request.PauseRequest()
 
 
 if __name__ == '__main__':

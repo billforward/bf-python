@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.invoice_recalculation_amendment import InvoiceRecalculationAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.invoice_recalculation_amendment import InvoiceRecalculationAmendment
 
 
 class TestInvoiceRecalculationAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestInvoiceRecalculationAmendment(unittest.TestCase):
         """
         Test InvoiceRecalculationAmendment
         """
-        model = swagger_client.models.invoice_recalculation_amendment.InvoiceRecalculationAmendment()
+        model = billforward.models.invoice_recalculation_amendment.InvoiceRecalculationAmendment()
 
 
 if __name__ == '__main__':

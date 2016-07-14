@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.profile import Profile
+import billforward
+from billforward.rest import ApiException
+from billforward.models.profile import Profile
 
 
 class TestProfile(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestProfile(unittest.TestCase):
         """
         Test Profile
         """
-        model = swagger_client.models.profile.Profile()
+        model = billforward.models.profile.Profile()
 
 
 if __name__ == '__main__':

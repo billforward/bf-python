@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.pricing_component_value import PricingComponentValue
+import billforward
+from billforward.rest import ApiException
+from billforward.models.pricing_component_value import PricingComponentValue
 
 
 class TestPricingComponentValue(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPricingComponentValue(unittest.TestCase):
         """
         Test PricingComponentValue
         """
-        model = swagger_client.models.pricing_component_value.PricingComponentValue()
+        model = billforward.models.pricing_component_value.PricingComponentValue()
 
 
 if __name__ == '__main__':

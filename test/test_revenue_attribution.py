@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.revenue_attribution import RevenueAttribution
+import billforward
+from billforward.rest import ApiException
+from billforward.models.revenue_attribution import RevenueAttribution
 
 
 class TestRevenueAttribution(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestRevenueAttribution(unittest.TestCase):
         """
         Test RevenueAttribution
         """
-        model = swagger_client.models.revenue_attribution.RevenueAttribution()
+        model = billforward.models.revenue_attribution.RevenueAttribution()
 
 
 if __name__ == '__main__':

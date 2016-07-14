@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.fixed_term_paged_metadata import FixedTermPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.fixed_term_paged_metadata import FixedTermPagedMetadata
 
 
 class TestFixedTermPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestFixedTermPagedMetadata(unittest.TestCase):
         """
         Test FixedTermPagedMetadata
         """
-        model = swagger_client.models.fixed_term_paged_metadata.FixedTermPagedMetadata()
+        model = billforward.models.fixed_term_paged_metadata.FixedTermPagedMetadata()
 
 
 if __name__ == '__main__':

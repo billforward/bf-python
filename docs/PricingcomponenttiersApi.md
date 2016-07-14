@@ -1,4 +1,4 @@
-# swagger_client.PricingcomponenttiersApi
+# billforward.PricingcomponenttiersApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,13 +21,13 @@ Create
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponenttiersApi()
-pricing_component_tier = swagger_client.PricingComponentTier() # PricingComponentTier | The pricing-component-tier object to be updated.
+api_instance = billforward.PricingcomponenttiersApi()
+pricing_component_tier = billforward.PricingComponentTier() # PricingComponentTier | The pricing-component-tier object to be updated.
 
 try: 
     # Create
@@ -68,12 +68,12 @@ Returns a collection of pricing-component-tier-tiers. By default 10 values are r
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponenttiersApi()
+api_instance = billforward.PricingcomponenttiersApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-tier-tier to return. (optional) (default to 0)
 records = 10 # int | The maximum number of pricing-component-tier-tiers to return. (optional) (default to 10)
@@ -123,12 +123,12 @@ Returns a collection of pricing-component-tier-tiers, specified by the pricing-c
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponenttiersApi()
+api_instance = billforward.PricingcomponenttiersApi()
 pricing_component_tier_id = 'pricing_component_tier_id_example' # str | The string ID of the pricing-component-tier-tier.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-tier-tier to return. (optional) (default to 0)
@@ -180,12 +180,12 @@ Returns a collection of pricing-component-tier-tiers, specified by the product-r
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponenttiersApi()
+api_instance = billforward.PricingcomponenttiersApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | The string product-rate-plan-ID of the pricing-component-tier-tier.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-tier-tier to return. (optional) (default to 0)
@@ -237,13 +237,13 @@ Update.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponenttiersApi()
-pricing_component_tier = swagger_client.PricingComponentTier() # PricingComponentTier | The pricing-component-tier object to be updated.
+api_instance = billforward.PricingcomponenttiersApi()
+pricing_component_tier = billforward.PricingComponentTier() # PricingComponentTier | The pricing-component-tier object to be updated.
 
 try: 
     # Update.

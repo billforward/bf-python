@@ -1,4 +1,4 @@
-# swagger_client.PricingcomponentvaluechangesApi
+# billforward.PricingcomponentvaluechangesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a pricing-component-value-change.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluechangesApi()
-pricing_component_value_change = swagger_client.InsertableBillingEntity() # InsertableBillingEntity | The pricing-component-value-change object to be updated.
+api_instance = billforward.PricingcomponentvaluechangesApi()
+pricing_component_value_change = billforward.InsertableBillingEntity() # InsertableBillingEntity | The pricing-component-value-change object to be updated.
 
 try: 
     # Create a pricing-component-value-change.
@@ -69,12 +69,12 @@ Returns a collection of pricing-component-value-changes. By default 10 values ar
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluechangesApi()
+api_instance = billforward.PricingcomponentvaluechangesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-value-change to return. (optional) (default to 0)
 records = 10 # int | The maximum number of pricing-component-value-changes to return. (optional) (default to 10)
@@ -124,12 +124,12 @@ Returns a single pricing-component-value-changes, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluechangesApi()
+api_instance = billforward.PricingcomponentvaluechangesApi()
 id = 'id_example' # str | The string ID of the pricing-component-value-change.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -173,12 +173,12 @@ Returns a collection of pricing-component-value-changes, specified by the pricin
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluechangesApi()
+api_instance = billforward.PricingcomponentvaluechangesApi()
 pricing_component_id = 'pricing_component_id_example' # str | The string ID of the pricing-component-value.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-value-change to return. (optional) (default to 0)
@@ -230,12 +230,12 @@ Returns a collection of pricing-component-value-changes, specified by the invoic
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluechangesApi()
+api_instance = billforward.PricingcomponentvaluechangesApi()
 invoice_id = 'invoice_id_example' # str | The string invoice-ID of the pricing-component-value-change.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-value-change to return. (optional) (default to 0)
@@ -287,12 +287,12 @@ Returns a collection of pricing-component-value-changes, specified by the subscr
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluechangesApi()
+api_instance = billforward.PricingcomponentvaluechangesApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-value-change to return. (optional) (default to 0)

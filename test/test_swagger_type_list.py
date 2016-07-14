@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.swagger_type_list import SwaggerTypeList
+import billforward
+from billforward.rest import ApiException
+from billforward.models.swagger_type_list import SwaggerTypeList
 
 
 class TestSwaggerTypeList(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestSwaggerTypeList(unittest.TestCase):
         """
         Test SwaggerTypeList
         """
-        model = swagger_client.models.swagger_type_list.SwaggerTypeList()
+        model = billforward.models.swagger_type_list.SwaggerTypeList()
 
 
 if __name__ == '__main__':

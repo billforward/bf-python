@@ -1,4 +1,4 @@
-# swagger_client.ConfigurationsApi
+# billforward.ConfigurationsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,13 +20,13 @@ Create a configuration.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ConfigurationsApi()
-configuration = swagger_client.MutableBillingEntity() # MutableBillingEntity | The configuration object to be created.
+api_instance = billforward.ConfigurationsApi()
+configuration = billforward.MutableBillingEntity() # MutableBillingEntity | The configuration object to be created.
 
 try: 
     # Create a configuration.
@@ -67,12 +67,12 @@ Returns a collection of configurations. By default 10 values are returned. Recor
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ConfigurationsApi()
+api_instance = billforward.ConfigurationsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component to return. (optional) (default to 0)
 records = 10 # int | The maximum number of pricing-components to return. (optional) (default to 10)
@@ -122,12 +122,12 @@ Returns a single configuration, specified by the type parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ConfigurationsApi()
+api_instance = billforward.ConfigurationsApi()
 configuration_type = 'configuration_type_example' # str | The unique type of the configuration.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component to return. (optional) (default to 0)
@@ -179,13 +179,13 @@ Update a configuration.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ConfigurationsApi()
-configuration = swagger_client.MutableBillingEntity() # MutableBillingEntity | The configuration object to be updated.
+api_instance = billforward.ConfigurationsApi()
+configuration = billforward.MutableBillingEntity() # MutableBillingEntity | The configuration object to be updated.
 
 try: 
     # Update a configuration.

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.product import Product
+import billforward
+from billforward.rest import ApiException
+from billforward.models.product import Product
 
 
 class TestProduct(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestProduct(unittest.TestCase):
         """
         Test Product
         """
-        model = swagger_client.models.product.Product()
+        model = billforward.models.product.Product()
 
 
 if __name__ == '__main__':

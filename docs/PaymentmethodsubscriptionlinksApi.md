@@ -1,4 +1,4 @@
-# swagger_client.PaymentmethodsubscriptionlinksApi
+# billforward.PaymentmethodsubscriptionlinksApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -18,13 +18,13 @@ Create
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsubscriptionlinksApi()
-payment_method = swagger_client.PaymentMethodSubscriptionLink() # PaymentMethodSubscriptionLink | The payment-method object to be updated.
+api_instance = billforward.PaymentmethodsubscriptionlinksApi()
+payment_method = billforward.PaymentMethodSubscriptionLink() # PaymentMethodSubscriptionLink | The payment-method object to be updated.
 
 try: 
     # Create
@@ -65,12 +65,12 @@ Retires the payment-method-subscription-link specified by the link-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PaymentmethodsubscriptionlinksApi()
+api_instance = billforward.PaymentmethodsubscriptionlinksApi()
 payment_method_subscription_link_id = 'payment_method_subscription_link_id_example' # str | ID of the link.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 

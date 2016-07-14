@@ -1,4 +1,4 @@
-# swagger_client.RolesApi
+# billforward.RolesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a new role.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi()
-role_request = swagger_client.BillingEntityBase() # BillingEntityBase | 
+api_instance = billforward.RolesApi()
+role_request = billforward.BillingEntityBase() # BillingEntityBase | 
 
 try: 
     # Create a new role.
@@ -69,12 +69,12 @@ Retrieves a collection of all roles. By default 10 values are returned. Records 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi()
+api_instance = billforward.RolesApi()
 organizations = ['organizations_example'] # list[str] |  (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
 records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
@@ -126,12 +126,12 @@ Retrieves a single role, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi()
+api_instance = billforward.RolesApi()
 role = 'role_example' # str | ID or name of the role.
 organizations = ['organizations_example'] # list[str] |  (optional)
 include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
@@ -177,12 +177,12 @@ Revokes a particular permission
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi()
+api_instance = billforward.RolesApi()
 role = 'role_example' # str | ID or name of the role.
 resource = 'resource_example' # str | 
 action = 'action_example' # str | 
@@ -230,12 +230,12 @@ Revokes a role
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi()
+api_instance = billforward.RolesApi()
 role = 'role_example' # str | ID or name of the role.
 organizations = ['organizations_example'] # list[str] |  (optional)
 
@@ -279,13 +279,13 @@ Update a role.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RolesApi()
-role_request = swagger_client.UpdateRoleRequest() # UpdateRoleRequest | 
+api_instance = billforward.RolesApi()
+role_request = billforward.UpdateRoleRequest() # UpdateRoleRequest | 
 
 try: 
     # Update a role.

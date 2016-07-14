@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.fixed_term import FixedTerm
+import billforward
+from billforward.rest import ApiException
+from billforward.models.fixed_term import FixedTerm
 
 
 class TestFixedTerm(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestFixedTerm(unittest.TestCase):
         """
         Test FixedTerm
         """
-        model = swagger_client.models.fixed_term.FixedTerm()
+        model = billforward.models.fixed_term.FixedTerm()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.pricing_component_value_change_paged_metadata import PricingComponentValueChangePagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.pricing_component_value_change_paged_metadata import PricingComponentValueChangePagedMetadata
 
 
 class TestPricingComponentValueChangePagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPricingComponentValueChangePagedMetadata(unittest.TestCase):
         """
         Test PricingComponentValueChangePagedMetadata
         """
-        model = swagger_client.models.pricing_component_value_change_paged_metadata.PricingComponentValueChangePagedMetadata()
+        model = billforward.models.pricing_component_value_change_paged_metadata.PricingComponentValueChangePagedMetadata()
 
 
 if __name__ == '__main__':

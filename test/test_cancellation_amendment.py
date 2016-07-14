@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.cancellation_amendment import CancellationAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.cancellation_amendment import CancellationAmendment
 
 
 class TestCancellationAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCancellationAmendment(unittest.TestCase):
         """
         Test CancellationAmendment
         """
-        model = swagger_client.models.cancellation_amendment.CancellationAmendment()
+        model = billforward.models.cancellation_amendment.CancellationAmendment()
 
 
 if __name__ == '__main__':

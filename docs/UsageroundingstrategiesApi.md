@@ -1,4 +1,4 @@
-# swagger_client.UsageroundingstrategiesApi
+# billforward.UsageroundingstrategiesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,13 +20,13 @@ Create a new rounding strategy
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageroundingstrategiesApi()
-usage_rounding_strategy = swagger_client.MutableBillingEntity() # MutableBillingEntity | The usage-rounding-strategy object to be created.
+api_instance = billforward.UsageroundingstrategiesApi()
+usage_rounding_strategy = billforward.MutableBillingEntity() # MutableBillingEntity | The usage-rounding-strategy object to be created.
 
 try: 
     # Create a new rounding strategy
@@ -67,12 +67,12 @@ Returns a collection of usage-rounding-strategies, specified by the usage-roundi
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageroundingstrategiesApi()
+api_instance = billforward.UsageroundingstrategiesApi()
 usage_rounding_strategies_id = 'usage_rounding_strategies_id_example' # str | The string ID of the usage-rounding-strategies.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component to return. (optional) (default to 0)
@@ -126,12 +126,12 @@ Returns a collection of usage-rounding-strategies, specified by the pricing-comp
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageroundingstrategiesApi()
+api_instance = billforward.UsageroundingstrategiesApi()
 pricing_component_id = 'pricing_component_id_example' # str | The string pricing-component-ID of the pricing-component.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component to return. (optional) (default to 0)
@@ -185,13 +185,13 @@ Update a rounding strategy
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsageroundingstrategiesApi()
-usage_rounding_strategy = swagger_client.MutableBillingEntity() # MutableBillingEntity | The usage-rounding-strategy object to be updated.
+api_instance = billforward.UsageroundingstrategiesApi()
+usage_rounding_strategy = billforward.MutableBillingEntity() # MutableBillingEntity | The usage-rounding-strategy object to be updated.
 
 try: 
     # Update a rounding strategy

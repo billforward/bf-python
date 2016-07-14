@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.time_response_paged_metadata import TimeResponsePagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.time_response_paged_metadata import TimeResponsePagedMetadata
 
 
 class TestTimeResponsePagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTimeResponsePagedMetadata(unittest.TestCase):
         """
         Test TimeResponsePagedMetadata
         """
-        model = swagger_client.models.time_response_paged_metadata.TimeResponsePagedMetadata()
+        model = billforward.models.time_response_paged_metadata.TimeResponsePagedMetadata()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.credit_note import CreditNote
+import billforward
+from billforward.rest import ApiException
+from billforward.models.credit_note import CreditNote
 
 
 class TestCreditNote(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCreditNote(unittest.TestCase):
         """
         Test CreditNote
         """
-        model = swagger_client.models.credit_note.CreditNote()
+        model = billforward.models.credit_note.CreditNote()
 
 
 if __name__ == '__main__':

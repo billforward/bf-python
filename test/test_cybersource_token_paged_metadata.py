@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.cybersource_token_paged_metadata import CybersourceTokenPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.cybersource_token_paged_metadata import CybersourceTokenPagedMetadata
 
 
 class TestCybersourceTokenPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCybersourceTokenPagedMetadata(unittest.TestCase):
         """
         Test CybersourceTokenPagedMetadata
         """
-        model = swagger_client.models.cybersource_token_paged_metadata.CybersourceTokenPagedMetadata()
+        model = billforward.models.cybersource_token_paged_metadata.CybersourceTokenPagedMetadata()
 
 
 if __name__ == '__main__':

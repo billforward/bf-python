@@ -1,4 +1,4 @@
-# swagger_client.ProductsApi
+# billforward.ProductsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -25,13 +25,13 @@ Create a product.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
-product = swagger_client.Product() # Product | The product object to be updated.
+api_instance = billforward.ProductsApi()
+product = billforward.Product() # Product | The product object to be updated.
 
 try: 
     # Create a product.
@@ -72,12 +72,12 @@ Remove any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
+api_instance = billforward.ProductsApi()
 product_id = 'product_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -121,12 +121,12 @@ Returns a collection of products. By default 10 values are returned. Records are
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
+api_instance = billforward.ProductsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product to return. (optional) (default to 0)
 records = 10 # int | The maximum number of products to return. (optional) (default to 10)
@@ -180,12 +180,12 @@ Retrieve any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
+api_instance = billforward.ProductsApi()
 product_id = 'product_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -229,12 +229,12 @@ Returns a single product, specified by the product-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
+api_instance = billforward.ProductsApi()
 product_id = 'product_id_example' # str | ID or name of the product.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
@@ -288,12 +288,12 @@ Deletes the product specified by the product-ID parameter. Any existing subscrip
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
+api_instance = billforward.ProductsApi()
 product_id = 'product_id_example' # str | ID of the Product.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -337,13 +337,13 @@ Remove any existing metadata keys and create the provided data.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.ProductsApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 product_id = 'product_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -388,13 +388,13 @@ Update a product.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
-product = swagger_client.Product() # Product | The product object to be updated.
+api_instance = billforward.ProductsApi()
+product = billforward.Product() # Product | The product object to be updated.
 
 try: 
     # Update a product.
@@ -435,13 +435,13 @@ Update any existing metadata key-values and insert any new key-values, no keys w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductsApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.ProductsApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 product_id = 'product_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

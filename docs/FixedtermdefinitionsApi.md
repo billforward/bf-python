@@ -1,4 +1,4 @@
-# swagger_client.FixedtermdefinitionsApi
+# billforward.FixedtermdefinitionsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -18,13 +18,13 @@ Create
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FixedtermdefinitionsApi()
-fixed_term_definiton = swagger_client.MutableBillingEntity() # MutableBillingEntity | The fixed-term-definition object to be updated.
+api_instance = billforward.FixedtermdefinitionsApi()
+fixed_term_definiton = billforward.MutableBillingEntity() # MutableBillingEntity | The fixed-term-definition object to be updated.
 
 try: 
     # Create
@@ -65,13 +65,13 @@ Update
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FixedtermdefinitionsApi()
-fixed_term_definiton = swagger_client.MutableBillingEntity() # MutableBillingEntity | The fixed-term-definition object to be updated.
+api_instance = billforward.FixedtermdefinitionsApi()
+fixed_term_definiton = billforward.MutableBillingEntity() # MutableBillingEntity | The fixed-term-definition object to be updated.
 
 try: 
     # Update

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.time_zone import TimeZone
+import billforward
+from billforward.rest import ApiException
+from billforward.models.time_zone import TimeZone
 
 
 class TestTimeZone(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTimeZone(unittest.TestCase):
         """
         Test TimeZone
         """
-        model = swagger_client.models.time_zone.TimeZone()
+        model = billforward.models.time_zone.TimeZone()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.email import Email
+import billforward
+from billforward.rest import ApiException
+from billforward.models.email import Email
 
 
 class TestEmail(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestEmail(unittest.TestCase):
         """
         Test Email
         """
-        model = swagger_client.models.email.Email()
+        model = billforward.models.email.Email()
 
 
 if __name__ == '__main__':

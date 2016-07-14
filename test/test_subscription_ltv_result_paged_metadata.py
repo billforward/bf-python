@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.subscription_ltv_result_paged_metadata import SubscriptionLTVResultPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.subscription_ltv_result_paged_metadata import SubscriptionLTVResultPagedMetadata
 
 
 class TestSubscriptionLTVResultPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestSubscriptionLTVResultPagedMetadata(unittest.TestCase):
         """
         Test SubscriptionLTVResultPagedMetadata
         """
-        model = swagger_client.models.subscription_ltv_result_paged_metadata.SubscriptionLTVResultPagedMetadata()
+        model = billforward.models.subscription_ltv_result_paged_metadata.SubscriptionLTVResultPagedMetadata()
 
 
 if __name__ == '__main__':

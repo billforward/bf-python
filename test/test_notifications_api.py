@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.notifications_api import NotificationsApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.notifications_api import NotificationsApi
 
 
 class TestNotificationsApi(unittest.TestCase):
     """ NotificationsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.notifications_api.NotificationsApi()
+        self.api = billforward.apis.notifications_api.NotificationsApi()
 
     def tearDown(self):
         pass

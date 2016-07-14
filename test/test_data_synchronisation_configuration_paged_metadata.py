@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.data_synchronisation_configuration_paged_metadata import DataSynchronisationConfigurationPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.data_synchronisation_configuration_paged_metadata import DataSynchronisationConfigurationPagedMetadata
 
 
 class TestDataSynchronisationConfigurationPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestDataSynchronisationConfigurationPagedMetadata(unittest.TestCase):
         """
         Test DataSynchronisationConfigurationPagedMetadata
         """
-        model = swagger_client.models.data_synchronisation_configuration_paged_metadata.DataSynchronisationConfigurationPagedMetadata()
+        model = billforward.models.data_synchronisation_configuration_paged_metadata.DataSynchronisationConfigurationPagedMetadata()
 
 
 if __name__ == '__main__':

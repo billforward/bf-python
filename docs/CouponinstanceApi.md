@@ -1,4 +1,4 @@
-# swagger_client.CouponinstanceApi
+# billforward.CouponinstanceApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -26,13 +26,13 @@ Create a coupon-instance.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
-coupon_instance = swagger_client.CouponInstance() # CouponInstance | The coupon-instance object to be created.
+api_instance = billforward.CouponinstanceApi()
+coupon_instance = billforward.CouponInstance() # CouponInstance | The coupon-instance object to be created.
 
 try: 
     # Create a coupon-instance.
@@ -73,12 +73,12 @@ Retire a coupon-instance, specified by the coupon-instance-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 coupon_instance_id = 'coupon_instance_id_example' # str | ID of the coupon-instance.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -122,12 +122,12 @@ Returns a collection of attachable coupon-instances. An attachable coupon-instan
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 attachableness = true # bool | The attachableness of the coupon-instance.
 has_code = true # bool | Whether the coupon-instances have coupon codes or not.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -181,12 +181,12 @@ Returns a collection of coupon-instances. By default 10 values are returned. Rec
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-instance to return. (optional) (default to 0)
 records = 10 # int | The maximum number of coupon-instances to return. (optional) (default to 10)
@@ -238,12 +238,12 @@ Returns a collection of coupon-instances, specified by coupon-code parameter. By
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 coupon_code = 'coupon_code_example' # str | The string coupon-code of the coupon-instance.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-instance to return. (optional) (default to 0)
@@ -297,12 +297,12 @@ Returns a collection of coupon-instances, specified by coupon-definition-ID para
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 coupon_definition_id = 'coupon_definition_id_example' # str | The string coupon-definition-ID of the coupon-instance.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-instance to return. (optional) (default to 0)
@@ -356,12 +356,12 @@ Returns a single coupon-instance, specified by the coupon-instance-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 coupon_instance_id = 'coupon_instance_id_example' # str | ID of the coupon-instance.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -405,12 +405,12 @@ Returns a collection of coupon-instances, specified by target-ID parameter. By d
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 target_id = 'target_id_example' # str | The string target-ID of the coupon-instance.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-instance to return. (optional) (default to 0)
@@ -464,12 +464,12 @@ Returns a collection of coupon-instances, specified by target parameter. By defa
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
+api_instance = billforward.CouponinstanceApi()
 target = 'target_example' # str | The string target of the coupon-instance.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first coupon-instance to return. (optional) (default to 0)
@@ -523,13 +523,13 @@ Update a coupon-instance.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CouponinstanceApi()
-coupon_instance = swagger_client.CouponInstance() # CouponInstance | The coupon-instance object to be updated.
+api_instance = billforward.CouponinstanceApi()
+coupon_instance = billforward.CouponInstance() # CouponInstance | The coupon-instance object to be updated.
 
 try: 
     # Update a coupon-instance.

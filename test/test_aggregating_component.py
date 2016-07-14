@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.aggregating_component import AggregatingComponent
+import billforward
+from billforward.rest import ApiException
+from billforward.models.aggregating_component import AggregatingComponent
 
 
 class TestAggregatingComponent(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAggregatingComponent(unittest.TestCase):
         """
         Test AggregatingComponent
         """
-        model = swagger_client.models.aggregating_component.AggregatingComponent()
+        model = billforward.models.aggregating_component.AggregatingComponent()
 
 
 if __name__ == '__main__':

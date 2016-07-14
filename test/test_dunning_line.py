@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.dunning_line import DunningLine
+import billforward
+from billforward.rest import ApiException
+from billforward.models.dunning_line import DunningLine
 
 
 class TestDunningLine(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestDunningLine(unittest.TestCase):
         """
         Test DunningLine
         """
-        model = swagger_client.models.dunning_line.DunningLine()
+        model = billforward.models.dunning_line.DunningLine()
 
 
 if __name__ == '__main__':

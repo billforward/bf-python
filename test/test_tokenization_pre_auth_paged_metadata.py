@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.tokenization_pre_auth_paged_metadata import TokenizationPreAuthPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.tokenization_pre_auth_paged_metadata import TokenizationPreAuthPagedMetadata
 
 
 class TestTokenizationPreAuthPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTokenizationPreAuthPagedMetadata(unittest.TestCase):
         """
         Test TokenizationPreAuthPagedMetadata
         """
-        model = swagger_client.models.tokenization_pre_auth_paged_metadata.TokenizationPreAuthPagedMetadata()
+        model = billforward.models.tokenization_pre_auth_paged_metadata.TokenizationPreAuthPagedMetadata()
 
 
 if __name__ == '__main__':

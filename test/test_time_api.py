@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.time_api import TimeApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.time_api import TimeApi
 
 
 class TestTimeApi(unittest.TestCase):
     """ TimeApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.time_api.TimeApi()
+        self.api = billforward.apis.time_api.TimeApi()
 
     def tearDown(self):
         pass

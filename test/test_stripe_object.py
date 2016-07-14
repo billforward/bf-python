@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.stripe_object import StripeObject
+import billforward
+from billforward.rest import ApiException
+from billforward.models.stripe_object import StripeObject
 
 
 class TestStripeObject(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestStripeObject(unittest.TestCase):
         """
         Test StripeObject
         """
-        model = swagger_client.models.stripe_object.StripeObject()
+        model = billforward.models.stripe_object.StripeObject()
 
 
 if __name__ == '__main__':

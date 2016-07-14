@@ -1,4 +1,4 @@
-# swagger_client.ProductrateplansApi
+# billforward.ProductrateplansApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -30,14 +30,14 @@ Adds or re-enables the specified taxation-strategy for the given product-rate-pl
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
-taxation_strategy = swagger_client.AddTaxationStrategyRequest() # AddTaxationStrategyRequest | The taxation-strategy
+taxation_strategy = billforward.AddTaxationStrategyRequest() # AddTaxationStrategyRequest | The taxation-strategy
 
 try: 
     # Adds or re-enables the specified taxation-strategy for the given product-rate-plan.
@@ -79,13 +79,13 @@ Create a new rate-plan.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
-product_rate_plan = swagger_client.ProductRatePlan() # ProductRatePlan | The product-rate-plan object to be created.
+api_instance = billforward.ProductrateplansApi()
+product_rate_plan = billforward.ProductRatePlan() # ProductRatePlan | The product-rate-plan object to be created.
 
 try: 
     # Create a new rate-plan.
@@ -126,12 +126,12 @@ Remove any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -175,12 +175,12 @@ Returns a collection of product-rate-plans. By default 10 values are returned. R
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
 records = 10 # int | The maximum number of product-rate-plans to return. (optional) (default to 10)
@@ -234,12 +234,12 @@ Returns all available taxes for the specified product-rate-plan. By default 10 v
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
@@ -291,12 +291,12 @@ Retrieve any associated metadata.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -340,12 +340,12 @@ Returns product-rate-plans, specified by the product-rate-plan id or name.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | id or name of the product-rate-plan.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
@@ -399,12 +399,12 @@ Returns a collection of product-rate-plans, specified by the product-ID paramete
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_id = 'product_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first product-rate-plan to return. (optional) (default to 0)
@@ -458,12 +458,12 @@ Returns a collection of product-rate-plans, specified by the product-ID paramete
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_id = 'product_id_example' # str | 
 rate_plan_id = 'rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -519,12 +519,12 @@ Removes the specified taxation-strategy for the given product-rate-plan.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 taxation_strategy_id = 'taxation_strategy_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -570,12 +570,12 @@ Retires the product-rate-plan specified product-rate-plan-ID.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
+api_instance = billforward.ProductrateplansApi()
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -619,13 +619,13 @@ Remove any existing metadata keys and create the provided data.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.ProductrateplansApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -670,13 +670,13 @@ Update a rate-plan.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
-product_rate_plan = swagger_client.ProductRatePlan() # ProductRatePlan | The product-rate-plan object to be updated.
+api_instance = billforward.ProductrateplansApi()
+product_rate_plan = billforward.ProductRatePlan() # ProductRatePlan | The product-rate-plan object to be updated.
 
 try: 
     # Update a rate-plan.
@@ -717,13 +717,13 @@ Update any existing metadata key-values and insert any new key-values, no keys w
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.ProductrateplansApi()
-metadata = swagger_client.DynamicMetadata() # DynamicMetadata | 
+api_instance = billforward.ProductrateplansApi()
+metadata = billforward.DynamicMetadata() # DynamicMetadata | 
 product_rate_plan_id = 'product_rate_plan_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.refunds_api import RefundsApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.refunds_api import RefundsApi
 
 
 class TestRefundsApi(unittest.TestCase):
     """ RefundsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.refunds_api.RefundsApi()
+        self.api = billforward.apis.refunds_api.RefundsApi()
 
     def tearDown(self):
         pass

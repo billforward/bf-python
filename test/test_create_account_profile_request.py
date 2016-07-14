@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.create_account_profile_request import CreateAccountProfileRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.create_account_profile_request import CreateAccountProfileRequest
 
 
 class TestCreateAccountProfileRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCreateAccountProfileRequest(unittest.TestCase):
         """
         Test CreateAccountProfileRequest
         """
-        model = swagger_client.models.create_account_profile_request.CreateAccountProfileRequest()
+        model = billforward.models.create_account_profile_request.CreateAccountProfileRequest()
 
 
 if __name__ == '__main__':

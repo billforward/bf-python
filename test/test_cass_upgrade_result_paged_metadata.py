@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.cass_upgrade_result_paged_metadata import CassUpgradeResultPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.cass_upgrade_result_paged_metadata import CassUpgradeResultPagedMetadata
 
 
 class TestCassUpgradeResultPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCassUpgradeResultPagedMetadata(unittest.TestCase):
         """
         Test CassUpgradeResultPagedMetadata
         """
-        model = swagger_client.models.cass_upgrade_result_paged_metadata.CassUpgradeResultPagedMetadata()
+        model = billforward.models.cass_upgrade_result_paged_metadata.CassUpgradeResultPagedMetadata()
 
 
 if __name__ == '__main__':

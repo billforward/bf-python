@@ -1,4 +1,4 @@
-# swagger_client.WebhooksApi
+# billforward.WebhooksApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -23,13 +23,13 @@ Create a webhook.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhooksApi()
-webhook = swagger_client.MutableBillingEntity() # MutableBillingEntity | The webhook object to be created.
+api_instance = billforward.WebhooksApi()
+webhook = billforward.MutableBillingEntity() # MutableBillingEntity | The webhook object to be created.
 
 try: 
     # Create a webhook.
@@ -70,13 +70,13 @@ Create a webhook.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhooksApi()
-request = swagger_client.BillingEntityBase() # BillingEntityBase | 
+api_instance = billforward.WebhooksApi()
+request = billforward.BillingEntityBase() # BillingEntityBase | 
 
 try: 
     # Create a webhook.
@@ -117,12 +117,12 @@ Returns a collection of Webhooks, specified by the accountID parameter. By defau
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhooksApi()
+api_instance = billforward.WebhooksApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first webhook to return. (optional) (default to 0)
 records = 10 # int | The maximum number of webhooks to return. (optional) (default to 10)
@@ -174,12 +174,12 @@ Returns a single webhook, specified by the webhook-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhooksApi()
+api_instance = billforward.WebhooksApi()
 webhook_id = 'webhook_id_example' # str | ID of the webhook.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -223,12 +223,12 @@ Retires the specified webhook.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhooksApi()
+api_instance = billforward.WebhooksApi()
 webhook_id = 'webhook_id_example' # str | ID of the webhook.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 
@@ -272,13 +272,13 @@ Update a webhook.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhooksApi()
-webhook = swagger_client.MutableBillingEntity() # MutableBillingEntity | The webhook object to be updated.
+api_instance = billforward.WebhooksApi()
+webhook = billforward.MutableBillingEntity() # MutableBillingEntity | The webhook object to be updated.
 
 try: 
     # Update a webhook.
@@ -319,12 +319,12 @@ New webhooks must be verified before use, use the verificationID of the webhook 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.WebhooksApi()
+api_instance = billforward.WebhooksApi()
 verification_id = 'verification_id_example' # str | verificationID of the webhook.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

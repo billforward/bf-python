@@ -1,4 +1,4 @@
-# swagger_client.SynchJobsApi
+# billforward.SynchJobsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -24,13 +24,13 @@ Create a synch job.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
-synch_job = swagger_client.MutableBillingEntity() # MutableBillingEntity | The data synch job object to be created.
+api_instance = billforward.SynchJobsApi()
+synch_job = billforward.MutableBillingEntity() # MutableBillingEntity | The data synch job object to be created.
 
 try: 
     # Create a synch job.
@@ -71,12 +71,12 @@ Returns a collection of Users. By default 10 values are returned. Records are re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
+api_instance = billforward.SynchJobsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first synch job to return. (optional) (default to 0)
 records = 10 # int | The maximum number of synch jobs to return. (optional) (default to 10)
@@ -126,12 +126,12 @@ Returns a single job, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
+api_instance = billforward.SynchJobsApi()
 synch_job_id = 'synch_job_id_example' # str | ID of the Sync Job.
 organizations = ['organizations_example'] # list[str] | A list of organization -IDs used to restrict the scope of API calls. (optional)
 
@@ -175,12 +175,12 @@ Returns a collection jobs, specified by the scope parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
+api_instance = billforward.SynchJobsApi()
 scope = 'scope_example' # str | The scope of the synch job.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -224,12 +224,12 @@ Returns a collection jobs, specified by the state parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
+api_instance = billforward.SynchJobsApi()
 state = 'state_example' # str | The state of the synch job.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -273,12 +273,12 @@ Returns a collection jobs, specified by the target parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
+api_instance = billforward.SynchJobsApi()
 target = 'target_example' # str | The target of the synch job.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -322,12 +322,12 @@ Returns a collection jobs, specified by the type parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
+api_instance = billforward.SynchJobsApi()
 type = 'type_example' # str | The type of the synch job.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -371,13 +371,13 @@ Update a synch job.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchJobsApi()
-synch_job = swagger_client.MutableBillingEntity() # MutableBillingEntity | The synch job object to be updated.
+api_instance = billforward.SynchJobsApi()
+synch_job = billforward.MutableBillingEntity() # MutableBillingEntity | The synch job object to be updated.
 
 try: 
     # Update a synch job.

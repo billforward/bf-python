@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.webhooks_api import WebhooksApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.webhooks_api import WebhooksApi
 
 
 class TestWebhooksApi(unittest.TestCase):
     """ WebhooksApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.webhooks_api.WebhooksApi()
+        self.api = billforward.apis.webhooks_api.WebhooksApi()
 
     def tearDown(self):
         pass

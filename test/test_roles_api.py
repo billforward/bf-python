@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.roles_api import RolesApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.roles_api import RolesApi
 
 
 class TestRolesApi(unittest.TestCase):
     """ RolesApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.roles_api.RolesApi()
+        self.api = billforward.apis.roles_api.RolesApi()
 
     def tearDown(self):
         pass

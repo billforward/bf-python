@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.add_taxation_strategy_request import AddTaxationStrategyRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.add_taxation_strategy_request import AddTaxationStrategyRequest
 
 
 class TestAddTaxationStrategyRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAddTaxationStrategyRequest(unittest.TestCase):
         """
         Test AddTaxationStrategyRequest
         """
-        model = swagger_client.models.add_taxation_strategy_request.AddTaxationStrategyRequest()
+        model = billforward.models.add_taxation_strategy_request.AddTaxationStrategyRequest()
 
 
 if __name__ == '__main__':

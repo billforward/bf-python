@@ -1,4 +1,4 @@
-# swagger_client.CreditnotesApi
+# billforward.CreditnotesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a credit note.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditnotesApi()
-credit_note = swagger_client.CreditNote() # CreditNote | The credit note object to be created.
+api_instance = billforward.CreditnotesApi()
+credit_note = billforward.CreditNote() # CreditNote | The credit note object to be created.
 
 try: 
     # Create a credit note.
@@ -69,12 +69,12 @@ Returns a single credit-note, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditnotesApi()
+api_instance = billforward.CreditnotesApi()
 credit_note_id = 'credit_note_id_example' # str | ID of the credit-note.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -118,12 +118,12 @@ Returns credit notes for an account.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditnotesApi()
+api_instance = billforward.CreditnotesApi()
 account_id = 'account_id_example' # str | ID of the account.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first payment to return. (optional) (default to 0)
@@ -175,12 +175,12 @@ Returns credit notes for an invoice.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditnotesApi()
+api_instance = billforward.CreditnotesApi()
 invoice_id = 'invoice_id_example' # str | ID of the Invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first payment to return. (optional) (default to 0)
@@ -232,12 +232,12 @@ Returns credit notes for an subscription.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditnotesApi()
+api_instance = billforward.CreditnotesApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first payment to return. (optional) (default to 0)
@@ -289,12 +289,12 @@ Removes any remaining value from credit note
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.CreditnotesApi()
+api_instance = billforward.CreditnotesApi()
 credit_note_id = 'credit_note_id_example' # str | ID of the credit-note.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 

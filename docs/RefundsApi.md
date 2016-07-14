@@ -1,4 +1,4 @@
-# swagger_client.RefundsApi
+# billforward.RefundsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -24,13 +24,13 @@ Method | HTTP request | Description
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
-refund = swagger_client.Refund() # Refund | The refund object to be created.
+api_instance = billforward.RefundsApi()
+refund = billforward.Refund() # Refund | The refund object to be created.
 
 try: 
     # <p>When creating a refund either the invoice, or invoice payment must be specified.</p><p>Creating a refund by specifying the invoiceID will refund any un-refunded value up to the full value of the payment. When refunding via the invoicePaymentID the same rules apply. Refunds will be processed by the same payment methods that took the payment.</p><p>Refunds can be for a partial amount of the payment. It is possible to create refunds up to the value of the total payment.</p><p>Once a payment or invoice is fully refunded, no more refunds can be created. Errors will be returned if the payment is greater than available refund funds.</p>
@@ -71,12 +71,12 @@ Returns a collection of all refunds. By default 10 values are returned. Refunds 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
+api_instance = billforward.RefundsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first refund to return. (optional) (default to 0)
 records = 10 # int | The maximum number of refunds to return. (optional) (default to 10)
@@ -126,12 +126,12 @@ Returns a single refund, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
+api_instance = billforward.RefundsApi()
 refund_id = 'refund_id_example' # str | ID of the Refund.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -175,12 +175,12 @@ Returns a refund for the original payment.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
+api_instance = billforward.RefundsApi()
 payment_id = 'payment_id_example' # str | ID of the Payment.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -224,12 +224,12 @@ Returns a refund for the refund payment.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
+api_instance = billforward.RefundsApi()
 payment_id = 'payment_id_example' # str | ID of the Payment.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -273,12 +273,12 @@ Returns a refund for the refund payment.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
+api_instance = billforward.RefundsApi()
 invoice_id = 'invoice_id_example' # str | ID of the Invoice.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -322,12 +322,12 @@ Retrieves refunds in CSV format.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
+api_instance = billforward.RefundsApi()
 completed_start = 'completed_start_example' # str | The UTC DateTime specifying the start of the interval within which refunds were completed.
 completed_end = 'completed_end_example' # str | The UTC DateTime specifying the end of the interval within which refunds were completed.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -381,13 +381,13 @@ Update a refund
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.RefundsApi()
-refund = swagger_client.Refund() # Refund | The refund object to be update.
+api_instance = billforward.RefundsApi()
+refund = billforward.Refund() # Refund | The refund object to be update.
 
 try: 
     # Update a refund

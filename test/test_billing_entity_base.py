@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.billing_entity_base import BillingEntityBase
+import billforward
+from billforward.rest import ApiException
+from billforward.models.billing_entity_base import BillingEntityBase
 
 
 class TestBillingEntityBase(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBillingEntityBase(unittest.TestCase):
         """
         Test BillingEntityBase
         """
-        model = swagger_client.models.billing_entity_base.BillingEntityBase()
+        model = billforward.models.billing_entity_base.BillingEntityBase()
 
 
 if __name__ == '__main__':

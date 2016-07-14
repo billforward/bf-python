@@ -1,4 +1,4 @@
-# swagger_client.PricingcalculatorApi
+# billforward.PricingcalculatorApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -19,13 +19,13 @@ Calculates the price of a subscription's upgrading/downgrading to a new pricing 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcalculatorApi()
-ammendment_price_request = swagger_client.BillingEntityBase() # BillingEntityBase | An amendment pricing request
+api_instance = billforward.PricingcalculatorApi()
+ammendment_price_request = billforward.BillingEntityBase() # BillingEntityBase | An amendment pricing request
 
 try: 
     # Calculates the price of a subscription's upgrading/downgrading to a new pricing component value.
@@ -66,13 +66,13 @@ Calculates the price of a subscription to a rate plan, at specified values of pr
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcalculatorApi()
-coupon_instance_initialisation_request = swagger_client.BillingEntityBase() # BillingEntityBase | A coupon instance initialisation request
+api_instance = billforward.PricingcalculatorApi()
+coupon_instance_initialisation_request = billforward.BillingEntityBase() # BillingEntityBase | A coupon instance initialisation request
 
 try: 
     # Calculates the price of a subscription to a rate plan, at specified values of pricing component values, and with the specified coupon applied.
@@ -113,13 +113,13 @@ Calculates the price of a subscription to a rate plan, at specified values of pr
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcalculatorApi()
-price_request = swagger_client.BillingEntityBase() # BillingEntityBase | A price request
+api_instance = billforward.PricingcalculatorApi()
+price_request = billforward.BillingEntityBase() # BillingEntityBase | A price request
 
 try: 
     # Calculates the price of a subscription to a rate plan, at specified values of pricing component values.

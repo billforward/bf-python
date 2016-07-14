@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.revive_subscription_request import ReviveSubscriptionRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.revive_subscription_request import ReviveSubscriptionRequest
 
 
 class TestReviveSubscriptionRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestReviveSubscriptionRequest(unittest.TestCase):
         """
         Test ReviveSubscriptionRequest
         """
-        model = swagger_client.models.revive_subscription_request.ReviveSubscriptionRequest()
+        model = billforward.models.revive_subscription_request.ReviveSubscriptionRequest()
 
 
 if __name__ == '__main__':

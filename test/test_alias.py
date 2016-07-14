@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.alias import Alias
+import billforward
+from billforward.rest import ApiException
+from billforward.models.alias import Alias
 
 
 class TestAlias(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAlias(unittest.TestCase):
         """
         Test Alias
         """
-        model = swagger_client.models.alias.Alias()
+        model = billforward.models.alias.Alias()
 
 
 if __name__ == '__main__':

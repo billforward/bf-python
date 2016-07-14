@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.cass_churn_result_paged_metadata import CassChurnResultPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.cass_churn_result_paged_metadata import CassChurnResultPagedMetadata
 
 
 class TestCassChurnResultPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCassChurnResultPagedMetadata(unittest.TestCase):
         """
         Test CassChurnResultPagedMetadata
         """
-        model = swagger_client.models.cass_churn_result_paged_metadata.CassChurnResultPagedMetadata()
+        model = billforward.models.cass_churn_result_paged_metadata.CassChurnResultPagedMetadata()
 
 
 if __name__ == '__main__':

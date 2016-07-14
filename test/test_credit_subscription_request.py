@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.credit_subscription_request import CreditSubscriptionRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.credit_subscription_request import CreditSubscriptionRequest
 
 
 class TestCreditSubscriptionRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCreditSubscriptionRequest(unittest.TestCase):
         """
         Test CreditSubscriptionRequest
         """
-        model = swagger_client.models.credit_subscription_request.CreditSubscriptionRequest()
+        model = billforward.models.credit_subscription_request.CreditSubscriptionRequest()
 
 
 if __name__ == '__main__':

@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.paymentmethodsubscriptionlinks_api import PaymentmethodsubscriptionlinksApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.paymentmethodsubscriptionlinks_api import PaymentmethodsubscriptionlinksApi
 
 
 class TestPaymentmethodsubscriptionlinksApi(unittest.TestCase):
     """ PaymentmethodsubscriptionlinksApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.paymentmethodsubscriptionlinks_api.PaymentmethodsubscriptionlinksApi()
+        self.api = billforward.apis.paymentmethodsubscriptionlinks_api.PaymentmethodsubscriptionlinksApi()
 
     def tearDown(self):
         pass

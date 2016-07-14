@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.usage_rounding_strategy_paged_metadata import UsageRoundingStrategyPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.usage_rounding_strategy_paged_metadata import UsageRoundingStrategyPagedMetadata
 
 
 class TestUsageRoundingStrategyPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestUsageRoundingStrategyPagedMetadata(unittest.TestCase):
         """
         Test UsageRoundingStrategyPagedMetadata
         """
-        model = swagger_client.models.usage_rounding_strategy_paged_metadata.UsageRoundingStrategyPagedMetadata()
+        model = billforward.models.usage_rounding_strategy_paged_metadata.UsageRoundingStrategyPagedMetadata()
 
 
 if __name__ == '__main__':

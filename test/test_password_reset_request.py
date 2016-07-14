@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.password_reset_request import PasswordResetRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.password_reset_request import PasswordResetRequest
 
 
 class TestPasswordResetRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPasswordResetRequest(unittest.TestCase):
         """
         Test PasswordResetRequest
         """
-        model = swagger_client.models.password_reset_request.PasswordResetRequest()
+        model = billforward.models.password_reset_request.PasswordResetRequest()
 
 
 if __name__ == '__main__':

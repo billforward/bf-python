@@ -1,4 +1,4 @@
-# swagger_client.SearchApi
+# billforward.SearchApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -17,12 +17,12 @@ Returns the results of the global search specified by the query-string.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SearchApi()
+api_instance = billforward.SearchApi()
 query_string = 'query_string_example' # str | The query string used to search.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 types = ['types_example'] # list[str] | A list of entities which will be checked when searching (optional)

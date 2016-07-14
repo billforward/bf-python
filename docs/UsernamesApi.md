@@ -1,4 +1,4 @@
-# swagger_client.UsernamesApi
+# billforward.UsernamesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -17,13 +17,13 @@ Create a username.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.UsernamesApi()
-username = swagger_client.Username() # Username | The username object to be created.
+api_instance = billforward.UsernamesApi()
+username = billforward.Username() # Username | The username object to be created.
 
 try: 
     # Create a username.

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.auth_capture_request import AuthCaptureRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.auth_capture_request import AuthCaptureRequest
 
 
 class TestAuthCaptureRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestAuthCaptureRequest(unittest.TestCase):
         """
         Test AuthCaptureRequest
         """
-        model = swagger_client.models.auth_capture_request.AuthCaptureRequest()
+        model = billforward.models.auth_capture_request.AuthCaptureRequest()
 
 
 if __name__ == '__main__':

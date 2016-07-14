@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.migration_request import MigrationRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.migration_request import MigrationRequest
 
 
 class TestMigrationRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestMigrationRequest(unittest.TestCase):
         """
         Test MigrationRequest
         """
-        model = swagger_client.models.migration_request.MigrationRequest()
+        model = billforward.models.migration_request.MigrationRequest()
 
 
 if __name__ == '__main__':

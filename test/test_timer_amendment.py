@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.timer_amendment import TimerAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.timer_amendment import TimerAmendment
 
 
 class TestTimerAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTimerAmendment(unittest.TestCase):
         """
         Test TimerAmendment
         """
-        model = swagger_client.models.timer_amendment.TimerAmendment()
+        model = billforward.models.timer_amendment.TimerAmendment()
 
 
 if __name__ == '__main__':

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.braintree_auth_capture_request import BraintreeAuthCaptureRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.braintree_auth_capture_request import BraintreeAuthCaptureRequest
 
 
 class TestBraintreeAuthCaptureRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestBraintreeAuthCaptureRequest(unittest.TestCase):
         """
         Test BraintreeAuthCaptureRequest
         """
-        model = swagger_client.models.braintree_auth_capture_request.BraintreeAuthCaptureRequest()
+        model = billforward.models.braintree_auth_capture_request.BraintreeAuthCaptureRequest()
 
 
 if __name__ == '__main__':

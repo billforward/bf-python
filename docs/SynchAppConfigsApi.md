@@ -1,4 +1,4 @@
-# swagger_client.SynchAppConfigsApi
+# billforward.SynchAppConfigsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -20,13 +20,13 @@ Create a synch app configuration.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchAppConfigsApi()
-synch_app_config = swagger_client.MutableBillingEntity() # MutableBillingEntity | The data synch app config object to be created.
+api_instance = billforward.SynchAppConfigsApi()
+synch_app_config = billforward.MutableBillingEntity() # MutableBillingEntity | The data synch app config object to be created.
 
 try: 
     # Create a synch app configuration.
@@ -67,12 +67,12 @@ Returns a single config, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchAppConfigsApi()
+api_instance = billforward.SynchAppConfigsApi()
 synch_app_configs_id = 'synch_app_configs_id_example' # str | ID of the Synch App Configuration.
 organizations = ['organizations_example'] # list[str] | A list of organization -IDs used to restrict the scope of API calls. (optional)
 
@@ -116,12 +116,12 @@ Returns a collection configurations, specified by the platform parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchAppConfigsApi()
+api_instance = billforward.SynchAppConfigsApi()
 platform = 'platform_example' # str | The type of the synch app configuration.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -165,13 +165,13 @@ Update a synch app configuration.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SynchAppConfigsApi()
-synch_app_config = swagger_client.MutableBillingEntity() # MutableBillingEntity | The synch app configuration object to be updated.
+api_instance = billforward.SynchAppConfigsApi()
+synch_app_config = billforward.MutableBillingEntity() # MutableBillingEntity | The synch app configuration object to be updated.
 
 try: 
     # Update a synch app configuration.

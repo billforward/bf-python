@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.dunning_line_paged_metadata import DunningLinePagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.dunning_line_paged_metadata import DunningLinePagedMetadata
 
 
 class TestDunningLinePagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestDunningLinePagedMetadata(unittest.TestCase):
         """
         Test DunningLinePagedMetadata
         """
-        model = swagger_client.models.dunning_line_paged_metadata.DunningLinePagedMetadata()
+        model = billforward.models.dunning_line_paged_metadata.DunningLinePagedMetadata()
 
 
 if __name__ == '__main__':

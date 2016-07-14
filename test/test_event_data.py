@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.event_data import EventData
+import billforward
+from billforward.rest import ApiException
+from billforward.models.event_data import EventData
 
 
 class TestEventData(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestEventData(unittest.TestCase):
         """
         Test EventData
         """
-        model = swagger_client.models.event_data.EventData()
+        model = billforward.models.event_data.EventData()
 
 
 if __name__ == '__main__':

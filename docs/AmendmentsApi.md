@@ -1,4 +1,4 @@
-# swagger_client.AmendmentsApi
+# billforward.AmendmentsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -27,13 +27,13 @@ Create an amendment.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
-amendment = swagger_client.Amendment() # Amendment | The amendment object to be created.
+api_instance = billforward.AmendmentsApi()
+amendment = billforward.Amendment() # Amendment | The amendment object to be created.
 
 try: 
     # Create an amendment.
@@ -74,12 +74,12 @@ Returns a collection of all amendments. By default 10 values are returned. Recor
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
 records = 10 # int | The maximum number of amendments to return. (optional) (default to 10)
@@ -135,12 +135,12 @@ Returns a single amendment, specified by the amendment-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 amendment_id = 'amendment_id_example' # str | The unique string-ID of the amendment.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -184,12 +184,12 @@ Returns a collection of amendments, specified by the state parameter. By default
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 state = 'state_example' # str | The current state of the amendment, either pending, succeeded, failed or discarded
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
@@ -241,12 +241,12 @@ Returns a collection of amendments, specified by the subscription-ID parameter. 
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 subscription_id = 'subscription_id_example' # str | ID of the subscription
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
@@ -298,12 +298,12 @@ No authorization required
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 query_string = 'query_string_example' # str | The query string used to search.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The starting index of the search results. (optional) (default to 0)
@@ -355,12 +355,12 @@ Returns a collection of amendment objects with an actioning-time within the peri
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -414,12 +414,12 @@ Returns a collection of amendment objects with created times within the period s
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -473,12 +473,12 @@ Returns a collection of amendment objects with updated times within the period s
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 lower_threshold = 'lower_threshold_example' # str | The UTC DateTime specifying the start of the result period.
 upper_threshold = 'upper_threshold_example' # str | The UTC DateTime specifying the end of the result period.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
@@ -532,12 +532,12 @@ Retires the amendment specified by the amendment-ID parameter. Retiring a amendm
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
+api_instance = billforward.AmendmentsApi()
 amendment_id = 'amendment_id_example' # str | ID of the amendment.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 
@@ -581,13 +581,13 @@ Update an amendment.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.AmendmentsApi()
-amendment = swagger_client.Amendment() # Amendment | The amendment object to be updated.
+api_instance = billforward.AmendmentsApi()
+amendment = billforward.Amendment() # Amendment | The amendment object to be updated.
 
 try: 
     # Update an amendment.

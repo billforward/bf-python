@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.pricing_component_value_change_amendment import PricingComponentValueChangeAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.pricing_component_value_change_amendment import PricingComponentValueChangeAmendment
 
 
 class TestPricingComponentValueChangeAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestPricingComponentValueChangeAmendment(unittest.TestCase):
         """
         Test PricingComponentValueChangeAmendment
         """
-        model = swagger_client.models.pricing_component_value_change_amendment.PricingComponentValueChangeAmendment()
+        model = billforward.models.pricing_component_value_change_amendment.PricingComponentValueChangeAmendment()
 
 
 if __name__ == '__main__':

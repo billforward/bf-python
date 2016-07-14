@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.tiered_pricing_component import TieredPricingComponent
+import billforward
+from billforward.rest import ApiException
+from billforward.models.tiered_pricing_component import TieredPricingComponent
 
 
 class TestTieredPricingComponent(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTieredPricingComponent(unittest.TestCase):
         """
         Test TieredPricingComponent
         """
-        model = swagger_client.models.tiered_pricing_component.TieredPricingComponent()
+        model = billforward.models.tiered_pricing_component.TieredPricingComponent()
 
 
 if __name__ == '__main__':

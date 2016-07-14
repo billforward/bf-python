@@ -27,16 +27,16 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.apis.fixedterms_api import FixedtermsApi
+import billforward
+from billforward.rest import ApiException
+from billforward.apis.fixedterms_api import FixedtermsApi
 
 
 class TestFixedtermsApi(unittest.TestCase):
     """ FixedtermsApi unit test stubs """
 
     def setUp(self):
-        self.api = swagger_client.apis.fixedterms_api.FixedtermsApi()
+        self.api = billforward.apis.fixedterms_api.FixedtermsApi()
 
     def tearDown(self):
         pass

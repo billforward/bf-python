@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.data_synchronization_job_paged_metadata import DataSynchronizationJobPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.data_synchronization_job_paged_metadata import DataSynchronizationJobPagedMetadata
 
 
 class TestDataSynchronizationJobPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestDataSynchronizationJobPagedMetadata(unittest.TestCase):
         """
         Test DataSynchronizationJobPagedMetadata
         """
-        model = swagger_client.models.data_synchronization_job_paged_metadata.DataSynchronizationJobPagedMetadata()
+        model = billforward.models.data_synchronization_job_paged_metadata.DataSynchronizationJobPagedMetadata()
 
 
 if __name__ == '__main__':

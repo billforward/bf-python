@@ -1,4 +1,4 @@
-# swagger_client.FixedtermsApi
+# billforward.FixedtermsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -17,13 +17,13 @@ Update
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.FixedtermsApi()
-payment_method = swagger_client.FixedTerm() # FixedTerm | The payment-method object to be updated.
+api_instance = billforward.FixedtermsApi()
+payment_method = billforward.FixedTerm() # FixedTerm | The payment-method object to be updated.
 
 try: 
     # Update

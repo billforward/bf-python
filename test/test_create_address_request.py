@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.create_address_request import CreateAddressRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.create_address_request import CreateAddressRequest
 
 
 class TestCreateAddressRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestCreateAddressRequest(unittest.TestCase):
         """
         Test CreateAddressRequest
         """
-        model = swagger_client.models.create_address_request.CreateAddressRequest()
+        model = billforward.models.create_address_request.CreateAddressRequest()
 
 
 if __name__ == '__main__':

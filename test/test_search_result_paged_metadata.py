@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.search_result_paged_metadata import SearchResultPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.search_result_paged_metadata import SearchResultPagedMetadata
 
 
 class TestSearchResultPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestSearchResultPagedMetadata(unittest.TestCase):
         """
         Test SearchResultPagedMetadata
         """
-        model = swagger_client.models.search_result_paged_metadata.SearchResultPagedMetadata()
+        model = billforward.models.search_result_paged_metadata.SearchResultPagedMetadata()
 
 
 if __name__ == '__main__':

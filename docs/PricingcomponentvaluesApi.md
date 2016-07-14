@@ -1,4 +1,4 @@
-# swagger_client.PricingcomponentvaluesApi
+# billforward.PricingcomponentvaluesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -21,13 +21,13 @@ Create a pricing-component-value.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluesApi()
-pricing_component_value = swagger_client.PricingComponentValue() # PricingComponentValue | The pricing-component-value object to be updated.
+api_instance = billforward.PricingcomponentvaluesApi()
+pricing_component_value = billforward.PricingComponentValue() # PricingComponentValue | The pricing-component-value object to be updated.
 
 try: 
     # Create a pricing-component-value.
@@ -68,12 +68,12 @@ Returns a collection of pricing-component-values.By default 10 values are return
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluesApi()
+api_instance = billforward.PricingcomponentvaluesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-value to return. (optional) (default to 0)
 records = 10 # int | The maximum number of pricing-component-values to return. (optional) (default to 10)
@@ -125,12 +125,12 @@ Returns a collection of pricing-component-values, specified by the pricing-compo
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluesApi()
+api_instance = billforward.PricingcomponentvaluesApi()
 pricing_component_id = 'pricing_component_id_example' # str | The string ID of the pricing-component-value.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-value to return. (optional) (default to 0)
@@ -184,12 +184,12 @@ Returns a collection of pricing-component-values, specified by the subscription-
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluesApi()
+api_instance = billforward.PricingcomponentvaluesApi()
 subscription_id = 'subscription_id_example' # str | The string subscription-ID of the pricing-component-value.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first pricing-component-value to return. (optional) (default to 0)
@@ -243,13 +243,13 @@ Update a pricing-component-value.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PricingcomponentvaluesApi()
-pricing_component_value = swagger_client.PricingComponentValue() # PricingComponentValue | The pricing-component-value object to be updated.
+api_instance = billforward.PricingcomponentvaluesApi()
+pricing_component_value = billforward.PricingComponentValue() # PricingComponentValue | The pricing-component-value object to be updated.
 
 try: 
     # Update a pricing-component-value.

@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.trust_commerce_token_paged_metadata import TrustCommerceTokenPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.trust_commerce_token_paged_metadata import TrustCommerceTokenPagedMetadata
 
 
 class TestTrustCommerceTokenPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestTrustCommerceTokenPagedMetadata(unittest.TestCase):
         """
         Test TrustCommerceTokenPagedMetadata
         """
-        model = swagger_client.models.trust_commerce_token_paged_metadata.TrustCommerceTokenPagedMetadata()
+        model = billforward.models.trust_commerce_token_paged_metadata.TrustCommerceTokenPagedMetadata()
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# swagger_client.PeriodsApi
+# billforward.PeriodsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -18,12 +18,12 @@ Retrieve by subscription)
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PeriodsApi()
+api_instance = billforward.PeriodsApi()
 subscription_id = 'subscription_id_example' # str | The subscriptionID of the usage.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
@@ -75,12 +75,12 @@ Get all periods
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PeriodsApi()
+api_instance = billforward.PeriodsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first amendment to return. (optional) (default to 0)
 records = 8766 # int | The maximum number of amendments to return. (optional) (default to 8766)

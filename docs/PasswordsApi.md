@@ -1,4 +1,4 @@
-# swagger_client.PasswordsApi
+# billforward.PasswordsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -17,13 +17,13 @@ Create
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PasswordsApi()
-password = swagger_client.Password() # Password | The password object to be created.
+api_instance = billforward.PasswordsApi()
+password = billforward.Password() # Password | The password object to be created.
 
 try: 
     # Create

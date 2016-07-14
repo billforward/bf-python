@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.webhook_paged_metadata import WebhookPagedMetadata
+import billforward
+from billforward.rest import ApiException
+from billforward.models.webhook_paged_metadata import WebhookPagedMetadata
 
 
 class TestWebhookPagedMetadata(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestWebhookPagedMetadata(unittest.TestCase):
         """
         Test WebhookPagedMetadata
         """
-        model = swagger_client.models.webhook_paged_metadata.WebhookPagedMetadata()
+        model = billforward.models.webhook_paged_metadata.WebhookPagedMetadata()
 
 
 if __name__ == '__main__':

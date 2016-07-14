@@ -1,4 +1,4 @@
-# swagger_client.DunninglinesApi
+# billforward.DunninglinesApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a dunning-line.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DunninglinesApi()
-dunning_line = swagger_client.DunningLine() # DunningLine | The Dunning-Line object to be updated.
+api_instance = billforward.DunninglinesApi()
+dunning_line = billforward.DunningLine() # DunningLine | The Dunning-Line object to be updated.
 
 try: 
     # Create a dunning-line.
@@ -69,12 +69,12 @@ Returns a collection of all dunning-lines. By default 10 values are returned. Re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DunninglinesApi()
+api_instance = billforward.DunninglinesApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
 records = 10 # int | The maximum number of invoices to return. (optional) (default to 10)
@@ -126,12 +126,12 @@ Returns a collection of dunning-lines specified by the index parameter. By defau
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DunninglinesApi()
+api_instance = billforward.DunninglinesApi()
 index = 56 # int | The attempt index of the dunning-line.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first invoice to return. (optional) (default to 0)
@@ -185,12 +185,12 @@ Returns a single dunning-line, specified by the dunning-line-ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DunninglinesApi()
+api_instance = billforward.DunninglinesApi()
 dunning_line_id = 'dunning_line_id_example' # str | ID of the dunning-line.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -234,12 +234,12 @@ Retires the specified dunning-line.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DunninglinesApi()
+api_instance = billforward.DunninglinesApi()
 dunning_line_id = 'dunning_line_id_example' # str | ID of the dunning-line.
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls.
 
@@ -283,13 +283,13 @@ Update a dunning-line.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.DunninglinesApi()
-dunning_line = swagger_client.DunningLine() # DunningLine | The Dunning-Line object to be updated.
+api_instance = billforward.DunninglinesApi()
+dunning_line = billforward.DunningLine() # DunningLine | The Dunning-Line object to be updated.
 
 try: 
     # Update a dunning-line.

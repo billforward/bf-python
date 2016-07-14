@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.update_address_request import UpdateAddressRequest
+import billforward
+from billforward.rest import ApiException
+from billforward.models.update_address_request import UpdateAddressRequest
 
 
 class TestUpdateAddressRequest(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestUpdateAddressRequest(unittest.TestCase):
         """
         Test UpdateAddressRequest
         """
-        model = swagger_client.models.update_address_request.UpdateAddressRequest()
+        model = billforward.models.update_address_request.UpdateAddressRequest()
 
 
 if __name__ == '__main__':

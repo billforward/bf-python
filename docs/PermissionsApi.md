@@ -1,4 +1,4 @@
-# swagger_client.PermissionsApi
+# billforward.PermissionsApi
 
 All URIs are relative to *https://localhost:8080/RestAPI*
 
@@ -22,13 +22,13 @@ Create a new permission.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PermissionsApi()
-permission_request = swagger_client.BillingEntityBase() # BillingEntityBase | 
+api_instance = billforward.PermissionsApi()
+permission_request = billforward.BillingEntityBase() # BillingEntityBase | 
 
 try: 
     # Create a new permission.
@@ -69,12 +69,12 @@ Retrieves a collection of all permissions. By default 10 values are returned. Re
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PermissionsApi()
+api_instance = billforward.PermissionsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
 records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
@@ -126,12 +126,12 @@ Retrieves all the available actions for the specified resource.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PermissionsApi()
+api_instance = billforward.PermissionsApi()
 resource = 'resource_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
@@ -175,12 +175,12 @@ Retrieves all available resource.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PermissionsApi()
+api_instance = billforward.PermissionsApi()
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
 try: 
@@ -222,12 +222,12 @@ Retrieves a single permission, specified by the ID parameter.
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PermissionsApi()
+api_instance = billforward.PermissionsApi()
 permission_id = 'permission_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
@@ -273,12 +273,12 @@ Revokes a permission
 ### Example 
 ```python
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import billforward
+from billforward.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.PermissionsApi()
+api_instance = billforward.PermissionsApi()
 permission_id = 'permission_id_example' # str | 
 organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 

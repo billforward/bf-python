@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.invoice_next_execution_attempt_amendment import InvoiceNextExecutionAttemptAmendment
+import billforward
+from billforward.rest import ApiException
+from billforward.models.invoice_next_execution_attempt_amendment import InvoiceNextExecutionAttemptAmendment
 
 
 class TestInvoiceNextExecutionAttemptAmendment(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestInvoiceNextExecutionAttemptAmendment(unittest.TestCase):
         """
         Test InvoiceNextExecutionAttemptAmendment
         """
-        model = swagger_client.models.invoice_next_execution_attempt_amendment.InvoiceNextExecutionAttemptAmendment()
+        model = billforward.models.invoice_next_execution_attempt_amendment.InvoiceNextExecutionAttemptAmendment()
 
 
 if __name__ == '__main__':

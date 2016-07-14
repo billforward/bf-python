@@ -27,9 +27,9 @@ import os
 import sys
 import unittest
 
-import swagger_client
-from swagger_client.rest import ApiException
-from swagger_client.models.mutable_billing_entity import MutableBillingEntity
+import billforward
+from billforward.rest import ApiException
+from billforward.models.mutable_billing_entity import MutableBillingEntity
 
 
 class TestMutableBillingEntity(unittest.TestCase):
@@ -45,7 +45,7 @@ class TestMutableBillingEntity(unittest.TestCase):
         """
         Test MutableBillingEntity
         """
-        model = swagger_client.models.mutable_billing_entity.MutableBillingEntity()
+        model = billforward.models.mutable_billing_entity.MutableBillingEntity()
 
 
 if __name__ == '__main__':
