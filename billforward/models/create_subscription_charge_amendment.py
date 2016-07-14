@@ -57,7 +57,6 @@ class CreateSubscriptionChargeAmendment(object):
             'description': 'str',
             'amount': 'float',
             'discount': 'float',
-            'type': 'str',
             'invoicing_type': 'str',
             'tax_status': 'str',
             'subscription_charge': 'SubscriptionCharge',
