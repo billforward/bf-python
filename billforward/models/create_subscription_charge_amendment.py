@@ -499,35 +499,6 @@ class CreateSubscriptionChargeAmendment(object):
         self._discount = discount
 
     @property
-    def type(self):
-        """
-        Gets the type of this CreateSubscriptionChargeAmendment.
-        { \"description\" : \"\", \"default\" : \"Manual\",  \"verbs\":[] }
-
-        :return: The type of this CreateSubscriptionChargeAmendment.
-        :rtype: str
-        """
-        return self._type
-
-    @type.setter
-    def type(self, type):
-        """
-        Sets the type of this CreateSubscriptionChargeAmendment.
-        { \"description\" : \"\", \"default\" : \"Manual\",  \"verbs\":[] }
-
-        :param type: The type of this CreateSubscriptionChargeAmendment.
-        :type: str
-        """
-        allowed_values = ["Setup", "Upgrade", "Manual", "ProductRatePlanMigration", "Arrears", "Advance", "Coupon", "Usage", "PricingComponent"]
-        if type not in allowed_values:
-            raise ValueError(
-                "Invalid value for `type` ({0}), must be one of {1}"
-                .format(type, allowed_values)
-            )
-
-        self._type = type
-
-    @property
     def invoicing_type(self):
         """
         Gets the invoicing_type of this CreateSubscriptionChargeAmendment.
