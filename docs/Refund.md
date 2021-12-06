@@ -36,8 +36,8 @@ Name | Type | Description | Notes
 **created_by** | **str** |  | [optional] 
 **type** | **str** |  | [optional] 
 **state** | **str** |  | [optional] 
-**refunded_value** | **float** |  | [optional] 
 **refunded_payment** | [**Payment**](Payment.md) |  | [optional] 
+**refunded_value** | **float** |  | [optional] 
 **account** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -24,8 +24,8 @@ Name | Type | Description | Notes
 **expires_at** | **datetime** |  | [optional] 
 **migrations** | [**list[Migration]**](Migration.md) |  | [optional] 
 **gateway_type** | **str** |  | [optional] 
-**environment_type** | **str** |  | [optional] 
 **production** | **bool** |  | [optional] 
+**environment_type** | **str** |  | [optional] 
 **apilogin_id** | **str** |  | [optional] 
 **apikey** | **str** |  | [optional] 
 

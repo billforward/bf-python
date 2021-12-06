@@ -49,8 +49,8 @@ class APIConfiguration(object):
         'expires_at': 'datetime',
         'migrations': 'list[Migration]',
         'gateway_type': 'str',
-        'environment_type': 'str',
         'production': 'bool',
+        'environment_type': 'str',
         'apilogin_id': 'str',
         'apikey': 'str'
     }
@@ -77,13 +77,13 @@ class APIConfiguration(object):
         'expires_at': 'expiresAt',
         'migrations': 'migrations',
         'gateway_type': 'gatewayType',
-        'environment_type': 'environmentType',
         'production': 'production',
+        'environment_type': 'environmentType',
         'apilogin_id': 'apiloginID',
         'apikey': 'apikey'
     }
 
-    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, type=None, environment=None, merchant_id=None, public_key=None, private_key=None, endpoint=None, client_id=None, client_secret=None, gateway_account_id=None, refresh_token=None, deleted=None, api_login_id=None, transaction_key=None, expires_at=None, migrations=None, gateway_type=None, environment_type=None, production=None, apilogin_id=None, apikey=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, type=None, environment=None, merchant_id=None, public_key=None, private_key=None, endpoint=None, client_id=None, client_secret=None, gateway_account_id=None, refresh_token=None, deleted=None, api_login_id=None, transaction_key=None, expires_at=None, migrations=None, gateway_type=None, production=None, environment_type=None, apilogin_id=None, apikey=None):  # noqa: E501
         """APIConfiguration - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -106,8 +106,8 @@ class APIConfiguration(object):
         self._expires_at = None
         self._migrations = None
         self._gateway_type = None
-        self._environment_type = None
         self._production = None
+        self._environment_type = None
         self._apilogin_id = None
         self._apikey = None
         self.discriminator = None
@@ -152,10 +152,10 @@ class APIConfiguration(object):
             self.migrations = migrations
         if gateway_type is not None:
             self.gateway_type = gateway_type
-        if environment_type is not None:
-            self.environment_type = environment_type
         if production is not None:
             self.production = production
+        if environment_type is not None:
+            self.environment_type = environment_type
         if apilogin_id is not None:
             self.apilogin_id = apilogin_id
         if apikey is not None:
@@ -623,6 +623,27 @@ class APIConfiguration(object):
         self._gateway_type = gateway_type
 
     @property
+    def production(self):
+        """Gets the production of this APIConfiguration.  # noqa: E501
+
+
+        :return: The production of this APIConfiguration.  # noqa: E501
+        :rtype: bool
+        """
+        return self._production
+
+    @production.setter
+    def production(self, production):
+        """Sets the production of this APIConfiguration.
+
+
+        :param production: The production of this APIConfiguration.  # noqa: E501
+        :type: bool
+        """
+
+        self._production = production
+
+    @property
     def environment_type(self):
         """Gets the environment_type of this APIConfiguration.  # noqa: E501
 
@@ -648,27 +669,6 @@ class APIConfiguration(object):
             )
 
         self._environment_type = environment_type
-
-    @property
-    def production(self):
-        """Gets the production of this APIConfiguration.  # noqa: E501
-
-
-        :return: The production of this APIConfiguration.  # noqa: E501
-        :rtype: bool
-        """
-        return self._production
-
-    @production.setter
-    def production(self, production):
-        """Sets the production of this APIConfiguration.
-
-
-        :param production: The production of this APIConfiguration.  # noqa: E501
-        :type: bool
-        """
-
-        self._production = production
 
     @property
     def apilogin_id(self):

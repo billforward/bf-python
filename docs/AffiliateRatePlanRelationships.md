@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **product_rate_plan_id** | **str** |  | [optional] 
 **start_date** | **datetime** |  | [optional] 
 **end_date** | **datetime** |  | [optional] 
-**interval** | [**IntervalDate**](IntervalDate.md) |  | [optional] 
 **account_id** | **str** |  | [optional] 
+**interval** | [**IntervalDate**](IntervalDate.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -40,8 +40,8 @@ class Amendment(object):
         'actioned_time': 'datetime',
         'state': 'str',
         'deleted': 'bool',
-        'amendment_type': 'str',
         'discardable_subsystem_object': 'IDiscardable',
+        'amendment_type': 'str',
         'type': 'str'
     }
 
@@ -58,8 +58,8 @@ class Amendment(object):
         'actioned_time': 'actionedTime',
         'state': 'state',
         'deleted': 'deleted',
-        'amendment_type': 'amendmentType',
         'discardable_subsystem_object': 'discardableSubsystemObject',
+        'amendment_type': 'amendmentType',
         'type': '@type'
     }
 
@@ -81,7 +81,7 @@ class Amendment(object):
 'ServiceEndAmendment': 'ServiceEndAmendment',
 'TimerAmendment': 'TimerAmendment'    }
 
-    def __init__(self, created=None, changed_by=None, updated=None, dummy_field=None, id=None, organization_id=None, subscription_id=None, description=None, actioning_time=None, actioned_time=None, state=None, deleted=None, amendment_type=None, discardable_subsystem_object=None, type=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, dummy_field=None, id=None, organization_id=None, subscription_id=None, description=None, actioning_time=None, actioned_time=None, state=None, deleted=None, discardable_subsystem_object=None, amendment_type=None, type=None):  # noqa: E501
         """Amendment - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -95,8 +95,8 @@ class Amendment(object):
         self._actioned_time = None
         self._state = None
         self._deleted = None
-        self._amendment_type = None
         self._discardable_subsystem_object = None
+        self._amendment_type = None
         self._type = None
         self.discriminator = '@type'
         if created is not None:
@@ -121,10 +121,10 @@ class Amendment(object):
             self.actioned_time = actioned_time
         self.state = state
         self.deleted = deleted
-        if amendment_type is not None:
-            self.amendment_type = amendment_type
         if discardable_subsystem_object is not None:
             self.discardable_subsystem_object = discardable_subsystem_object
+        if amendment_type is not None:
+            self.amendment_type = amendment_type
         self.type = type
 
     @property
@@ -390,6 +390,27 @@ class Amendment(object):
         self._deleted = deleted
 
     @property
+    def discardable_subsystem_object(self):
+        """Gets the discardable_subsystem_object of this Amendment.  # noqa: E501
+
+
+        :return: The discardable_subsystem_object of this Amendment.  # noqa: E501
+        :rtype: IDiscardable
+        """
+        return self._discardable_subsystem_object
+
+    @discardable_subsystem_object.setter
+    def discardable_subsystem_object(self, discardable_subsystem_object):
+        """Sets the discardable_subsystem_object of this Amendment.
+
+
+        :param discardable_subsystem_object: The discardable_subsystem_object of this Amendment.  # noqa: E501
+        :type: IDiscardable
+        """
+
+        self._discardable_subsystem_object = discardable_subsystem_object
+
+    @property
     def amendment_type(self):
         """Gets the amendment_type of this Amendment.  # noqa: E501
 
@@ -415,27 +436,6 @@ class Amendment(object):
             )
 
         self._amendment_type = amendment_type
-
-    @property
-    def discardable_subsystem_object(self):
-        """Gets the discardable_subsystem_object of this Amendment.  # noqa: E501
-
-
-        :return: The discardable_subsystem_object of this Amendment.  # noqa: E501
-        :rtype: IDiscardable
-        """
-        return self._discardable_subsystem_object
-
-    @discardable_subsystem_object.setter
-    def discardable_subsystem_object(self, discardable_subsystem_object):
-        """Sets the discardable_subsystem_object of this Amendment.
-
-
-        :param discardable_subsystem_object: The discardable_subsystem_object of this Amendment.  # noqa: E501
-        :type: IDiscardable
-        """
-
-        self._discardable_subsystem_object = discardable_subsystem_object
 
     @property
     def type(self):

@@ -396,7 +396,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_csv_report_revenue_attributions_raw**
-> get_csv_report_revenue_attributions_raw(organizations=organizations, date_discriminator=date_discriminator, recognition_start=recognition_start, recognition_end=recognition_end, date_interval_inclusivity=date_interval_inclusivity, date_time_format=date_time_format, date_granularity=date_granularity, boolean_format=boolean_format, monetary_amount_format=monetary_amount_format, meta_column_account=meta_column_account, meta_column_sub_child=meta_column_sub_child)
+> get_csv_report_revenue_attributions_raw(organizations=organizations, date_discriminator=date_discriminator, recognition_start=recognition_start, recognition_end=recognition_end, date_interval_inclusivity=date_interval_inclusivity, date_time_format=date_time_format, date_granularity=date_granularity, boolean_format=boolean_format, monetary_amount_format=monetary_amount_format, meta_column_account=meta_column_account, meta_column_sub_child=meta_column_sub_child, include_zero_value=include_zero_value)
 
 
 
@@ -422,9 +422,10 @@ boolean_format = 'TrueFalseLowercase' # str |  (optional) (default to TrueFalseL
 monetary_amount_format = 'NoCommasPeriod2DP' # str |  (optional) (default to NoCommasPeriod2DP)
 meta_column_account = ['meta_column_account_example'] # list[str] |  (optional)
 meta_column_sub_child = ['meta_column_sub_child_example'] # list[str] |  (optional)
+include_zero_value = true # bool |  (optional)
 
 try:
-    api_instance.get_csv_report_revenue_attributions_raw(organizations=organizations, date_discriminator=date_discriminator, recognition_start=recognition_start, recognition_end=recognition_end, date_interval_inclusivity=date_interval_inclusivity, date_time_format=date_time_format, date_granularity=date_granularity, boolean_format=boolean_format, monetary_amount_format=monetary_amount_format, meta_column_account=meta_column_account, meta_column_sub_child=meta_column_sub_child)
+    api_instance.get_csv_report_revenue_attributions_raw(organizations=organizations, date_discriminator=date_discriminator, recognition_start=recognition_start, recognition_end=recognition_end, date_interval_inclusivity=date_interval_inclusivity, date_time_format=date_time_format, date_granularity=date_granularity, boolean_format=boolean_format, monetary_amount_format=monetary_amount_format, meta_column_account=meta_column_account, meta_column_sub_child=meta_column_sub_child, include_zero_value=include_zero_value)
 except ApiException as e:
     print("Exception when calling ReportsApi->get_csv_report_revenue_attributions_raw: %s\n" % e)
 ```
@@ -444,6 +445,7 @@ Name | Type | Description  | Notes
  **monetary_amount_format** | **str**|  | [optional] [default to NoCommasPeriod2DP]
  **meta_column_account** | [**list[str]**](str.md)|  | [optional] 
  **meta_column_sub_child** | [**list[str]**](str.md)|  | [optional] 
+ **include_zero_value** | **bool**|  | [optional] 
 
 ### Return type
 

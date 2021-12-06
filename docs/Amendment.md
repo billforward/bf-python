@@ -15,8 +15,8 @@ Name | Type | Description | Notes
 **actioned_time** | **datetime** |  | [optional] 
 **state** | **str** |  | 
 **deleted** | **bool** |  | 
-**amendment_type** | **str** |  | [optional] 
 **discardable_subsystem_object** | [**IDiscardable**](IDiscardable.md) |  | [optional] 
+**amendment_type** | **str** |  | [optional] 
 **type** | **str** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

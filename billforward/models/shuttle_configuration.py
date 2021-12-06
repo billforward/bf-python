@@ -29,34 +29,55 @@ class ShuttleConfiguration(APIConfiguration):
                             and the value is json key in definition.
     """
     swagger_types = {
+        'percentage_for_other_payment_methods': 'float',
         'hosted_payment_config': 'HostedPaymentConfig',
-        'instance_key': 'str',
-        'percentage_for_other_payment_methods': 'float'
+        'instance_key': 'str'
     }
     if hasattr(APIConfiguration, "swagger_types"):
         swagger_types.update(APIConfiguration.swagger_types)
 
     attribute_map = {
+        'percentage_for_other_payment_methods': 'percentageForOtherPaymentMethods',
         'hosted_payment_config': 'hostedPaymentConfig',
-        'instance_key': 'instanceKey',
-        'percentage_for_other_payment_methods': 'percentageForOtherPaymentMethods'
+        'instance_key': 'instanceKey'
     }
     if hasattr(APIConfiguration, "attribute_map"):
         attribute_map.update(APIConfiguration.attribute_map)
 
-    def __init__(self, hosted_payment_config=None, instance_key=None, percentage_for_other_payment_methods=None, *args, **kwargs):  # noqa: E501
+    def __init__(self, percentage_for_other_payment_methods=None, hosted_payment_config=None, instance_key=None, *args, **kwargs):  # noqa: E501
         """ShuttleConfiguration - a model defined in Swagger"""  # noqa: E501
+        self._percentage_for_other_payment_methods = None
         self._hosted_payment_config = None
         self._instance_key = None
-        self._percentage_for_other_payment_methods = None
         self.discriminator = None
+        if percentage_for_other_payment_methods is not None:
+            self.percentage_for_other_payment_methods = percentage_for_other_payment_methods
         if hosted_payment_config is not None:
             self.hosted_payment_config = hosted_payment_config
         if instance_key is not None:
             self.instance_key = instance_key
-        if percentage_for_other_payment_methods is not None:
-            self.percentage_for_other_payment_methods = percentage_for_other_payment_methods
         APIConfiguration.__init__(self, *args, **kwargs)
+
+    @property
+    def percentage_for_other_payment_methods(self):
+        """Gets the percentage_for_other_payment_methods of this ShuttleConfiguration.  # noqa: E501
+
+
+        :return: The percentage_for_other_payment_methods of this ShuttleConfiguration.  # noqa: E501
+        :rtype: float
+        """
+        return self._percentage_for_other_payment_methods
+
+    @percentage_for_other_payment_methods.setter
+    def percentage_for_other_payment_methods(self, percentage_for_other_payment_methods):
+        """Sets the percentage_for_other_payment_methods of this ShuttleConfiguration.
+
+
+        :param percentage_for_other_payment_methods: The percentage_for_other_payment_methods of this ShuttleConfiguration.  # noqa: E501
+        :type: float
+        """
+
+        self._percentage_for_other_payment_methods = percentage_for_other_payment_methods
 
     @property
     def hosted_payment_config(self):
@@ -99,27 +120,6 @@ class ShuttleConfiguration(APIConfiguration):
         """
 
         self._instance_key = instance_key
-
-    @property
-    def percentage_for_other_payment_methods(self):
-        """Gets the percentage_for_other_payment_methods of this ShuttleConfiguration.  # noqa: E501
-
-
-        :return: The percentage_for_other_payment_methods of this ShuttleConfiguration.  # noqa: E501
-        :rtype: float
-        """
-        return self._percentage_for_other_payment_methods
-
-    @percentage_for_other_payment_methods.setter
-    def percentage_for_other_payment_methods(self, percentage_for_other_payment_methods):
-        """Sets the percentage_for_other_payment_methods of this ShuttleConfiguration.
-
-
-        :param percentage_for_other_payment_methods: The percentage_for_other_payment_methods of this ShuttleConfiguration.  # noqa: E501
-        :type: float
-        """
-
-        self._percentage_for_other_payment_methods = percentage_for_other_payment_methods
 
     def to_dict(self):
         """Returns the model properties as a dict"""

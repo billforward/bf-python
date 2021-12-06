@@ -46,9 +46,9 @@ class User(object):
         'timezone': 'UserTimezone',
         'flexcheck_user': 'bool',
         'two_fa': 'bool',
+        'email': 'str',
         'main_username': 'Username',
-        'active_usernames': 'list[str]',
-        'email': 'str'
+        'active_usernames': 'list[str]'
     }
 
     attribute_map = {
@@ -70,12 +70,12 @@ class User(object):
         'timezone': 'timezone',
         'flexcheck_user': 'flexcheckUser',
         'two_fa': 'twoFA',
+        'email': 'email',
         'main_username': 'mainUsername',
-        'active_usernames': 'activeUsernames',
-        'email': 'email'
+        'active_usernames': 'activeUsernames'
     }
 
-    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, password=None, username=None, open_id_identifier=None, password_reset_code=None, password_reset_attempts=None, password_reset_valid_till=None, last_successful_login=None, successful_logins=None, bf_admin=None, enabled=None, timezone=None, flexcheck_user=None, two_fa=None, main_username=None, active_usernames=None, email=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, password=None, username=None, open_id_identifier=None, password_reset_code=None, password_reset_attempts=None, password_reset_valid_till=None, last_successful_login=None, successful_logins=None, bf_admin=None, enabled=None, timezone=None, flexcheck_user=None, two_fa=None, email=None, main_username=None, active_usernames=None):  # noqa: E501
         """User - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -95,9 +95,9 @@ class User(object):
         self._timezone = None
         self._flexcheck_user = None
         self._two_fa = None
+        self._email = None
         self._main_username = None
         self._active_usernames = None
-        self._email = None
         self.discriminator = None
         if created is not None:
             self.created = created
@@ -131,12 +131,12 @@ class User(object):
         self.flexcheck_user = flexcheck_user
         if two_fa is not None:
             self.two_fa = two_fa
+        if email is not None:
+            self.email = email
         if main_username is not None:
             self.main_username = main_username
         if active_usernames is not None:
             self.active_usernames = active_usernames
-        if email is not None:
-            self.email = email
 
     @property
     def created(self):
@@ -525,6 +525,27 @@ class User(object):
         self._two_fa = two_fa
 
     @property
+    def email(self):
+        """Gets the email of this User.  # noqa: E501
+
+
+        :return: The email of this User.  # noqa: E501
+        :rtype: str
+        """
+        return self._email
+
+    @email.setter
+    def email(self, email):
+        """Sets the email of this User.
+
+
+        :param email: The email of this User.  # noqa: E501
+        :type: str
+        """
+
+        self._email = email
+
+    @property
     def main_username(self):
         """Gets the main_username of this User.  # noqa: E501
 
@@ -565,27 +586,6 @@ class User(object):
         """
 
         self._active_usernames = active_usernames
-
-    @property
-    def email(self):
-        """Gets the email of this User.  # noqa: E501
-
-
-        :return: The email of this User.  # noqa: E501
-        :rtype: str
-        """
-        return self._email
-
-    @email.setter
-    def email(self, email):
-        """Sets the email of this User.
-
-
-        :param email: The email of this User.  # noqa: E501
-        :type: str
-        """
-
-        self._email = email
 
     def to_dict(self):
         """Returns the model properties as a dict"""

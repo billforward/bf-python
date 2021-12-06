@@ -799,6 +799,7 @@ class ReportsApi(object):
         :param str monetary_amount_format:
         :param list[str] meta_column_account:
         :param list[str] meta_column_sub_child:
+        :param bool include_zero_value:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -830,12 +831,13 @@ class ReportsApi(object):
         :param str monetary_amount_format:
         :param list[str] meta_column_account:
         :param list[str] meta_column_sub_child:
+        :param bool include_zero_value:
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['organizations', 'date_discriminator', 'recognition_start', 'recognition_end', 'date_interval_inclusivity', 'date_time_format', 'date_granularity', 'boolean_format', 'monetary_amount_format', 'meta_column_account', 'meta_column_sub_child']  # noqa: E501
+        all_params = ['organizations', 'date_discriminator', 'recognition_start', 'recognition_end', 'date_interval_inclusivity', 'date_time_format', 'date_granularity', 'boolean_format', 'monetary_amount_format', 'meta_column_account', 'meta_column_sub_child', 'include_zero_value']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -881,6 +883,8 @@ class ReportsApi(object):
         if 'meta_column_sub_child' in params:
             query_params.append(('meta_column_sub_child[]', params['meta_column_sub_child']))  # noqa: E501
             collection_formats['meta_column_sub_child[]'] = 'multi'  # noqa: E501
+        if 'include_zero_value' in params:
+            query_params.append(('includeZeroValue', params['include_zero_value']))  # noqa: E501
 
         header_params = {}
 
