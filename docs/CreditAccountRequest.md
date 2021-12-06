@@ -3,13 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**created** | **datetime** | { \&quot;description\&quot; : \&quot;The UTC DateTime when the object was created.\&quot;, \&quot;verbs\&quot;:[] } | [optional] 
-**organization_id** | **str** | { \&quot;description\&quot; : \&quot;\&quot;, \&quot;verbs\&quot;:[] } | [optional] 
-**value** | **float** | { \&quot;description\&quot; : \&quot; Monetary value of the credit\&quot;, \&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;] } | 
-**currency** | **str** | { \&quot;description\&quot; : \&quot;Currency of the credit\&quot;, \&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;] } | 
-**invoice_id** | **str** | { \&quot;description\&quot; : \&quot;Reference an invoice\&quot;, \&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;] } | [optional] 
-**description** | **str** | { \&quot;description\&quot; : \&quot;\&quot;, \&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;] } | [optional] 
+**created** | **datetime** |  | [optional] 
+**organization_id** | **str** |  | [optional] 
+**value** | **float** |  | [optional] 
+**expires** | **datetime** |  | [optional] 
+**currency** | [**CreditNoteCurrency**](CreditNoteCurrency.md) |  | [optional] 
+**invoice_id** | **str** |  | [optional] 
+**description** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

@@ -1,0 +1,12 @@
+# PaymentRefundRequest
+
+## Properties
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**organization_id** | **str** |  | [optional] 
+**reason** | **str** |  | [optional] 
+**amount** | **float** |  | [optional] 
+**virtual_refund_gateway_types** | **list[str]** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

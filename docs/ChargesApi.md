@@ -1,244 +1,177 @@
 # billforward.ChargesApi
 
-All URIs are relative to *https://localhost:8080/RestAPI*
+All URIs are relative to *https://app.billforward.net/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_all_subscription_charges**](ChargesApi.md#get_all_subscription_charges) | **GET** /charges | Retrieves a collection of all charges. By default 10 values are returned. Records are returned in natural order.
-[**get_subscription_charge_by_account_id**](ChargesApi.md#get_subscription_charge_by_account_id) | **GET** /charges/account/{account-ID} | Retrieves a collection of charges, specified by the account-ID parameter. By default 10 values are returned. Records are returned in natural order.
-[**get_subscription_charge_by_id**](ChargesApi.md#get_subscription_charge_by_id) | **GET** /charges/{charge-id} | Retrieves a single charge, specified by the charge-id parameter.
-[**get_subscription_charge_by_state**](ChargesApi.md#get_subscription_charge_by_state) | **GET** /charges/state/{state} | Retrieves a collection of charges, specified by the state parameter. By default 10 values are returned. Records are returned in natural order.
-[**get_subscription_charge_by_version_id**](ChargesApi.md#get_subscription_charge_by_version_id) | **GET** /charges/version/{version-ID} | Retrieves a single charge, specified by the version-ID parameter.
-[**recalculate_subscription_charge**](ChargesApi.md#recalculate_subscription_charge) | **POST** /charges/{charge-ID}/recalculate | Recalculate a charge.
-[**void_subscription_charge**](ChargesApi.md#void_subscription_charge) | **DELETE** /charges/{charge-id} | Void the charge with the specified charge-ID.
+[**batch_recalculate_subscription_charge**](ChargesApi.md#batch_recalculate_subscription_charge) | **POST** /charges/recalculate | 
+[**get_all_subscription_charges**](ChargesApi.md#get_all_subscription_charges) | **GET** /charges | 
+[**get_subscription_charge_by_id**](ChargesApi.md#get_subscription_charge_by_id) | **GET** /charges/{charge-id} | 
+[**recalculate_subscription_charge**](ChargesApi.md#recalculate_subscription_charge) | **POST** /charges/{charge-ID}/recalculate | 
+[**void_subscription_charge**](ChargesApi.md#void_subscription_charge) | **DELETE** /charges/{charge-id} | 
+
+# **batch_recalculate_subscription_charge**
+> InlineResponseDefault15 batch_recalculate_subscription_charge(body=body)
 
 
-# **get_all_subscription_charges**
-> SubscriptionChargePagedMetadata get_all_subscription_charges(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
 
-Retrieves a collection of all charges. By default 10 values are returned. Records are returned in natural order.
-
-{\"nickname\":\"Retrieve all charges\",\"response\":\"getChargeAll.html\"}
-
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.ChargesApi()
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
-offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
-records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
-order_by = 'created' # str | Specify a field used to order the result set. (optional) (default to created)
-order = 'DESC' # str | Ihe direction of any ordering, either ASC or DESC. (optional) (default to DESC)
-include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
 
-try: 
-    # Retrieves a collection of all charges. By default 10 values are returned. Records are returned in natural order.
-    api_response = api_instance.get_all_subscription_charges(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
+# create an instance of the API class
+api_instance = billforward.ChargesApi(billforward.ApiClient(configuration))
+body = billforward.RecalculateChargeBatchRequest() # RecalculateChargeBatchRequest |  (optional)
+
+try:
+    api_response = api_instance.batch_recalculate_subscription_charge(body=body)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ChargesApi->get_all_subscription_charges: %s\n" % e
+    print("Exception when calling ChargesApi->batch_recalculate_subscription_charge: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
- **offset** | **int**| The offset from the first subscription to return. | [optional] [default to 0]
- **records** | **int**| The maximum number of subscriptions to return. | [optional] [default to 10]
- **order_by** | **str**| Specify a field used to order the result set. | [optional] [default to created]
- **order** | **str**| Ihe direction of any ordering, either ASC or DESC. | [optional] [default to DESC]
- **include_retired** | **bool**| Whether retired subscriptions should be returned. | [optional] [default to false]
+ **body** | [**RecalculateChargeBatchRequest**](RecalculateChargeBatchRequest.md)|  | [optional] 
 
 ### Return type
 
-[**SubscriptionChargePagedMetadata**](SubscriptionChargePagedMetadata.md)
+[**InlineResponseDefault15**](InlineResponseDefault15.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_subscription_charge_by_account_id**
-> SubscriptionChargePagedMetadata get_subscription_charge_by_account_id(account_id, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
+# **get_all_subscription_charges**
+> InlineResponseDefault10 get_all_subscription_charges(account_id=account_id, product_rate_plan=product_rate_plan, state=state, pricing_component_type=pricing_component_type, parent_invoice_id=parent_invoice_id, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
 
-Retrieves a collection of charges, specified by the account-ID parameter. By default 10 values are returned. Records are returned in natural order.
 
-{\"nickname\":\"Retrieve by account\",\"response\":\"getChargeByAccount.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.ChargesApi()
-account_id = 'account_id_example' # str | The string ID of the account
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
-offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
-records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
-order_by = 'id' # str | Specify a field used to order the result set. (optional) (default to id)
-order = 'DESC' # str | Ihe direction of any ordering, either ASC or DESC. (optional) (default to DESC)
-include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
 
-try: 
-    # Retrieves a collection of charges, specified by the account-ID parameter. By default 10 values are returned. Records are returned in natural order.
-    api_response = api_instance.get_subscription_charge_by_account_id(account_id, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
+# create an instance of the API class
+api_instance = billforward.ChargesApi(billforward.ApiClient(configuration))
+account_id = 'account_id_example' # str |  (optional)
+product_rate_plan = 'product_rate_plan_example' # str |  (optional)
+state = 'state_example' # str |  (optional)
+pricing_component_type = 'pricing_component_type_example' # str |  (optional)
+parent_invoice_id = ['parent_invoice_id_example'] # list[str] |  (optional)
+organizations = ['organizations_example'] # list[str] |  (optional)
+offset = 0 # int |  (optional) (default to 0)
+records = 10 # int |  (optional) (default to 10)
+order_by = 'created' # str |  (optional) (default to created)
+order = 'DESC' # str |  (optional) (default to DESC)
+include_retired = false # bool |  (optional) (default to false)
+
+try:
+    api_response = api_instance.get_all_subscription_charges(account_id=account_id, product_rate_plan=product_rate_plan, state=state, pricing_component_type=pricing_component_type, parent_invoice_id=parent_invoice_id, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ChargesApi->get_subscription_charge_by_account_id: %s\n" % e
+    print("Exception when calling ChargesApi->get_all_subscription_charges: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **account_id** | **str**| The string ID of the account | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
- **offset** | **int**| The offset from the first subscription to return. | [optional] [default to 0]
- **records** | **int**| The maximum number of subscriptions to return. | [optional] [default to 10]
- **order_by** | **str**| Specify a field used to order the result set. | [optional] [default to id]
- **order** | **str**| Ihe direction of any ordering, either ASC or DESC. | [optional] [default to DESC]
- **include_retired** | **bool**| Whether retired subscriptions should be returned. | [optional] [default to false]
+ **account_id** | **str**|  | [optional] 
+ **product_rate_plan** | **str**|  | [optional] 
+ **state** | **str**|  | [optional] 
+ **pricing_component_type** | **str**|  | [optional] 
+ **parent_invoice_id** | [**list[str]**](str.md)|  | [optional] 
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
+ **offset** | **int**|  | [optional] [default to 0]
+ **records** | **int**|  | [optional] [default to 10]
+ **order_by** | **str**|  | [optional] [default to created]
+ **order** | **str**|  | [optional] [default to DESC]
+ **include_retired** | **bool**|  | [optional] [default to false]
 
 ### Return type
 
-[**SubscriptionChargePagedMetadata**](SubscriptionChargePagedMetadata.md)
+[**InlineResponseDefault10**](InlineResponseDefault10.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_subscription_charge_by_id**
-> SubscriptionChargePagedMetadata get_subscription_charge_by_id(charge_id, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
+> InlineResponseDefault16 get_subscription_charge_by_id(charge_id, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
 
-Retrieves a single charge, specified by the charge-id parameter.
 
-{\"nickname\":\"Retrieve a charge\",\"response\":\"getChargeByID.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.ChargesApi()
-charge_id = 'charge_id_example' # str | The unique string-ID of the subscription.
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
-offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
-records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
-order_by = 'id' # str | Specify a field used to order the result set. (optional) (default to id)
-order = 'DESC' # str | Ihe direction of any ordering, either ASC or DESC. (optional) (default to DESC)
-include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
 
-try: 
-    # Retrieves a single charge, specified by the charge-id parameter.
+# create an instance of the API class
+api_instance = billforward.ChargesApi(billforward.ApiClient(configuration))
+charge_id = 'charge_id_example' # str | 
+organizations = ['organizations_example'] # list[str] |  (optional)
+offset = 0 # int |  (optional) (default to 0)
+records = 10 # int |  (optional) (default to 10)
+order_by = 'id' # str |  (optional) (default to id)
+order = 'DESC' # str |  (optional) (default to DESC)
+include_retired = false # bool |  (optional) (default to false)
+
+try:
     api_response = api_instance.get_subscription_charge_by_id(charge_id, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ChargesApi->get_subscription_charge_by_id: %s\n" % e
+    print("Exception when calling ChargesApi->get_subscription_charge_by_id: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **charge_id** | **str**| The unique string-ID of the subscription. | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
- **offset** | **int**| The offset from the first subscription to return. | [optional] [default to 0]
- **records** | **int**| The maximum number of subscriptions to return. | [optional] [default to 10]
- **order_by** | **str**| Specify a field used to order the result set. | [optional] [default to id]
- **order** | **str**| Ihe direction of any ordering, either ASC or DESC. | [optional] [default to DESC]
- **include_retired** | **bool**| Whether retired subscriptions should be returned. | [optional] [default to false]
+ **charge_id** | **str**|  | 
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
+ **offset** | **int**|  | [optional] [default to 0]
+ **records** | **int**|  | [optional] [default to 10]
+ **order_by** | **str**|  | [optional] [default to id]
+ **order** | **str**|  | [optional] [default to DESC]
+ **include_retired** | **bool**|  | [optional] [default to false]
 
 ### Return type
 
-[**SubscriptionChargePagedMetadata**](SubscriptionChargePagedMetadata.md)
+[**InlineResponseDefault16**](InlineResponseDefault16.md)
 
 ### Authorization
 
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: text/plain
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-# **get_subscription_charge_by_state**
-> SubscriptionChargePagedMetadata get_subscription_charge_by_state(state, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
-
-Retrieves a collection of charges, specified by the state parameter. By default 10 values are returned. Records are returned in natural order.
-
-{\"nickname\":\"Retrieve by state\",\"response\":\"getChargeByState.html\"}
-
-### Example 
-```python
-import time
-import billforward
-from billforward.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = billforward.ChargesApi()
-state = 'state_example' # str | The current state of the charge
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
-offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
-records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
-order_by = 'id' # str | Specify a field used to order the result set. (optional) (default to id)
-order = 'DESC' # str | Ihe direction of any ordering, either ASC or DESC. (optional) (default to DESC)
-include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
-
-try: 
-    # Retrieves a collection of charges, specified by the state parameter. By default 10 values are returned. Records are returned in natural order.
-    api_response = api_instance.get_subscription_charge_by_state(state, organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ChargesApi->get_subscription_charge_by_state: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **state** | **str**| The current state of the charge | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
- **offset** | **int**| The offset from the first subscription to return. | [optional] [default to 0]
- **records** | **int**| The maximum number of subscriptions to return. | [optional] [default to 10]
- **order_by** | **str**| Specify a field used to order the result set. | [optional] [default to id]
- **order** | **str**| Ihe direction of any ordering, either ASC or DESC. | [optional] [default to DESC]
- **include_retired** | **bool**| Whether retired subscriptions should be returned. | [optional] [default to false]
-
-### Return type
-
-[**SubscriptionChargePagedMetadata**](SubscriptionChargePagedMetadata.md)
-
-### Authorization
-
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -247,145 +180,94 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_subscription_charge_by_version_id**
-> SubscriptionChargePagedMetadata get_subscription_charge_by_version_id(version_id, organizations=organizations)
-
-Retrieves a single charge, specified by the version-ID parameter.
-
-{\"nickname\":\"Retrieve by version\",\"response\":\"getChargeByVersionID.html\"}
-
-### Example 
-```python
-import time
-import billforward
-from billforward.rest import ApiException
-from pprint import pprint
-
-# create an instance of the API class
-api_instance = billforward.ChargesApi()
-version_id = 'version_id_example' # str | The version-ID of the charge.
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
-
-try: 
-    # Retrieves a single charge, specified by the version-ID parameter.
-    api_response = api_instance.get_subscription_charge_by_version_id(version_id, organizations=organizations)
-    pprint(api_response)
-except ApiException as e:
-    print "Exception when calling ChargesApi->get_subscription_charge_by_version_id: %s\n" % e
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **version_id** | **str**| The version-ID of the charge. | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
-
-### Return type
-
-[**SubscriptionChargePagedMetadata**](SubscriptionChargePagedMetadata.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: text/plain
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **recalculate_subscription_charge**
-> SubscriptionChargePagedMetadata recalculate_subscription_charge(charge_id, charge)
+> InlineResponseDefault10 recalculate_subscription_charge(charge_id, body=body)
 
-Recalculate a charge.
 
-{\"nickname\":\"Re-calculate a charge\",\"request\":\"recalculateChargeRequest.html\",\"response\":\"recalculateChargeResponse.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.ChargesApi()
-charge_id = 'charge_id_example' # str | Unique id of the charge.
-charge = billforward.RecalculateChargeRequest() # RecalculateChargeRequest | The charge to be re-calculated.
 
-try: 
-    # Recalculate a charge.
-    api_response = api_instance.recalculate_subscription_charge(charge_id, charge)
+# create an instance of the API class
+api_instance = billforward.ChargesApi(billforward.ApiClient(configuration))
+charge_id = 'charge_id_example' # str | 
+body = billforward.RecalculateChargeRequest() # RecalculateChargeRequest |  (optional)
+
+try:
+    api_response = api_instance.recalculate_subscription_charge(charge_id, body=body)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ChargesApi->recalculate_subscription_charge: %s\n" % e
+    print("Exception when calling ChargesApi->recalculate_subscription_charge: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **charge_id** | **str**| Unique id of the charge. | 
- **charge** | [**RecalculateChargeRequest**](RecalculateChargeRequest.md)| The charge to be re-calculated. | 
+ **charge_id** | **str**|  | 
+ **body** | [**RecalculateChargeRequest**](RecalculateChargeRequest.md)|  | [optional] 
 
 ### Return type
 
-[**SubscriptionChargePagedMetadata**](SubscriptionChargePagedMetadata.md)
+[**InlineResponseDefault10**](InlineResponseDefault10.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: text/xml, application/xml, application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **void_subscription_charge**
-> SubscriptionChargePagedMetadata void_subscription_charge(charge_id, organizations=organizations)
+> InlineResponseDefault16 void_subscription_charge(charge_id, organizations=organizations)
 
-Void the charge with the specified charge-ID.
 
-{\"nickname\":\"Void charge\",\"response\":\"deleteCharge.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.ChargesApi()
-charge_id = 'charge_id_example' # str | Unique id of the charge.
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
-try: 
-    # Void the charge with the specified charge-ID.
+# create an instance of the API class
+api_instance = billforward.ChargesApi(billforward.ApiClient(configuration))
+charge_id = 'charge_id_example' # str | 
+organizations = ['organizations_example'] # list[str] |  (optional)
+
+try:
     api_response = api_instance.void_subscription_charge(charge_id, organizations=organizations)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling ChargesApi->void_subscription_charge: %s\n" % e
+    print("Exception when calling ChargesApi->void_subscription_charge: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **charge_id** | **str**| Unique id of the charge. | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
+ **charge_id** | **str**|  | 
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
 
 ### Return type
 
-[**SubscriptionChargePagedMetadata**](SubscriptionChargePagedMetadata.md)
+[**InlineResponseDefault16**](InlineResponseDefault16.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 

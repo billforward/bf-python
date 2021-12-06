@@ -3,26 +3,39 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**account_id** | **str** | {\&quot;description\&quot;:\&quot;ID of the BillForward Account who will own this subscription. You should ensure beforehand that the customer has had a BillForward Account created for them.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | 
-**product** | **str** | {\&quot;description\&quot;:\&quot;Name or ID of the product.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | 
-**product_rate_plan** | **str** | {\&quot;description\&quot;:\&quot;ID or name of the rate plan to which the subscription will be subscribing. Lookup by name is only possible if a &#x60;productID&#x60; is specified.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | 
-**organization_id** | **str** | {\&quot;default\&quot;:\&quot;(Auto-populated using your authentication credentials)\&quot;,\&quot;description\&quot;:\&quot;ID of the BillForward Organization within which the requested Subscription should be created. If omitted, this will be auto-populated using your authentication credentials.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**name** | **str** | {\&quot;default\&quot;:\&quot;(Subscription will be named after the rate plan to which the subscription subscribes)\&quot;,\&quot;description\&quot;:\&quot;Name of the created subscription. This is primarily for your benefit &amp;mdash; for example, to enable you to identify subscriptions at a glance in the BillForward web interface (e.g. &#39;Customer 1425, guy@mail.com, Premium membership&#39;).\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**description** | **str** | {\&quot;default\&quot;:\&quot;(null)\&quot;,\&quot;description\&quot;:\&quot;Description of the created subscription. This is primarily for your benefit &amp;mdash; for example, you could write here the mechanism through which you obtained this customer. (e.g. &#39;Customer obtained through Lazy Wednesdays promotion&#39;).\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**start** | **datetime** | {\&quot;default\&quot;:\&quot;(ServerNow upon receiving request)\&quot;,\&quot;description\&quot;:\&quot;ISO 8601 UTC DateTime (e.g. 2015-06-16T11:58:41Z) describing the date at which the subscription should enter its first service period.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**end** | **datetime** | {\&quot;default\&quot;:\&quot;(1 period ahead of the &#x60;start&#x60; time)\&quot;,\&quot;description\&quot;:\&quot;ISO 8601 UTC DateTime (e.g. 2015-06-16T11:58:41Z) describing the date at which the subscription should finish its first service period.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**state** | **str** | {\&quot;default\&quot;:\&quot;Provisioned\&quot;,\&quot;description\&quot;:\&quot;The state in which the created subscription will begin.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Provisioned&lt;/span&gt; &amp;mdash; The subscription will wait (without raising any invoices or beginning its service) until explicit action is taken to change its state.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;AwaitingPayment&lt;/span&gt; &amp;mdash; The subscription is activated. After &#x60;start&#x60; time is surpassed, it will begin service and raise its first invoice.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**trial_end** | **datetime** | {\&quot;default\&quot;:\&quot;(null)\&quot;,\&quot;description\&quot;:\&quot;ISO 8601 UTC DateTime (e.g. 2015-06-16T11:58:41Z) describing the date at which the subscription should leave the trial period.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
+**created** | **datetime** |  | [optional] 
+**account_id** | **str** |  | [optional] 
+**product** | **str** |  | [optional] 
+**product_rate_plan** | **str** |  | [optional] 
+**organization_id** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
+**description** | **str** |  | [optional] 
+**contract_start** | **datetime** |  | [optional] 
+**start** | **datetime** |  | [optional] 
+**end** | **datetime** |  | [optional] 
+**state** | **str** |  | [optional] 
+**trial_end** | **datetime** |  | [optional] 
 **type** | **str** |  | [optional] 
-**parent_id** | **str** | {\&quot;default\&quot;:\&quot;(If a subscription exists which &#39;aggregates all subscriptions belonging to this BillForward Account&#39;, refer to the ID of that subscription. Otherwise: null)\&quot;,\&quot;description\&quot;:\&quot;ID of a parent subscription which will collect the charges raised by this subscription. The parent becomes responsible for paying those charges. If a subscription exists which &#39;aggregates all subscriptions belonging to this BillForward Account&#39;, then that parent will override any parent specified here.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**aggregate_all_subscriptions_on_account** | **bool** | {\&quot;default\&quot;:false,\&quot;description\&quot;:\&quot;Whether this subscription should become an &#39;aggregating subscription&#39;, collecting charges (starting now) from all other subscriptions (current and future) belonging to this BillForward Account.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] [default to False]
-**align_period_with_aggregating_subscription** | **bool** | {\&quot;default\&quot;:true,\&quot;description\&quot;:\&quot;Whether to override the &#x60;end&#x60; date to line up with the current period end of the &#39;aggregating subscription&#39; to which this subscription belongs.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] [default to False]
-**pricing_component_quantities** | [**list[PricingComponentQuantityRequest]**](PricingComponentQuantityRequest.md) | {\&quot;default\&quot;:\&quot;(empty list)\&quot;,\&quot;description\&quot;:\&quot;Quantities that this subscription possesses (upon beginning service), of pricing components upon the subscription&#39;s rate plan. For example: you can set the subscription to begin its service with &#39;5 widgets&#39; consumed. Otherwise the &#39;default quantity&#39; will be observed instead, for each pricing component upon the rate plan.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;]} | [optional] 
-**metadata** | [**DynamicMetadata**](DynamicMetadata.md) | { \&quot;description\&quot; : \&quot;Add metadata.\&quot;, \&quot;verbs\&quot;:[\&quot;POST\&quot;] } | [optional] 
+**failed_payment_behaviour** | **str** |  | [optional] 
+**parent_id** | **str** |  | [optional] 
+**exclude_from_auto_aggregation** | **bool** |  | [optional] 
+**aggregate_all_subscriptions_on_account** | **bool** |  | [optional] 
+**allow_subscription_wihtout_rate_plan** | **bool** |  | [optional] 
+**dont_create_default_fixed_term** | **bool** |  | [optional] 
+**align_period_with_aggregating_subscription** | **bool** |  | [optional] 
+**parent_should_copy_child_period_end** | **bool** |  | [optional] 
+**pricing_component_quantities** | [**list[CreatePricingComponentQuantityRequest]**](CreatePricingComponentQuantityRequest.md) |  | [optional] 
 **payment_terms** | **int** |  | [optional] 
-**contract_start** | **datetime** | {\&quot;description\&quot;:\&quot;start of the contracted period.  This will be after a trial, if one exists\&quot;,\&quot;verbs\&quot;:[\&quot;GET\&quot;]} | [optional] 
-**failed_payment_behaviour** | **str** | {\&quot;default\&quot;:\&quot;None\&quot;,\&quot;description\&quot;:\&quot;The action that should be taken, should an invoice for some subscription to this rate plan remain unpaid despite the dunning period&#39;s being exceeded.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;CancelSubscription&lt;/span&gt; &amp;mdash; Demotes the subscription to the &#x60;Failed&#x60; state as soon as the dunning period is exceeded.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;None&lt;/span&gt; &amp;mdash; The subscription is allowed to continue in the &#x60;AwaitingPayment&#x60; state indefinitely even if the dunning period is exceeded.For slow payment cycles &amp;mdash; or when manual invoice remediation is common &amp;mdash; &lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;None&lt;/span&gt; is recommended.&lt;br&gt;In a heavily-automated SaaS environment, automatic cancellation via &lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;CancelSubscription&lt;/span&gt; is recommended.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;PUT\&quot;,\&quot;GET\&quot;]} | [optional] 
+**purchase_order** | **str** |  | [optional] 
+**coupon_codes** | **list[str]** |  | [optional] 
+**prepayment_amount** | **float** |  | [optional] 
+**extras** | [**Extras**](Extras.md) |  | [optional] 
+**termed_subscription** | **bool** |  | [optional] 
+**term_periods** | **int** |  | [optional] 
+**term_expiry_behaviour** | **str** |  | [optional] 
+**subsequent_product_rate_plan** | **str** |  | [optional] 
+**metadata** | **dict(str, object)** |  | [optional] 
+**ignore_first_period_usage** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 
