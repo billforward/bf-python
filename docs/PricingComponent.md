@@ -32,7 +32,7 @@ Name | Type | Description | Notes
 **sorted_tiers** | [**list[PricingComponentTier]**](PricingComponentTier.md) |  | [optional] 
 **version_id** | **str** |  | [optional] 
 **id** | **str** |  | 
-**type** | **str** |  | 
+**at_type** | **str** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

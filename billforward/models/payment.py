@@ -48,7 +48,7 @@ class Payment(object):
         'refund_id': 'str',
         'type': 'str',
         'remaining_nominal_value': 'float',
-        'type': 'str'
+        'at_type': 'str'
     }
 
     attribute_map = {
@@ -72,7 +72,7 @@ class Payment(object):
         'refund_id': 'refundID',
         'type': 'type',
         'remaining_nominal_value': 'remainingNominalValue',
-        'type': '@type'
+        'at_type': '@type'
     }
 
     discriminator_value_class_map = {
@@ -93,7 +93,7 @@ class Payment(object):
 'EpxPayment': 'EpxPayment',
 'PaypalPayment': 'PaypalPayment'    }
 
-    def __init__(self, created=None, changed_by=None, updated=None, metadata=None, id=None, crm_id=None, account_id=None, subscription_id=None, payment_method_id=None, invoice_id=None, organization_id=None, gateway=None, currency=None, nominal_value=None, actual_value=None, payment_received=None, refunded_value=None, refund_id=None, type=None, remaining_nominal_value=None, type=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, metadata=None, id=None, crm_id=None, account_id=None, subscription_id=None, payment_method_id=None, invoice_id=None, organization_id=None, gateway=None, currency=None, nominal_value=None, actual_value=None, payment_received=None, refunded_value=None, refund_id=None, type=None, remaining_nominal_value=None, at_type=None):  # noqa: E501
         """Payment - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -115,7 +115,7 @@ class Payment(object):
         self._refund_id = None
         self._type = None
         self._remaining_nominal_value = None
-        self._type = None
+        self._at_type = None
         self.discriminator = '@type'
         if created is not None:
             self.created = created
@@ -152,7 +152,7 @@ class Payment(object):
             self.refund_id = refund_id
         self.type = type
         self.remaining_nominal_value = remaining_nominal_value
-        self.type = type
+        self.at_type = at_type
 
     @property
     def created(self):
@@ -597,27 +597,27 @@ class Payment(object):
         self._remaining_nominal_value = remaining_nominal_value
 
     @property
-    def type(self):
-        """Gets the type of this Payment.  # noqa: E501
+    def at_type(self):
+        """Gets the at_type of this Payment.  # noqa: E501
 
 
-        :return: The type of this Payment.  # noqa: E501
+        :return: The at_type of this Payment.  # noqa: E501
         :rtype: str
         """
-        return self._type
+        return self._at_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this Payment.
+    @at_type.setter
+    def at_type(self, at_type):
+        """Sets the at_type of this Payment.
 
 
-        :param type: The type of this Payment.  # noqa: E501
+        :param at_type: The at_type of this Payment.  # noqa: E501
         :type: str
         """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
+        if at_type is None:
+            raise ValueError("Invalid value for `at_type`, must not be `None`")  # noqa: E501
 
-        self._type = type
+        self._at_type = at_type
 
     def get_real_child_model(self, data):
         """Returns the real base class specified by the discriminator"""

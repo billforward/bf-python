@@ -42,7 +42,7 @@ class Amendment(object):
         'deleted': 'bool',
         'discardable_subsystem_object': 'IDiscardable',
         'amendment_type': 'str',
-        'type': 'str'
+        'at_type': 'str'
     }
 
     attribute_map = {
@@ -60,7 +60,7 @@ class Amendment(object):
         'deleted': 'deleted',
         'discardable_subsystem_object': 'discardableSubsystemObject',
         'amendment_type': 'amendmentType',
-        'type': '@type'
+        'at_type': '@type'
     }
 
     discriminator_value_class_map = {
@@ -81,7 +81,7 @@ class Amendment(object):
 'ServiceEndAmendment': 'ServiceEndAmendment',
 'TimerAmendment': 'TimerAmendment'    }
 
-    def __init__(self, created=None, changed_by=None, updated=None, dummy_field=None, id=None, organization_id=None, subscription_id=None, description=None, actioning_time=None, actioned_time=None, state=None, deleted=None, discardable_subsystem_object=None, amendment_type=None, type=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, dummy_field=None, id=None, organization_id=None, subscription_id=None, description=None, actioning_time=None, actioned_time=None, state=None, deleted=None, discardable_subsystem_object=None, amendment_type=None, at_type=None):  # noqa: E501
         """Amendment - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -97,7 +97,7 @@ class Amendment(object):
         self._deleted = None
         self._discardable_subsystem_object = None
         self._amendment_type = None
-        self._type = None
+        self._at_type = None
         self.discriminator = '@type'
         if created is not None:
             self.created = created
@@ -125,7 +125,7 @@ class Amendment(object):
             self.discardable_subsystem_object = discardable_subsystem_object
         if amendment_type is not None:
             self.amendment_type = amendment_type
-        self.type = type
+        self.at_type = at_type
 
     @property
     def created(self):
@@ -438,27 +438,27 @@ class Amendment(object):
         self._amendment_type = amendment_type
 
     @property
-    def type(self):
-        """Gets the type of this Amendment.  # noqa: E501
+    def at_type(self):
+        """Gets the at_type of this Amendment.  # noqa: E501
 
 
-        :return: The type of this Amendment.  # noqa: E501
+        :return: The at_type of this Amendment.  # noqa: E501
         :rtype: str
         """
-        return self._type
+        return self._at_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this Amendment.
+    @at_type.setter
+    def at_type(self, at_type):
+        """Sets the at_type of this Amendment.
 
 
-        :param type: The type of this Amendment.  # noqa: E501
+        :param at_type: The at_type of this Amendment.  # noqa: E501
         :type: str
         """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
+        if at_type is None:
+            raise ValueError("Invalid value for `at_type`, must not be `None`")  # noqa: E501
 
-        self._type = type
+        self._at_type = at_type
 
     def get_real_child_model(self, data):
         """Returns the real base class specified by the discriminator"""

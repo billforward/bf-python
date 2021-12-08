@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **refund_id** | **str** |  | [optional] 
 **type** | **str** |  | 
 **remaining_nominal_value** | **float** |  | 
-**type** | **str** |  | 
+**at_type** | **str** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

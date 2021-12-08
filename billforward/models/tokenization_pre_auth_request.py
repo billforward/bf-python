@@ -37,7 +37,7 @@ class TokenizationPreAuthRequest(object):
         'bill_forward_public_token': 'str',
         'email_tokenization_id': 'str',
         'id': 'str',
-        'type': 'str'
+        'at_type': 'str'
     }
 
     attribute_map = {
@@ -50,7 +50,7 @@ class TokenizationPreAuthRequest(object):
         'bill_forward_public_token': 'billForwardPublicToken',
         'email_tokenization_id': 'emailTokenizationID',
         'id': 'id',
-        'type': '@type'
+        'at_type': '@type'
     }
 
     discriminator_value_class_map = {
@@ -61,7 +61,7 @@ class TokenizationPreAuthRequest(object):
 'BraintreePreAuthRequest': 'BraintreePreAuthRequest',
 'ShuttlePreAuthRequest': 'ShuttlePreAuthRequest'    }
 
-    def __init__(self, created=None, changed_by=None, gateway_id=None, gateway=None, organization_id=None, bill_forward_url=None, bill_forward_public_token=None, email_tokenization_id=None, id=None, type=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, gateway_id=None, gateway=None, organization_id=None, bill_forward_url=None, bill_forward_public_token=None, email_tokenization_id=None, id=None, at_type=None):  # noqa: E501
         """TokenizationPreAuthRequest - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -72,7 +72,7 @@ class TokenizationPreAuthRequest(object):
         self._bill_forward_public_token = None
         self._email_tokenization_id = None
         self._id = None
-        self._type = None
+        self._at_type = None
         self.discriminator = '@type'
         if created is not None:
             self.created = created
@@ -92,7 +92,7 @@ class TokenizationPreAuthRequest(object):
             self.email_tokenization_id = email_tokenization_id
         if id is not None:
             self.id = id
-        self.type = type
+        self.at_type = at_type
 
     @property
     def created(self):
@@ -290,27 +290,27 @@ class TokenizationPreAuthRequest(object):
         self._id = id
 
     @property
-    def type(self):
-        """Gets the type of this TokenizationPreAuthRequest.  # noqa: E501
+    def at_type(self):
+        """Gets the at_type of this TokenizationPreAuthRequest.  # noqa: E501
 
 
-        :return: The type of this TokenizationPreAuthRequest.  # noqa: E501
+        :return: The at_type of this TokenizationPreAuthRequest.  # noqa: E501
         :rtype: str
         """
-        return self._type
+        return self._at_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this TokenizationPreAuthRequest.
+    @at_type.setter
+    def at_type(self, at_type):
+        """Sets the at_type of this TokenizationPreAuthRequest.
 
 
-        :param type: The type of this TokenizationPreAuthRequest.  # noqa: E501
+        :param at_type: The at_type of this TokenizationPreAuthRequest.  # noqa: E501
         :type: str
         """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
+        if at_type is None:
+            raise ValueError("Invalid value for `at_type`, must not be `None`")  # noqa: E501
 
-        self._type = type
+        self._at_type = at_type
 
     def get_real_child_model(self, data):
         """Returns the real base class specified by the discriminator"""

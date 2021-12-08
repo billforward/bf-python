@@ -57,7 +57,7 @@ class PricingComponent(object):
         'sorted_tiers': 'list[PricingComponentTier]',
         'version_id': 'str',
         'id': 'str',
-        'type': 'str'
+        'at_type': 'str'
     }
 
     attribute_map = {
@@ -90,7 +90,7 @@ class PricingComponent(object):
         'sorted_tiers': 'sortedTiers',
         'version_id': 'versionID',
         'id': 'id',
-        'type': '@type'
+        'at_type': '@type'
     }
 
     discriminator_value_class_map = {
@@ -98,7 +98,7 @@ class PricingComponent(object):
 'FlatPricingComponent': 'FlatPricingComponent',
 'TieredVolumePricingComponent': 'TieredVolumePricingComponent'    }
 
-    def __init__(self, created=None, changed_by=None, updated=None, dummy_field=None, crm_id=None, product_rate_plan_id=None, product_rate_plan_version_id=None, unit_of_measure_id=None, organization_id=None, name=None, public_name=None, description=None, tax_code=None, charge_type=None, invoicing_type=None, charge_model=None, upgrade_mode=None, downgrade_mode=None, default_quantity=None, min_quantity=None, max_quantity=None, valid_from=None, valid_till=None, unit_credit=None, tiers=None, unit_of_measure=None, sorted_tiers=None, version_id=None, id=None, type=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, dummy_field=None, crm_id=None, product_rate_plan_id=None, product_rate_plan_version_id=None, unit_of_measure_id=None, organization_id=None, name=None, public_name=None, description=None, tax_code=None, charge_type=None, invoicing_type=None, charge_model=None, upgrade_mode=None, downgrade_mode=None, default_quantity=None, min_quantity=None, max_quantity=None, valid_from=None, valid_till=None, unit_credit=None, tiers=None, unit_of_measure=None, sorted_tiers=None, version_id=None, id=None, at_type=None):  # noqa: E501
         """PricingComponent - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -129,7 +129,7 @@ class PricingComponent(object):
         self._sorted_tiers = None
         self._version_id = None
         self._id = None
-        self._type = None
+        self._at_type = None
         self.discriminator = '@type'
         if created is not None:
             self.created = created
@@ -181,7 +181,7 @@ class PricingComponent(object):
         if version_id is not None:
             self.version_id = version_id
         self.id = id
-        self.type = type
+        self.at_type = at_type
 
     @property
     def created(self):
@@ -839,27 +839,27 @@ class PricingComponent(object):
         self._id = id
 
     @property
-    def type(self):
-        """Gets the type of this PricingComponent.  # noqa: E501
+    def at_type(self):
+        """Gets the at_type of this PricingComponent.  # noqa: E501
 
 
-        :return: The type of this PricingComponent.  # noqa: E501
+        :return: The at_type of this PricingComponent.  # noqa: E501
         :rtype: str
         """
-        return self._type
+        return self._at_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this PricingComponent.
+    @at_type.setter
+    def at_type(self, at_type):
+        """Sets the at_type of this PricingComponent.
 
 
-        :param type: The type of this PricingComponent.  # noqa: E501
+        :param at_type: The at_type of this PricingComponent.  # noqa: E501
         :type: str
         """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
+        if at_type is None:
+            raise ValueError("Invalid value for `at_type`, must not be `None`")  # noqa: E501
 
-        self._type = type
+        self._at_type = at_type
 
     def get_real_child_model(self, data):
         """Returns the real base class specified by the discriminator"""

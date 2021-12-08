@@ -35,7 +35,7 @@ Name | Type | Description | Notes
 **group_name** | **str** |  | [optional] 
 **outer_period_start** | **datetime** |  | [optional] 
 **crm_id** | **str** |  | [optional] 
-**type** | **str** |  | 
+**at_type** | **str** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

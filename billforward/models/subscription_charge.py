@@ -60,7 +60,7 @@ class SubscriptionCharge(object):
         'group_name': 'str',
         'outer_period_start': 'datetime',
         'crm_id': 'str',
-        'type': 'str'
+        'at_type': 'str'
     }
 
     attribute_map = {
@@ -96,7 +96,7 @@ class SubscriptionCharge(object):
         'group_name': 'groupName',
         'outer_period_start': 'outerPeriodStart',
         'crm_id': 'crmID',
-        'type': '@type'
+        'at_type': '@type'
     }
 
     discriminator_value_class_map = {
@@ -110,7 +110,7 @@ class SubscriptionCharge(object):
 'UpgradeCharge': 'UpgradeCharge',
 'PricingComponentCharge': 'PricingComponentCharge'    }
 
-    def __init__(self, created=None, changed_by=None, updated=None, id=None, account_id=None, subscription_id=None, subscription_version_id=None, invoice_id=None, organization_id=None, name=None, description=None, tax_code=None, amount=None, amount_excluding_tax=None, currency=None, period_start=None, period_end=None, type=None, invoicing_type=None, state=None, charge_type=None, calculation=None, remaining_credit_behaviour=None, trial=None, version_id=None, version_number=None, linked_charge_id=None, percentage_of_original=None, original_charge_id=None, group_name=None, outer_period_start=None, crm_id=None, type=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, id=None, account_id=None, subscription_id=None, subscription_version_id=None, invoice_id=None, organization_id=None, name=None, description=None, tax_code=None, amount=None, amount_excluding_tax=None, currency=None, period_start=None, period_end=None, type=None, invoicing_type=None, state=None, charge_type=None, calculation=None, remaining_credit_behaviour=None, trial=None, version_id=None, version_number=None, linked_charge_id=None, percentage_of_original=None, original_charge_id=None, group_name=None, outer_period_start=None, crm_id=None, at_type=None):  # noqa: E501
         """SubscriptionCharge - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -144,7 +144,7 @@ class SubscriptionCharge(object):
         self._group_name = None
         self._outer_period_start = None
         self._crm_id = None
-        self._type = None
+        self._at_type = None
         self.discriminator = '@type'
         if created is not None:
             self.created = created
@@ -204,7 +204,7 @@ class SubscriptionCharge(object):
             self.outer_period_start = outer_period_start
         if crm_id is not None:
             self.crm_id = crm_id
-        self.type = type
+        self.at_type = at_type
 
     @property
     def created(self):
@@ -921,27 +921,27 @@ class SubscriptionCharge(object):
         self._crm_id = crm_id
 
     @property
-    def type(self):
-        """Gets the type of this SubscriptionCharge.  # noqa: E501
+    def at_type(self):
+        """Gets the at_type of this SubscriptionCharge.  # noqa: E501
 
 
-        :return: The type of this SubscriptionCharge.  # noqa: E501
+        :return: The at_type of this SubscriptionCharge.  # noqa: E501
         :rtype: str
         """
-        return self._type
+        return self._at_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this SubscriptionCharge.
+    @at_type.setter
+    def at_type(self, at_type):
+        """Sets the at_type of this SubscriptionCharge.
 
 
-        :param type: The type of this SubscriptionCharge.  # noqa: E501
+        :param at_type: The at_type of this SubscriptionCharge.  # noqa: E501
         :type: str
         """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
+        if at_type is None:
+            raise ValueError("Invalid value for `at_type`, must not be `None`")  # noqa: E501
 
-        self._type = type
+        self._at_type = at_type
 
     def get_real_child_model(self, data):
         """Returns the real base class specified by the discriminator"""

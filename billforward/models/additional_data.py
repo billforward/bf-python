@@ -28,44 +28,44 @@ class AdditionalData(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'type': 'str'
+        'at_type': 'str'
     }
 
     attribute_map = {
-        'type': '@type'
+        'at_type': '@type'
     }
 
     discriminator_value_class_map = {
           'StripeAdditionalData': 'StripeAdditionalData'    }
 
-    def __init__(self, type=None):  # noqa: E501
+    def __init__(self, at_type=None):  # noqa: E501
         """AdditionalData - a model defined in Swagger"""  # noqa: E501
-        self._type = None
+        self._at_type = None
         self.discriminator = '@type'
-        self.type = type
+        self.at_type = at_type
 
     @property
-    def type(self):
-        """Gets the type of this AdditionalData.  # noqa: E501
+    def at_type(self):
+        """Gets the at_type of this AdditionalData.  # noqa: E501
 
 
-        :return: The type of this AdditionalData.  # noqa: E501
+        :return: The at_type of this AdditionalData.  # noqa: E501
         :rtype: str
         """
-        return self._type
+        return self._at_type
 
-    @type.setter
-    def type(self, type):
-        """Sets the type of this AdditionalData.
+    @at_type.setter
+    def at_type(self, at_type):
+        """Sets the at_type of this AdditionalData.
 
 
-        :param type: The type of this AdditionalData.  # noqa: E501
+        :param at_type: The at_type of this AdditionalData.  # noqa: E501
         :type: str
         """
-        if type is None:
-            raise ValueError("Invalid value for `type`, must not be `None`")  # noqa: E501
+        if at_type is None:
+            raise ValueError("Invalid value for `at_type`, must not be `None`")  # noqa: E501
 
-        self._type = type
+        self._at_type = at_type
 
     def get_real_child_model(self, data):
         """Returns the real base class specified by the discriminator"""
