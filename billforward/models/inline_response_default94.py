@@ -29,7 +29,7 @@ class InlineResponseDefault94(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[BraintreeToken]'
+        'results': 'list[StripeAchToken]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault94(object):
 
 
         :return: The results of this InlineResponseDefault94.  # noqa: E501
-        :rtype: list[BraintreeToken]
+        :rtype: list[StripeAchToken]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault94(object):
 
 
         :param results: The results of this InlineResponseDefault94.  # noqa: E501
-        :type: list[BraintreeToken]
+        :type: list[StripeAchToken]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

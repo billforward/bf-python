@@ -49,9 +49,9 @@ class APIConfiguration(object):
         'expires_at': 'datetime',
         'migrations': 'list[Migration]',
         'gateway_type': 'str',
+        'apilogin_id': 'str',
         'production': 'bool',
         'environment_type': 'str',
-        'apilogin_id': 'str',
         'apikey': 'str'
     }
 
@@ -77,13 +77,13 @@ class APIConfiguration(object):
         'expires_at': 'expiresAt',
         'migrations': 'migrations',
         'gateway_type': 'gatewayType',
+        'apilogin_id': 'apiloginID',
         'production': 'production',
         'environment_type': 'environmentType',
-        'apilogin_id': 'apiloginID',
         'apikey': 'apikey'
     }
 
-    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, type=None, environment=None, merchant_id=None, public_key=None, private_key=None, endpoint=None, client_id=None, client_secret=None, gateway_account_id=None, refresh_token=None, deleted=None, api_login_id=None, transaction_key=None, expires_at=None, migrations=None, gateway_type=None, production=None, environment_type=None, apilogin_id=None, apikey=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, type=None, environment=None, merchant_id=None, public_key=None, private_key=None, endpoint=None, client_id=None, client_secret=None, gateway_account_id=None, refresh_token=None, deleted=None, api_login_id=None, transaction_key=None, expires_at=None, migrations=None, gateway_type=None, apilogin_id=None, production=None, environment_type=None, apikey=None):  # noqa: E501
         """APIConfiguration - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -106,9 +106,9 @@ class APIConfiguration(object):
         self._expires_at = None
         self._migrations = None
         self._gateway_type = None
+        self._apilogin_id = None
         self._production = None
         self._environment_type = None
-        self._apilogin_id = None
         self._apikey = None
         self.discriminator = None
         if created is not None:
@@ -152,12 +152,12 @@ class APIConfiguration(object):
             self.migrations = migrations
         if gateway_type is not None:
             self.gateway_type = gateway_type
+        if apilogin_id is not None:
+            self.apilogin_id = apilogin_id
         if production is not None:
             self.production = production
         if environment_type is not None:
             self.environment_type = environment_type
-        if apilogin_id is not None:
-            self.apilogin_id = apilogin_id
         if apikey is not None:
             self.apikey = apikey
 
@@ -623,6 +623,27 @@ class APIConfiguration(object):
         self._gateway_type = gateway_type
 
     @property
+    def apilogin_id(self):
+        """Gets the apilogin_id of this APIConfiguration.  # noqa: E501
+
+
+        :return: The apilogin_id of this APIConfiguration.  # noqa: E501
+        :rtype: str
+        """
+        return self._apilogin_id
+
+    @apilogin_id.setter
+    def apilogin_id(self, apilogin_id):
+        """Sets the apilogin_id of this APIConfiguration.
+
+
+        :param apilogin_id: The apilogin_id of this APIConfiguration.  # noqa: E501
+        :type: str
+        """
+
+        self._apilogin_id = apilogin_id
+
+    @property
     def production(self):
         """Gets the production of this APIConfiguration.  # noqa: E501
 
@@ -669,27 +690,6 @@ class APIConfiguration(object):
             )
 
         self._environment_type = environment_type
-
-    @property
-    def apilogin_id(self):
-        """Gets the apilogin_id of this APIConfiguration.  # noqa: E501
-
-
-        :return: The apilogin_id of this APIConfiguration.  # noqa: E501
-        :rtype: str
-        """
-        return self._apilogin_id
-
-    @apilogin_id.setter
-    def apilogin_id(self, apilogin_id):
-        """Sets the apilogin_id of this APIConfiguration.
-
-
-        :param apilogin_id: The apilogin_id of this APIConfiguration.  # noqa: E501
-        :type: str
-        """
-
-        self._apilogin_id = apilogin_id
 
     @property
     def apikey(self):

@@ -61,8 +61,8 @@ class Refund(object):
         'created_by': 'str',
         'type': 'str',
         'state': 'str',
-        'refunded_payment': 'Payment',
         'refunded_value': 'float',
+        'refunded_payment': 'Payment',
         'account': 'str'
     }
 
@@ -100,12 +100,12 @@ class Refund(object):
         'created_by': 'createdBy',
         'type': 'type',
         'state': 'state',
-        'refunded_payment': 'refundedPayment',
         'refunded_value': 'refundedValue',
+        'refunded_payment': 'refundedPayment',
         'account': 'account'
     }
 
-    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, account_id=None, reason=None, nominal_value=None, value=None, refunded=None, actual_value=None, nominal_refunded_value=None, actual_refunded_value=None, refund_state=None, refund_type=None, refund_nature=None, last_execution_attempt=None, next_execution_attempt=None, final_execution_attempt=None, refund_completed=None, currency=None, payment_method_id=None, invoice_payment_id=None, refund_invoice_payment_id=None, original_payment_id=None, original_gateway_payment_reference=None, refund_payment_id=None, invoice_id=None, receipt_id=None, original_receipt_id=None, created_by=None, type=None, state=None, refunded_payment=None, refunded_value=None, account=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, account_id=None, reason=None, nominal_value=None, value=None, refunded=None, actual_value=None, nominal_refunded_value=None, actual_refunded_value=None, refund_state=None, refund_type=None, refund_nature=None, last_execution_attempt=None, next_execution_attempt=None, final_execution_attempt=None, refund_completed=None, currency=None, payment_method_id=None, invoice_payment_id=None, refund_invoice_payment_id=None, original_payment_id=None, original_gateway_payment_reference=None, refund_payment_id=None, invoice_id=None, receipt_id=None, original_receipt_id=None, created_by=None, type=None, state=None, refunded_value=None, refunded_payment=None, account=None):  # noqa: E501
         """Refund - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -140,8 +140,8 @@ class Refund(object):
         self._created_by = None
         self._type = None
         self._state = None
-        self._refunded_payment = None
         self._refunded_value = None
+        self._refunded_payment = None
         self._account = None
         self.discriminator = None
         if created is not None:
@@ -202,10 +202,10 @@ class Refund(object):
             self.type = type
         if state is not None:
             self.state = state
-        if refunded_payment is not None:
-            self.refunded_payment = refunded_payment
         if refunded_value is not None:
             self.refunded_value = refunded_value
+        if refunded_payment is not None:
+            self.refunded_payment = refunded_payment
         if account is not None:
             self.account = account
 
@@ -949,27 +949,6 @@ class Refund(object):
         self._state = state
 
     @property
-    def refunded_payment(self):
-        """Gets the refunded_payment of this Refund.  # noqa: E501
-
-
-        :return: The refunded_payment of this Refund.  # noqa: E501
-        :rtype: Payment
-        """
-        return self._refunded_payment
-
-    @refunded_payment.setter
-    def refunded_payment(self, refunded_payment):
-        """Sets the refunded_payment of this Refund.
-
-
-        :param refunded_payment: The refunded_payment of this Refund.  # noqa: E501
-        :type: Payment
-        """
-
-        self._refunded_payment = refunded_payment
-
-    @property
     def refunded_value(self):
         """Gets the refunded_value of this Refund.  # noqa: E501
 
@@ -989,6 +968,27 @@ class Refund(object):
         """
 
         self._refunded_value = refunded_value
+
+    @property
+    def refunded_payment(self):
+        """Gets the refunded_payment of this Refund.  # noqa: E501
+
+
+        :return: The refunded_payment of this Refund.  # noqa: E501
+        :rtype: Payment
+        """
+        return self._refunded_payment
+
+    @refunded_payment.setter
+    def refunded_payment(self, refunded_payment):
+        """Sets the refunded_payment of this Refund.
+
+
+        :param refunded_payment: The refunded_payment of this Refund.  # noqa: E501
+        :type: Payment
+        """
+
+        self._refunded_payment = refunded_payment
 
     @property
     def account(self):

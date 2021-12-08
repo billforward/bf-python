@@ -368,7 +368,7 @@ class InvoiceTemplateConfigResponse(object):
         :param show_unit_price: The show_unit_price of this InvoiceTemplateConfigResponse.  # noqa: E501
         :type: str
         """
-        allowed_values = ["Hidden", "Column", "Inline"]  # noqa: E501
+        allowed_values = ["Hidden", "Column"]  # noqa: E501
         if show_unit_price not in allowed_values:
             raise ValueError(
                 "Invalid value for `show_unit_price` ({0}), must be one of {1}"  # noqa: E501

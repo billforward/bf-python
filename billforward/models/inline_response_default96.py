@@ -29,7 +29,7 @@ class InlineResponseDefault96(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[StripeToken]'
+        'results': 'list[TrustCommerceToken]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault96(object):
 
 
         :return: The results of this InlineResponseDefault96.  # noqa: E501
-        :rtype: list[StripeToken]
+        :rtype: list[TrustCommerceToken]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault96(object):
 
 
         :param results: The results of this InlineResponseDefault96.  # noqa: E501
-        :type: list[StripeToken]
+        :type: list[TrustCommerceToken]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

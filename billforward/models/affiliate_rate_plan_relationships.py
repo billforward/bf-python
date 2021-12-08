@@ -37,8 +37,8 @@ class AffiliateRatePlanRelationships(object):
         'product_rate_plan_id': 'str',
         'start_date': 'datetime',
         'end_date': 'datetime',
-        'account_id': 'str',
-        'interval': 'IntervalDate'
+        'interval': 'IntervalDate',
+        'account_id': 'str'
     }
 
     attribute_map = {
@@ -51,11 +51,11 @@ class AffiliateRatePlanRelationships(object):
         'product_rate_plan_id': 'productRatePlanID',
         'start_date': 'startDate',
         'end_date': 'endDate',
-        'account_id': 'accountID',
-        'interval': 'interval'
+        'interval': 'interval',
+        'account_id': 'accountID'
     }
 
-    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, commission_structure=None, product_rate_plan_id=None, start_date=None, end_date=None, account_id=None, interval=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, commission_structure=None, product_rate_plan_id=None, start_date=None, end_date=None, interval=None, account_id=None):  # noqa: E501
         """AffiliateRatePlanRelationships - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -66,8 +66,8 @@ class AffiliateRatePlanRelationships(object):
         self._product_rate_plan_id = None
         self._start_date = None
         self._end_date = None
-        self._account_id = None
         self._interval = None
+        self._account_id = None
         self.discriminator = None
         if created is not None:
             self.created = created
@@ -87,10 +87,10 @@ class AffiliateRatePlanRelationships(object):
             self.start_date = start_date
         if end_date is not None:
             self.end_date = end_date
-        if account_id is not None:
-            self.account_id = account_id
         if interval is not None:
             self.interval = interval
+        if account_id is not None:
+            self.account_id = account_id
 
     @property
     def created(self):
@@ -282,27 +282,6 @@ class AffiliateRatePlanRelationships(object):
         self._end_date = end_date
 
     @property
-    def account_id(self):
-        """Gets the account_id of this AffiliateRatePlanRelationships.  # noqa: E501
-
-
-        :return: The account_id of this AffiliateRatePlanRelationships.  # noqa: E501
-        :rtype: str
-        """
-        return self._account_id
-
-    @account_id.setter
-    def account_id(self, account_id):
-        """Sets the account_id of this AffiliateRatePlanRelationships.
-
-
-        :param account_id: The account_id of this AffiliateRatePlanRelationships.  # noqa: E501
-        :type: str
-        """
-
-        self._account_id = account_id
-
-    @property
     def interval(self):
         """Gets the interval of this AffiliateRatePlanRelationships.  # noqa: E501
 
@@ -322,6 +301,27 @@ class AffiliateRatePlanRelationships(object):
         """
 
         self._interval = interval
+
+    @property
+    def account_id(self):
+        """Gets the account_id of this AffiliateRatePlanRelationships.  # noqa: E501
+
+
+        :return: The account_id of this AffiliateRatePlanRelationships.  # noqa: E501
+        :rtype: str
+        """
+        return self._account_id
+
+    @account_id.setter
+    def account_id(self, account_id):
+        """Sets the account_id of this AffiliateRatePlanRelationships.
+
+
+        :param account_id: The account_id of this AffiliateRatePlanRelationships.  # noqa: E501
+        :type: str
+        """
+
+        self._account_id = account_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

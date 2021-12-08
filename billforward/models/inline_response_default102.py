@@ -29,7 +29,7 @@ class InlineResponseDefault102(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[Webhook]'
+        'results': 'list[AllowedWebhookSubscriptionValues]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault102(object):
 
 
         :return: The results of this InlineResponseDefault102.  # noqa: E501
-        :rtype: list[Webhook]
+        :rtype: list[AllowedWebhookSubscriptionValues]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault102(object):
 
 
         :param results: The results of this InlineResponseDefault102.  # noqa: E501
-        :type: list[Webhook]
+        :type: list[AllowedWebhookSubscriptionValues]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

@@ -3,12 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**next_page** | **str** |  | [optional] 
-**current_page** | **int** |  | [optional] 
-**current_offset** | **int** |  | [optional] 
-**records_requested** | **int** |  | [optional] 
-**records_returned** | **int** |  | [optional] 
-**total_records** | **int** |  | [optional] 
 **execution_time** | **int** |  | 
 **results** | [**list[Webhook]**](Webhook.md) |  | 
 

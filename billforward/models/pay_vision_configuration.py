@@ -31,9 +31,9 @@ class PayVisionConfiguration(APIConfiguration):
     swagger_types = {
         'key_filename': 'str',
         'domain': 'str',
-        'password': 'str',
         'entity_id': 'str',
-        'user_id': 'str'
+        'user_id': 'str',
+        'password': 'str'
     }
     if hasattr(APIConfiguration, "swagger_types"):
         swagger_types.update(APIConfiguration.swagger_types)
@@ -41,31 +41,31 @@ class PayVisionConfiguration(APIConfiguration):
     attribute_map = {
         'key_filename': 'keyFilename',
         'domain': 'domain',
-        'password': 'password',
         'entity_id': 'entityID',
-        'user_id': 'userID'
+        'user_id': 'userID',
+        'password': 'password'
     }
     if hasattr(APIConfiguration, "attribute_map"):
         attribute_map.update(APIConfiguration.attribute_map)
 
-    def __init__(self, key_filename=None, domain=None, password=None, entity_id=None, user_id=None, *args, **kwargs):  # noqa: E501
+    def __init__(self, key_filename=None, domain=None, entity_id=None, user_id=None, password=None, *args, **kwargs):  # noqa: E501
         """PayVisionConfiguration - a model defined in Swagger"""  # noqa: E501
         self._key_filename = None
         self._domain = None
-        self._password = None
         self._entity_id = None
         self._user_id = None
+        self._password = None
         self.discriminator = None
         if key_filename is not None:
             self.key_filename = key_filename
         if domain is not None:
             self.domain = domain
-        if password is not None:
-            self.password = password
         if entity_id is not None:
             self.entity_id = entity_id
         if user_id is not None:
             self.user_id = user_id
+        if password is not None:
+            self.password = password
         APIConfiguration.__init__(self, *args, **kwargs)
 
     @property
@@ -111,27 +111,6 @@ class PayVisionConfiguration(APIConfiguration):
         self._domain = domain
 
     @property
-    def password(self):
-        """Gets the password of this PayVisionConfiguration.  # noqa: E501
-
-
-        :return: The password of this PayVisionConfiguration.  # noqa: E501
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this PayVisionConfiguration.
-
-
-        :param password: The password of this PayVisionConfiguration.  # noqa: E501
-        :type: str
-        """
-
-        self._password = password
-
-    @property
     def entity_id(self):
         """Gets the entity_id of this PayVisionConfiguration.  # noqa: E501
 
@@ -172,6 +151,27 @@ class PayVisionConfiguration(APIConfiguration):
         """
 
         self._user_id = user_id
+
+    @property
+    def password(self):
+        """Gets the password of this PayVisionConfiguration.  # noqa: E501
+
+
+        :return: The password of this PayVisionConfiguration.  # noqa: E501
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this PayVisionConfiguration.
+
+
+        :param password: The password of this PayVisionConfiguration.  # noqa: E501
+        :type: str
+        """
+
+        self._password = password
 
     def to_dict(self):
         """Returns the model properties as a dict"""

@@ -228,7 +228,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param AuthorizeNetToken body:
-        :return: InlineResponseDefault93
+        :return: InlineResponseDefault92
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -249,7 +249,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param AuthorizeNetToken body:
-        :return: InlineResponseDefault93
+        :return: InlineResponseDefault92
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -303,7 +303,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault93',  # noqa: E501
+            response_type='InlineResponseDefault92',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -321,7 +321,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param BraintreeToken body:
-        :return: InlineResponseDefault94
+        :return: InlineResponseDefault93
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -342,7 +342,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param BraintreeToken body:
-        :return: InlineResponseDefault94
+        :return: InlineResponseDefault93
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -396,7 +396,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault94',  # noqa: E501
+            response_type='InlineResponseDefault93',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -414,7 +414,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeAchToken body:
-        :return: InlineResponseDefault95
+        :return: InlineResponseDefault94
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -435,7 +435,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeAchToken body:
-        :return: InlineResponseDefault95
+        :return: InlineResponseDefault94
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -489,7 +489,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault95',  # noqa: E501
+            response_type='InlineResponseDefault94',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -507,7 +507,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeToken body:
-        :return: InlineResponseDefault96
+        :return: InlineResponseDefault95
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -528,7 +528,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeToken body:
-        :return: InlineResponseDefault96
+        :return: InlineResponseDefault95
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -582,7 +582,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault96',  # noqa: E501
+            response_type='InlineResponseDefault95',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -600,7 +600,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param TrustCommerceToken body:
-        :return: InlineResponseDefault97
+        :return: InlineResponseDefault96
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -621,7 +621,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param TrustCommerceToken body:
-        :return: InlineResponseDefault97
+        :return: InlineResponseDefault96
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -675,7 +675,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault97',  # noqa: E501
+            response_type='InlineResponseDefault96',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -773,405 +773,6 @@ class TokenizationApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
-    def epx_card_capture(self, **kwargs):  # noqa: E501
-        """epx_card_capture  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.epx_card_capture(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param EpxCaptureRequest body:
-        :return: InlineResponseDefault40
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.epx_card_capture_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.epx_card_capture_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def epx_card_capture_with_http_info(self, **kwargs):  # noqa: E501
-        """epx_card_capture  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.epx_card_capture_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param EpxCaptureRequest body:
-        :return: InlineResponseDefault40
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['body']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method epx_card_capture" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'body' in params:
-            body_params = params['body']
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['bearerAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/tokenization/epx', 'POST',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='InlineResponseDefault40',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def epx_pre_auth(self, **kwargs):  # noqa: E501
-        """epx_pre_auth  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.epx_pre_auth(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param EpxPreAuthRequest body:
-        :return: InlineResponseDefault79
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.epx_pre_auth_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.epx_pre_auth_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def epx_pre_auth_with_http_info(self, **kwargs):  # noqa: E501
-        """epx_pre_auth  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.epx_pre_auth_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param EpxPreAuthRequest body:
-        :return: InlineResponseDefault79
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['body']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method epx_pre_auth" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-
-        body_params = None
-        if 'body' in params:
-            body_params = params['body']
-        # HTTP header `Accept`
-        header_params['Accept'] = self.api_client.select_header_accept(
-            ['application/json'])  # noqa: E501
-
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/json'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['bearerAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/tokenization/epx-pre-auth', 'POST',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type='InlineResponseDefault79',  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
-    def epx_pre_auth_response(self, **kwargs):  # noqa: E501
-        """epx_pre_auth_response  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.epx_pre_auth_response(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str cust_nbr:
-        :param str merch_nbr:
-        :param str dba_nbr:
-        :param str terminal_nbr:
-        :param str tran_code:
-        :param str amount:
-        :param str auth_account:
-        :param str first_name:
-        :param str last_name:
-        :param str exp_date:
-        :param str bp_resp_code:
-        :param str bp_resp_text:
-        :param str bp_field_errors:
-        :param str msg_version:
-        :param str tran_type:
-        :param str tran_nbr:
-        :param str local_date:
-        :param str local_time:
-        :param str auth_guid:
-        :param str auth_resp:
-        :param str auth_code:
-        :param str auth_cvv2:
-        :param str auth_resp_text:
-        :param str auth_card_type:
-        :param str auth_tran_date_gmt:
-        :param str auth_amount_requested:
-        :param str auth_amount:
-        :param str auth_currency_code:
-        :param str network_response:
-        :param str auth_masked_account_nbr:
-        :param str user_data_9:
-        :param str user_data_10:
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-        kwargs['_return_http_data_only'] = True
-        if kwargs.get('async_req'):
-            return self.epx_pre_auth_response_with_http_info(**kwargs)  # noqa: E501
-        else:
-            (data) = self.epx_pre_auth_response_with_http_info(**kwargs)  # noqa: E501
-            return data
-
-    def epx_pre_auth_response_with_http_info(self, **kwargs):  # noqa: E501
-        """epx_pre_auth_response  # noqa: E501
-
-        This method makes a synchronous HTTP request by default. To make an
-        asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.epx_pre_auth_response_with_http_info(async_req=True)
-        >>> result = thread.get()
-
-        :param async_req bool
-        :param str cust_nbr:
-        :param str merch_nbr:
-        :param str dba_nbr:
-        :param str terminal_nbr:
-        :param str tran_code:
-        :param str amount:
-        :param str auth_account:
-        :param str first_name:
-        :param str last_name:
-        :param str exp_date:
-        :param str bp_resp_code:
-        :param str bp_resp_text:
-        :param str bp_field_errors:
-        :param str msg_version:
-        :param str tran_type:
-        :param str tran_nbr:
-        :param str local_date:
-        :param str local_time:
-        :param str auth_guid:
-        :param str auth_resp:
-        :param str auth_code:
-        :param str auth_cvv2:
-        :param str auth_resp_text:
-        :param str auth_card_type:
-        :param str auth_tran_date_gmt:
-        :param str auth_amount_requested:
-        :param str auth_amount:
-        :param str auth_currency_code:
-        :param str network_response:
-        :param str auth_masked_account_nbr:
-        :param str user_data_9:
-        :param str user_data_10:
-        :return: None
-                 If the method is called asynchronously,
-                 returns the request thread.
-        """
-
-        all_params = ['cust_nbr', 'merch_nbr', 'dba_nbr', 'terminal_nbr', 'tran_code', 'amount', 'auth_account', 'first_name', 'last_name', 'exp_date', 'bp_resp_code', 'bp_resp_text', 'bp_field_errors', 'msg_version', 'tran_type', 'tran_nbr', 'local_date', 'local_time', 'auth_guid', 'auth_resp', 'auth_code', 'auth_cvv2', 'auth_resp_text', 'auth_card_type', 'auth_tran_date_gmt', 'auth_amount_requested', 'auth_amount', 'auth_currency_code', 'network_response', 'auth_masked_account_nbr', 'user_data_9', 'user_data_10']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
-
-        params = locals()
-        for key, val in six.iteritems(params['kwargs']):
-            if key not in all_params:
-                raise TypeError(
-                    "Got an unexpected keyword argument '%s'"
-                    " to method epx_pre_auth_response" % key
-                )
-            params[key] = val
-        del params['kwargs']
-
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = []
-        local_var_files = {}
-        if 'cust_nbr' in params:
-            form_params.append(('CUST_NBR', params['cust_nbr']))  # noqa: E501
-        if 'merch_nbr' in params:
-            form_params.append(('MERCH_NBR', params['merch_nbr']))  # noqa: E501
-        if 'dba_nbr' in params:
-            form_params.append(('DBA_NBR', params['dba_nbr']))  # noqa: E501
-        if 'terminal_nbr' in params:
-            form_params.append(('TERMINAL_NBR', params['terminal_nbr']))  # noqa: E501
-        if 'tran_code' in params:
-            form_params.append(('TRAN_CODE', params['tran_code']))  # noqa: E501
-        if 'amount' in params:
-            form_params.append(('AMOUNT', params['amount']))  # noqa: E501
-        if 'auth_account' in params:
-            form_params.append(('AUTH_ACCOUNT', params['auth_account']))  # noqa: E501
-        if 'first_name' in params:
-            form_params.append(('FIRST_NAME', params['first_name']))  # noqa: E501
-        if 'last_name' in params:
-            form_params.append(('LAST_NAME', params['last_name']))  # noqa: E501
-        if 'exp_date' in params:
-            form_params.append(('EXP_DATE', params['exp_date']))  # noqa: E501
-        if 'bp_resp_code' in params:
-            form_params.append(('BP_RESP_CODE', params['bp_resp_code']))  # noqa: E501
-        if 'bp_resp_text' in params:
-            form_params.append(('BP_RESP_TEXT', params['bp_resp_text']))  # noqa: E501
-        if 'bp_field_errors' in params:
-            form_params.append(('BP_FIELD_ERRORS', params['bp_field_errors']))  # noqa: E501
-        if 'msg_version' in params:
-            form_params.append(('MSG_VERSION', params['msg_version']))  # noqa: E501
-        if 'tran_type' in params:
-            form_params.append(('TRAN_TYPE', params['tran_type']))  # noqa: E501
-        if 'tran_nbr' in params:
-            form_params.append(('TRAN_NBR', params['tran_nbr']))  # noqa: E501
-        if 'local_date' in params:
-            form_params.append(('LOCAL_DATE', params['local_date']))  # noqa: E501
-        if 'local_time' in params:
-            form_params.append(('LOCAL_TIME', params['local_time']))  # noqa: E501
-        if 'auth_guid' in params:
-            form_params.append(('AUTH_GUID', params['auth_guid']))  # noqa: E501
-        if 'auth_resp' in params:
-            form_params.append(('AUTH_RESP', params['auth_resp']))  # noqa: E501
-        if 'auth_code' in params:
-            form_params.append(('AUTH_CODE', params['auth_code']))  # noqa: E501
-        if 'auth_cvv2' in params:
-            form_params.append(('AUTH_CVV2', params['auth_cvv2']))  # noqa: E501
-        if 'auth_resp_text' in params:
-            form_params.append(('AUTH_RESP_TEXT', params['auth_resp_text']))  # noqa: E501
-        if 'auth_card_type' in params:
-            form_params.append(('AUTH_CARD_TYPE', params['auth_card_type']))  # noqa: E501
-        if 'auth_tran_date_gmt' in params:
-            form_params.append(('AUTH_TRAN_DATE_GMT', params['auth_tran_date_gmt']))  # noqa: E501
-        if 'auth_amount_requested' in params:
-            form_params.append(('AUTH_AMOUNT_REQUESTED', params['auth_amount_requested']))  # noqa: E501
-        if 'auth_amount' in params:
-            form_params.append(('AUTH_AMOUNT', params['auth_amount']))  # noqa: E501
-        if 'auth_currency_code' in params:
-            form_params.append(('AUTH_CURRENCY_CODE', params['auth_currency_code']))  # noqa: E501
-        if 'network_response' in params:
-            form_params.append(('NETWORK_RESPONSE', params['network_response']))  # noqa: E501
-        if 'auth_masked_account_nbr' in params:
-            form_params.append(('AUTH_MASKED_ACCOUNT_NBR', params['auth_masked_account_nbr']))  # noqa: E501
-        if 'user_data_9' in params:
-            form_params.append(('USER_DATA_9', params['user_data_9']))  # noqa: E501
-        if 'user_data_10' in params:
-            form_params.append(('USER_DATA_10', params['user_data_10']))  # noqa: E501
-
-        body_params = None
-        # HTTP header `Content-Type`
-        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
-            ['application/x-www-form-urlencoded'])  # noqa: E501
-
-        # Authentication setting
-        auth_settings = ['bearerAuth']  # noqa: E501
-
-        return self.api_client.call_api(
-            '/tokenization/epx-redirect', 'POST',
-            path_params,
-            query_params,
-            header_params,
-            body=body_params,
-            post_params=form_params,
-            files=local_var_files,
-            response_type=None,  # noqa: E501
-            auth_settings=auth_settings,
-            async_req=params.get('async_req'),
-            _return_http_data_only=params.get('_return_http_data_only'),
-            _preload_content=params.get('_preload_content', True),
-            _request_timeout=params.get('_request_timeout'),
-            collection_formats=collection_formats)
-
     def expire_email_redirect_capture(self, id, **kwargs):  # noqa: E501
         """expire_email_redirect_capture  # noqa: E501
 
@@ -1183,7 +784,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1205,7 +806,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1262,7 +863,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault80',  # noqa: E501
+            response_type='InlineResponseDefault79',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1283,7 +884,7 @@ class TokenizationApi(object):
         :param str subscription_id:
         :param str invoice_id:
         :param list[str] organizations:
-        :return: InlineResponseDefault81
+        :return: InlineResponseDefault80
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1307,7 +908,7 @@ class TokenizationApi(object):
         :param str subscription_id:
         :param str invoice_id:
         :param list[str] organizations:
-        :return: InlineResponseDefault81
+        :return: InlineResponseDefault80
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1364,7 +965,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault81',  # noqa: E501
+            response_type='InlineResponseDefault80',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1383,7 +984,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str account_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault98
+        :return: InlineResponseDefault97
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1405,7 +1006,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str account_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault98
+        :return: InlineResponseDefault97
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1462,7 +1063,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault98',  # noqa: E501
+            response_type='InlineResponseDefault97',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1481,7 +1082,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str card_details_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault99
+        :return: InlineResponseDefault98
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1503,7 +1104,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str card_details_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault99
+        :return: InlineResponseDefault98
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1560,7 +1161,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault99',  # noqa: E501
+            response_type='InlineResponseDefault98',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1579,7 +1180,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1601,7 +1202,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1658,7 +1259,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault80',  # noqa: E501
+            response_type='InlineResponseDefault79',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1771,7 +1372,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str stripe_ach_token_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault100
+        :return: InlineResponseDefault99
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1793,7 +1394,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str stripe_ach_token_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault100
+        :return: InlineResponseDefault99
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1850,7 +1451,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault100',  # noqa: E501
+            response_type='InlineResponseDefault99',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1869,7 +1470,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str stripe_token_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault99
+        :return: InlineResponseDefault98
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1891,7 +1492,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str stripe_token_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault99
+        :return: InlineResponseDefault98
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1948,7 +1549,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault99',  # noqa: E501
+            response_type='InlineResponseDefault98',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2152,7 +1753,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param TokenizationPreAuthRequest body:
-        :return: InlineResponseDefault82
+        :return: InlineResponseDefault81
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2173,7 +1774,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param TokenizationPreAuthRequest body:
-        :return: InlineResponseDefault82
+        :return: InlineResponseDefault81
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2227,7 +1828,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault82',  # noqa: E501
+            response_type='InlineResponseDefault81',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2498,7 +2099,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param EmailTokenizationSendAPIRequest body:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2520,7 +2121,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param EmailTokenizationSendAPIRequest body:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2580,7 +2181,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault80',  # noqa: E501
+            response_type='InlineResponseDefault79',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2598,7 +2199,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param EmailTokenizationCreateAPIRequest body:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2619,7 +2220,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param EmailTokenizationCreateAPIRequest body:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2673,7 +2274,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault80',  # noqa: E501
+            response_type='InlineResponseDefault79',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2874,7 +2475,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param EmailTokenizationUpdateAPIRequest body:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2896,7 +2497,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param str id: (required)
         :param EmailTokenizationUpdateAPIRequest body:
-        :return: InlineResponseDefault80
+        :return: InlineResponseDefault79
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2956,7 +2557,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault80',  # noqa: E501
+            response_type='InlineResponseDefault79',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2975,7 +2576,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param Profile body:
         :param str request_token:
-        :return: InlineResponseDefault83
+        :return: InlineResponseDefault82
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2997,7 +2598,7 @@ class TokenizationApi(object):
         :param async_req bool
         :param Profile body:
         :param str request_token:
-        :return: InlineResponseDefault83
+        :return: InlineResponseDefault82
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3053,7 +2654,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault83',  # noqa: E501
+            response_type='InlineResponseDefault82',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -3071,7 +2672,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeAchToken body:
-        :return: InlineResponseDefault95
+        :return: InlineResponseDefault94
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3092,7 +2693,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeAchToken body:
-        :return: InlineResponseDefault95
+        :return: InlineResponseDefault94
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3146,7 +2747,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault95',  # noqa: E501
+            response_type='InlineResponseDefault94',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -3164,7 +2765,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeToken body:
-        :return: InlineResponseDefault96
+        :return: InlineResponseDefault95
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3185,7 +2786,7 @@ class TokenizationApi(object):
 
         :param async_req bool
         :param StripeToken body:
-        :return: InlineResponseDefault96
+        :return: InlineResponseDefault95
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -3239,7 +2840,7 @@ class TokenizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault96',  # noqa: E501
+            response_type='InlineResponseDefault95',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

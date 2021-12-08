@@ -21,9 +21,9 @@ Name | Type | Description | Notes
 **timezone** | [**UserTimezone**](UserTimezone.md) |  | 
 **flexcheck_user** | **bool** |  | 
 **two_fa** | **bool** |  | [optional] 
-**email** | **str** |  | [optional] 
 **main_username** | [**Username**](Username.md) |  | [optional] 
 **active_usernames** | **list[str]** |  | [optional] 
+**email** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

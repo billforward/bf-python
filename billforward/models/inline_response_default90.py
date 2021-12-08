@@ -29,7 +29,7 @@ class InlineResponseDefault90(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[PasswordResetResponse]'
+        'results': 'list[Username]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault90(object):
 
 
         :return: The results of this InlineResponseDefault90.  # noqa: E501
-        :rtype: list[PasswordResetResponse]
+        :rtype: list[Username]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault90(object):
 
 
         :param results: The results of this InlineResponseDefault90.  # noqa: E501
-        :type: list[PasswordResetResponse]
+        :type: list[Username]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

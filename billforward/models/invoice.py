@@ -79,6 +79,7 @@ class Invoice(object):
         'payment_terms': 'int',
         'children': 'list[Invoice]',
         'executions': 'list[ExecutionReceiptResponse]',
+        'monotonic_number': 'int',
         'total_invoice_cost': 'float',
         'zero_cost': 'bool',
         'c_rmid': 'str'
@@ -136,12 +137,13 @@ class Invoice(object):
         'payment_terms': 'paymentTerms',
         'children': 'children',
         'executions': 'executions',
+        'monotonic_number': 'monotonicNumber',
         'total_invoice_cost': 'totalInvoiceCost',
         'zero_cost': 'zeroCost',
         'c_rmid': 'cRMID'
     }
 
-    def __init__(self, created=None, changed_by=None, updated=None, metadata=None, version_id=None, id=None, subscription_id=None, subscription_version_id=None, account_id=None, organization_id=None, parent_invoice_id=None, name=None, description=None, state=None, issued=None, due=None, period_start=None, period_end=None, deleted=None, total_execution_attempts=None, last_execution_attempt=None, next_execution_attempt=None, final_execution_attempt=None, payment_received=None, currency=None, cost_excluding_tax=None, invoice_cost=None, non_discounted_cost=None, non_discounted_cost_excluding_tax=None, invoice_paid=None, discount_amount=None, discount_amount_excluding_tax=None, invoice_refunded=None, credit_rolled_over=None, credit_rolled_over_excluding_tax=None, type=None, locked=None, managed_by=None, initial_invoice=None, processing=None, purchase_order=None, version_number=None, invoice_lines=None, tax_lines=None, invoice_payments=None, invoice_refunds=None, invoice_credit_notes=None, charges=None, payment_terms=None, children=None, executions=None, total_invoice_cost=None, zero_cost=None, c_rmid=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, metadata=None, version_id=None, id=None, subscription_id=None, subscription_version_id=None, account_id=None, organization_id=None, parent_invoice_id=None, name=None, description=None, state=None, issued=None, due=None, period_start=None, period_end=None, deleted=None, total_execution_attempts=None, last_execution_attempt=None, next_execution_attempt=None, final_execution_attempt=None, payment_received=None, currency=None, cost_excluding_tax=None, invoice_cost=None, non_discounted_cost=None, non_discounted_cost_excluding_tax=None, invoice_paid=None, discount_amount=None, discount_amount_excluding_tax=None, invoice_refunded=None, credit_rolled_over=None, credit_rolled_over_excluding_tax=None, type=None, locked=None, managed_by=None, initial_invoice=None, processing=None, purchase_order=None, version_number=None, invoice_lines=None, tax_lines=None, invoice_payments=None, invoice_refunds=None, invoice_credit_notes=None, charges=None, payment_terms=None, children=None, executions=None, monotonic_number=None, total_invoice_cost=None, zero_cost=None, c_rmid=None):  # noqa: E501
         """Invoice - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -194,6 +196,7 @@ class Invoice(object):
         self._payment_terms = None
         self._children = None
         self._executions = None
+        self._monotonic_number = None
         self._total_invoice_cost = None
         self._zero_cost = None
         self._c_rmid = None
@@ -288,6 +291,8 @@ class Invoice(object):
             self.children = children
         if executions is not None:
             self.executions = executions
+        if monotonic_number is not None:
+            self.monotonic_number = monotonic_number
         if total_invoice_cost is not None:
             self.total_invoice_cost = total_invoice_cost
         if zero_cost is not None:
@@ -1407,6 +1412,27 @@ class Invoice(object):
         """
 
         self._executions = executions
+
+    @property
+    def monotonic_number(self):
+        """Gets the monotonic_number of this Invoice.  # noqa: E501
+
+
+        :return: The monotonic_number of this Invoice.  # noqa: E501
+        :rtype: int
+        """
+        return self._monotonic_number
+
+    @monotonic_number.setter
+    def monotonic_number(self, monotonic_number):
+        """Sets the monotonic_number of this Invoice.
+
+
+        :param monotonic_number: The monotonic_number of this Invoice.  # noqa: E501
+        :type: int
+        """
+
+        self._monotonic_number = monotonic_number
 
     @property
     def total_invoice_cost(self):

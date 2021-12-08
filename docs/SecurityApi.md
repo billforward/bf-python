@@ -28,7 +28,7 @@ Method | HTTP request | Description
 [**update_user_password_with_reset_code**](SecurityApi.md#update_user_password_with_reset_code) | **POST** /users/password-reset/password-update | 
 
 # **create_flexcheck_user_login**
-> InlineResponseDefault84 create_flexcheck_user_login(body=body)
+> InlineResponseDefault83 create_flexcheck_user_login(body=body)
 
 
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault84**](InlineResponseDefault84.md)
+[**InlineResponseDefault83**](InlineResponseDefault83.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_user_login**
-> InlineResponseDefault84 create_user_login(body=body)
+> InlineResponseDefault83 create_user_login(body=body)
 
 
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault84**](InlineResponseDefault84.md)
+[**InlineResponseDefault83**](InlineResponseDefault83.md)
 
 ### Authorization
 
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_current_user**
-> InlineResponseDefault86 get_current_user(organizations=organizations)
+> InlineResponseDefault85 get_current_user(organizations=organizations)
 
 
 
@@ -254,7 +254,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault86**](InlineResponseDefault86.md)
+[**InlineResponseDefault85**](InlineResponseDefault85.md)
 
 ### Authorization
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_my_organizations**
-> InlineResponseDefault87 get_my_organizations()
+> InlineResponseDefault86 get_my_organizations()
 
 
 
@@ -296,7 +296,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**InlineResponseDefault87**](InlineResponseDefault87.md)
+[**InlineResponseDefault86**](InlineResponseDefault86.md)
 
 ### Authorization
 
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_simple_all_users**
-> InlineResponseDefault85 get_simple_all_users(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order)
+> InlineResponseDefault84 get_simple_all_users(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order)
 
 
 
@@ -446,7 +446,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault85**](InlineResponseDefault85.md)
+[**InlineResponseDefault84**](InlineResponseDefault84.md)
 
 ### Authorization
 
@@ -502,7 +502,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_user_by_username**
-> InlineResponseDefault88 get_user_by_username(email, organizations=organizations)
+> InlineResponseDefault87 get_user_by_username(email, organizations=organizations)
 
 
 
@@ -536,7 +536,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault88**](InlineResponseDefault88.md)
+[**InlineResponseDefault87**](InlineResponseDefault87.md)
 
 ### Authorization
 
@@ -550,7 +550,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **invite_user_login**
-> InlineResponseDefault84 invite_user_login(body=body)
+> InlineResponseDefault83 invite_user_login(body=body)
 
 
 
@@ -582,7 +582,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault84**](InlineResponseDefault84.md)
+[**InlineResponseDefault83**](InlineResponseDefault83.md)
 
 ### Authorization
 
@@ -596,7 +596,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **link_open_id_token_to_user**
-> InlineResponseDefault89 link_open_id_token_to_user(body=body)
+> InlineResponseDefault88 link_open_id_token_to_user(body=body)
 
 
 
@@ -628,7 +628,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault89**](InlineResponseDefault89.md)
+[**InlineResponseDefault88**](InlineResponseDefault88.md)
 
 ### Authorization
 
@@ -740,7 +740,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **request_password_reset_code**
-> InlineResponseDefault90 request_password_reset_code(body=body)
+> InlineResponseDefault89 request_password_reset_code(body=body)
 
 
 
@@ -772,7 +772,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault90**](InlineResponseDefault90.md)
+[**InlineResponseDefault89**](InlineResponseDefault89.md)
 
 ### Authorization
 
@@ -834,7 +834,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_email**
-> InlineResponseDefault86 update_email(email, body=body, organizations=organizations)
+> InlineResponseDefault85 update_email(email, body=body, organizations=organizations)
 
 
 
@@ -870,7 +870,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault86**](InlineResponseDefault86.md)
+[**InlineResponseDefault85**](InlineResponseDefault85.md)
 
 ### Authorization
 
@@ -930,7 +930,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_user_infos**
-> InlineResponseDefault91 update_user_infos(email, body=body, organizations=organizations)
+> InlineResponseDefault90 update_user_infos(email, body=body, organizations=organizations)
 
 
 
@@ -966,7 +966,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault91**](InlineResponseDefault91.md)
+[**InlineResponseDefault90**](InlineResponseDefault90.md)
 
 ### Authorization
 
@@ -980,7 +980,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_user_password**
-> InlineResponseDefault92 update_user_password(email, body=body, organizations=organizations)
+> InlineResponseDefault91 update_user_password(email, body=body, organizations=organizations)
 
 
 
@@ -1016,7 +1016,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault92**](InlineResponseDefault92.md)
+[**InlineResponseDefault91**](InlineResponseDefault91.md)
 
 ### Authorization
 
@@ -1030,7 +1030,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_user_password_with_reset_code**
-> InlineResponseDefault92 update_user_password_with_reset_code(body=body)
+> InlineResponseDefault91 update_user_password_with_reset_code(body=body)
 
 
 
@@ -1062,7 +1062,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault92**](InlineResponseDefault92.md)
+[**InlineResponseDefault91**](InlineResponseDefault91.md)
 
 ### Authorization
 

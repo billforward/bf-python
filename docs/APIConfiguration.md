@@ -24,9 +24,9 @@ Name | Type | Description | Notes
 **expires_at** | **datetime** |  | [optional] 
 **migrations** | [**list[Migration]**](Migration.md) |  | [optional] 
 **gateway_type** | **str** |  | [optional] 
+**apilogin_id** | **str** |  | [optional] 
 **production** | **bool** |  | [optional] 
 **environment_type** | **str** |  | [optional] 
-**apilogin_id** | **str** |  | [optional] 
 **apikey** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

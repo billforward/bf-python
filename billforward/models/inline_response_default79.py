@@ -29,7 +29,7 @@ class InlineResponseDefault79(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[EpxPreAuthResponse]'
+        'results': 'list[EmailTokenization]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault79(object):
 
 
         :return: The results of this InlineResponseDefault79.  # noqa: E501
-        :rtype: list[EpxPreAuthResponse]
+        :rtype: list[EmailTokenization]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault79(object):
 
 
         :param results: The results of this InlineResponseDefault79.  # noqa: E501
-        :type: list[EpxPreAuthResponse]
+        :type: list[EmailTokenization]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

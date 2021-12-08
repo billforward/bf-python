@@ -35,7 +35,7 @@ class InlineResponseDefault100(object):
         'records_returned': 'int',
         'total_records': 'int',
         'execution_time': 'int',
-        'results': 'list[StripeAchToken]'
+        'results': 'list[Webhook]'
     }
 
     attribute_map = {
@@ -230,7 +230,7 @@ class InlineResponseDefault100(object):
 
 
         :return: The results of this InlineResponseDefault100.  # noqa: E501
-        :rtype: list[StripeAchToken]
+        :rtype: list[Webhook]
         """
         return self._results
 
@@ -240,7 +240,7 @@ class InlineResponseDefault100(object):
 
 
         :param results: The results of this InlineResponseDefault100.  # noqa: E501
-        :type: list[StripeAchToken]
+        :type: list[Webhook]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

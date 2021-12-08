@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **include_retired** | **bool** |  | [optional] 
 **wildcard** | **bool** |  | [optional] 
 **entity** | **bool** |  | [optional] 
-**typed_single_result** | [**Coupon**](Coupon.md) |  | [optional] 
 **typed_results** | [**list[Coupon]**](Coupon.md) |  | [optional] 
+**typed_single_result** | [**Coupon**](Coupon.md) |  | [optional] 
 **single_result** | [**BillingEntityBase**](BillingEntityBase.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

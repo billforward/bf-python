@@ -42,8 +42,8 @@ class TypedQueryResultWrapperPayment(object):
         'include_retired': 'bool',
         'wildcard': 'bool',
         'entity': 'bool',
-        'typed_single_result': 'Payment',
         'typed_results': 'list[Payment]',
+        'typed_single_result': 'Payment',
         'single_result': 'BillingEntityBase'
     }
 
@@ -62,12 +62,12 @@ class TypedQueryResultWrapperPayment(object):
         'include_retired': 'includeRetired',
         'wildcard': 'wildcard',
         'entity': 'entity',
-        'typed_single_result': 'typedSingleResult',
         'typed_results': 'typedResults',
+        'typed_single_result': 'typedSingleResult',
         'single_result': 'singleResult'
     }
 
-    def __init__(self, entity_name=None, total_records_returned=None, total_records=None, results=None, arguments=None, organizations=None, types=None, offset=None, records=None, order_by=None, order_direction=None, include_retired=None, wildcard=None, entity=None, typed_single_result=None, typed_results=None, single_result=None):  # noqa: E501
+    def __init__(self, entity_name=None, total_records_returned=None, total_records=None, results=None, arguments=None, organizations=None, types=None, offset=None, records=None, order_by=None, order_direction=None, include_retired=None, wildcard=None, entity=None, typed_results=None, typed_single_result=None, single_result=None):  # noqa: E501
         """TypedQueryResultWrapperPayment - a model defined in Swagger"""  # noqa: E501
         self._entity_name = None
         self._total_records_returned = None
@@ -83,8 +83,8 @@ class TypedQueryResultWrapperPayment(object):
         self._include_retired = None
         self._wildcard = None
         self._entity = None
-        self._typed_single_result = None
         self._typed_results = None
+        self._typed_single_result = None
         self._single_result = None
         self.discriminator = None
         if entity_name is not None:
@@ -115,10 +115,10 @@ class TypedQueryResultWrapperPayment(object):
             self.wildcard = wildcard
         if entity is not None:
             self.entity = entity
-        if typed_single_result is not None:
-            self.typed_single_result = typed_single_result
         if typed_results is not None:
             self.typed_results = typed_results
+        if typed_single_result is not None:
+            self.typed_single_result = typed_single_result
         if single_result is not None:
             self.single_result = single_result
 
@@ -429,27 +429,6 @@ class TypedQueryResultWrapperPayment(object):
         self._entity = entity
 
     @property
-    def typed_single_result(self):
-        """Gets the typed_single_result of this TypedQueryResultWrapperPayment.  # noqa: E501
-
-
-        :return: The typed_single_result of this TypedQueryResultWrapperPayment.  # noqa: E501
-        :rtype: Payment
-        """
-        return self._typed_single_result
-
-    @typed_single_result.setter
-    def typed_single_result(self, typed_single_result):
-        """Sets the typed_single_result of this TypedQueryResultWrapperPayment.
-
-
-        :param typed_single_result: The typed_single_result of this TypedQueryResultWrapperPayment.  # noqa: E501
-        :type: Payment
-        """
-
-        self._typed_single_result = typed_single_result
-
-    @property
     def typed_results(self):
         """Gets the typed_results of this TypedQueryResultWrapperPayment.  # noqa: E501
 
@@ -469,6 +448,27 @@ class TypedQueryResultWrapperPayment(object):
         """
 
         self._typed_results = typed_results
+
+    @property
+    def typed_single_result(self):
+        """Gets the typed_single_result of this TypedQueryResultWrapperPayment.  # noqa: E501
+
+
+        :return: The typed_single_result of this TypedQueryResultWrapperPayment.  # noqa: E501
+        :rtype: Payment
+        """
+        return self._typed_single_result
+
+    @typed_single_result.setter
+    def typed_single_result(self, typed_single_result):
+        """Sets the typed_single_result of this TypedQueryResultWrapperPayment.
+
+
+        :param typed_single_result: The typed_single_result of this TypedQueryResultWrapperPayment.  # noqa: E501
+        :type: Payment
+        """
+
+        self._typed_single_result = typed_single_result
 
     @property
     def single_result(self):

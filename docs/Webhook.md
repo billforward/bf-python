@@ -15,7 +15,6 @@ Name | Type | Description | Notes
 **inactive_level** | **int** |  | [optional] 
 **webhook_subscriptions** | [**list[WebhookSubscription]**](WebhookSubscription.md) |  | [optional] 
 **url** | **str** |  | [optional] 
-**url** | **str** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

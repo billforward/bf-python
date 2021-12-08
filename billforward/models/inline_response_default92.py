@@ -29,7 +29,7 @@ class InlineResponseDefault92(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[UpdatePasswordResponse]'
+        'results': 'list[AuthorizeNetToken]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault92(object):
 
 
         :return: The results of this InlineResponseDefault92.  # noqa: E501
-        :rtype: list[UpdatePasswordResponse]
+        :rtype: list[AuthorizeNetToken]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault92(object):
 
 
         :param results: The results of this InlineResponseDefault92.  # noqa: E501
-        :type: list[UpdatePasswordResponse]
+        :type: list[AuthorizeNetToken]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

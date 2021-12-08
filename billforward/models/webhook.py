@@ -39,7 +39,6 @@ class Webhook(object):
         'temporarily_inactive_until': 'datetime',
         'inactive_level': 'int',
         'webhook_subscriptions': 'list[WebhookSubscription]',
-        'url': 'str',
         'url': 'str'
     }
 
@@ -55,11 +54,10 @@ class Webhook(object):
         'temporarily_inactive_until': 'temporarilyInactiveUntil',
         'inactive_level': 'inactiveLevel',
         'webhook_subscriptions': 'webhookSubscriptions',
-        'url': 'url',
         'url': 'URL'
     }
 
-    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, name=None, consecutive_failures=None, deleted=None, temporarily_inactive_until=None, inactive_level=None, webhook_subscriptions=None, url=None, url=None):  # noqa: E501
+    def __init__(self, created=None, changed_by=None, updated=None, id=None, organization_id=None, name=None, consecutive_failures=None, deleted=None, temporarily_inactive_until=None, inactive_level=None, webhook_subscriptions=None, url=None):  # noqa: E501
         """Webhook - a model defined in Swagger"""  # noqa: E501
         self._created = None
         self._changed_by = None
@@ -72,7 +70,6 @@ class Webhook(object):
         self._temporarily_inactive_until = None
         self._inactive_level = None
         self._webhook_subscriptions = None
-        self._url = None
         self._url = None
         self.discriminator = None
         if created is not None:
@@ -97,8 +94,6 @@ class Webhook(object):
             self.inactive_level = inactive_level
         if webhook_subscriptions is not None:
             self.webhook_subscriptions = webhook_subscriptions
-        if url is not None:
-            self.url = url
         if url is not None:
             self.url = url
 
@@ -332,27 +327,6 @@ class Webhook(object):
         """
 
         self._webhook_subscriptions = webhook_subscriptions
-
-    @property
-    def url(self):
-        """Gets the url of this Webhook.  # noqa: E501
-
-
-        :return: The url of this Webhook.  # noqa: E501
-        :rtype: str
-        """
-        return self._url
-
-    @url.setter
-    def url(self, url):
-        """Sets the url of this Webhook.
-
-
-        :param url: The url of this Webhook.  # noqa: E501
-        :type: str
-        """
-
-        self._url = url
 
     @property
     def url(self):

@@ -54,6 +54,7 @@ Name | Type | Description | Notes
 **payment_terms** | **int** |  | [optional] 
 **children** | [**list[Invoice]**](Invoice.md) |  | [optional] 
 **executions** | [**list[ExecutionReceiptResponse]**](ExecutionReceiptResponse.md) |  | [optional] 
+**monotonic_number** | **int** |  | [optional] 
 **total_invoice_cost** | **float** |  | [optional] 
 **zero_cost** | **bool** |  | [optional] 
 **c_rmid** | **str** |  | [optional] 

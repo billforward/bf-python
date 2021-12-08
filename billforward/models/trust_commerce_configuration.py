@@ -29,50 +29,29 @@ class TrustCommerceConfiguration(APIConfiguration):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'password': 'str',
-        'cust_id': 'str'
+        'cust_id': 'str',
+        'password': 'str'
     }
     if hasattr(APIConfiguration, "swagger_types"):
         swagger_types.update(APIConfiguration.swagger_types)
 
     attribute_map = {
-        'password': 'password',
-        'cust_id': 'custID'
+        'cust_id': 'custID',
+        'password': 'password'
     }
     if hasattr(APIConfiguration, "attribute_map"):
         attribute_map.update(APIConfiguration.attribute_map)
 
-    def __init__(self, password=None, cust_id=None, *args, **kwargs):  # noqa: E501
+    def __init__(self, cust_id=None, password=None, *args, **kwargs):  # noqa: E501
         """TrustCommerceConfiguration - a model defined in Swagger"""  # noqa: E501
-        self._password = None
         self._cust_id = None
+        self._password = None
         self.discriminator = None
-        if password is not None:
-            self.password = password
         if cust_id is not None:
             self.cust_id = cust_id
+        if password is not None:
+            self.password = password
         APIConfiguration.__init__(self, *args, **kwargs)
-
-    @property
-    def password(self):
-        """Gets the password of this TrustCommerceConfiguration.  # noqa: E501
-
-
-        :return: The password of this TrustCommerceConfiguration.  # noqa: E501
-        :rtype: str
-        """
-        return self._password
-
-    @password.setter
-    def password(self, password):
-        """Sets the password of this TrustCommerceConfiguration.
-
-
-        :param password: The password of this TrustCommerceConfiguration.  # noqa: E501
-        :type: str
-        """
-
-        self._password = password
 
     @property
     def cust_id(self):
@@ -94,6 +73,27 @@ class TrustCommerceConfiguration(APIConfiguration):
         """
 
         self._cust_id = cust_id
+
+    @property
+    def password(self):
+        """Gets the password of this TrustCommerceConfiguration.  # noqa: E501
+
+
+        :return: The password of this TrustCommerceConfiguration.  # noqa: E501
+        :rtype: str
+        """
+        return self._password
+
+    @password.setter
+    def password(self, password):
+        """Sets the password of this TrustCommerceConfiguration.
+
+
+        :param password: The password of this TrustCommerceConfiguration.  # noqa: E501
+        :type: str
+        """
+
+        self._password = password
 
     def to_dict(self):
         """Returns the model properties as a dict"""

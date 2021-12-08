@@ -14,7 +14,7 @@ Method | HTTP request | Description
 [**verify_webhook**](WebhooksApi.md#verify_webhook) | **GET** /webhooks/verify/{verification-ID} | 
 
 # **create_webhook**
-> InlineResponseDefault102 create_webhook(body=body)
+> InlineResponseDefault101 create_webhook(body=body)
 
 
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault102**](InlineResponseDefault102.md)
+[**InlineResponseDefault101**](InlineResponseDefault101.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **create_webhook_v2**
-> InlineResponseDefault102 create_webhook_v2(body=body)
+> InlineResponseDefault101 create_webhook_v2(body=body)
 
 
 
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault102**](InlineResponseDefault102.md)
+[**InlineResponseDefault101**](InlineResponseDefault101.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_webhooks**
-> InlineResponseDefault101 get_all_webhooks(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
+> InlineResponseDefault100 get_all_webhooks(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
 
 
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault101**](InlineResponseDefault101.md)
+[**InlineResponseDefault100**](InlineResponseDefault100.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_allowed_webhook_subscriptions**
-> InlineResponseDefault103 get_allowed_webhook_subscriptions(organizations=organizations)
+> InlineResponseDefault102 get_allowed_webhook_subscriptions(organizations=organizations)
 
 
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault103**](InlineResponseDefault103.md)
+[**InlineResponseDefault102**](InlineResponseDefault102.md)
 
 ### Authorization
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_webhook_by_id**
-> InlineResponseDefault102 get_webhook_by_id(webhook_id, organizations=organizations)
+> InlineResponseDefault101 get_webhook_by_id(webhook_id, organizations=organizations)
 
 
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault102**](InlineResponseDefault102.md)
+[**InlineResponseDefault101**](InlineResponseDefault101.md)
 
 ### Authorization
 
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **retire_webhook**
-> InlineResponseDefault102 retire_webhook(webhook_id, organizations=organizations)
+> InlineResponseDefault101 retire_webhook(webhook_id, organizations=organizations)
 
 
 
@@ -290,7 +290,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault102**](InlineResponseDefault102.md)
+[**InlineResponseDefault101**](InlineResponseDefault101.md)
 
 ### Authorization
 
@@ -304,7 +304,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **update_webhook**
-> InlineResponseDefault102 update_webhook(body=body)
+> InlineResponseDefault101 update_webhook(body=body)
 
 
 
@@ -336,7 +336,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault102**](InlineResponseDefault102.md)
+[**InlineResponseDefault101**](InlineResponseDefault101.md)
 
 ### Authorization
 
@@ -350,7 +350,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **verify_webhook**
-> InlineResponseDefault102 verify_webhook(verification_id, organizations=organizations)
+> InlineResponseDefault101 verify_webhook(verification_id, organizations=organizations)
 
 
 
@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**InlineResponseDefault102**](InlineResponseDefault102.md)
+[**InlineResponseDefault101**](InlineResponseDefault101.md)
 
 ### Authorization
 

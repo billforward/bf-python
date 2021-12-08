@@ -35,7 +35,7 @@ class InlineResponseDefault99(object):
         'records_returned': 'int',
         'total_records': 'int',
         'execution_time': 'int',
-        'results': 'list[StripeToken]'
+        'results': 'list[StripeAchToken]'
     }
 
     attribute_map = {
@@ -230,7 +230,7 @@ class InlineResponseDefault99(object):
 
 
         :return: The results of this InlineResponseDefault99.  # noqa: E501
-        :rtype: list[StripeToken]
+        :rtype: list[StripeAchToken]
         """
         return self._results
 
@@ -240,7 +240,7 @@ class InlineResponseDefault99(object):
 
 
         :param results: The results of this InlineResponseDefault99.  # noqa: E501
-        :type: list[StripeToken]
+        :type: list[StripeAchToken]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

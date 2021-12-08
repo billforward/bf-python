@@ -35,7 +35,7 @@ class InlineResponseDefault98(object):
         'records_returned': 'int',
         'total_records': 'int',
         'execution_time': 'int',
-        'results': 'list[BraintreeToken]'
+        'results': 'list[StripeToken]'
     }
 
     attribute_map = {
@@ -230,7 +230,7 @@ class InlineResponseDefault98(object):
 
 
         :return: The results of this InlineResponseDefault98.  # noqa: E501
-        :rtype: list[BraintreeToken]
+        :rtype: list[StripeToken]
         """
         return self._results
 
@@ -240,7 +240,7 @@ class InlineResponseDefault98(object):
 
 
         :param results: The results of this InlineResponseDefault98.  # noqa: E501
-        :type: list[BraintreeToken]
+        :type: list[StripeToken]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

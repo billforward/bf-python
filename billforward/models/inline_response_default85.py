@@ -28,178 +28,22 @@ class InlineResponseDefault85(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'next_page': 'str',
-        'current_page': 'int',
-        'current_offset': 'int',
-        'records_requested': 'int',
-        'records_returned': 'int',
-        'total_records': 'int',
         'execution_time': 'int',
-        'results': 'list[SimpleUser]'
+        'results': 'list[UserResponse]'
     }
 
     attribute_map = {
-        'next_page': 'nextPage',
-        'current_page': 'currentPage',
-        'current_offset': 'currentOffset',
-        'records_requested': 'recordsRequested',
-        'records_returned': 'recordsReturned',
-        'total_records': 'totalRecords',
         'execution_time': 'executionTime',
         'results': 'results'
     }
 
-    def __init__(self, next_page=None, current_page=None, current_offset=None, records_requested=None, records_returned=None, total_records=None, execution_time=None, results=None):  # noqa: E501
+    def __init__(self, execution_time=None, results=None):  # noqa: E501
         """InlineResponseDefault85 - a model defined in Swagger"""  # noqa: E501
-        self._next_page = None
-        self._current_page = None
-        self._current_offset = None
-        self._records_requested = None
-        self._records_returned = None
-        self._total_records = None
         self._execution_time = None
         self._results = None
         self.discriminator = None
-        if next_page is not None:
-            self.next_page = next_page
-        if current_page is not None:
-            self.current_page = current_page
-        if current_offset is not None:
-            self.current_offset = current_offset
-        if records_requested is not None:
-            self.records_requested = records_requested
-        if records_returned is not None:
-            self.records_returned = records_returned
-        if total_records is not None:
-            self.total_records = total_records
         self.execution_time = execution_time
         self.results = results
-
-    @property
-    def next_page(self):
-        """Gets the next_page of this InlineResponseDefault85.  # noqa: E501
-
-
-        :return: The next_page of this InlineResponseDefault85.  # noqa: E501
-        :rtype: str
-        """
-        return self._next_page
-
-    @next_page.setter
-    def next_page(self, next_page):
-        """Sets the next_page of this InlineResponseDefault85.
-
-
-        :param next_page: The next_page of this InlineResponseDefault85.  # noqa: E501
-        :type: str
-        """
-
-        self._next_page = next_page
-
-    @property
-    def current_page(self):
-        """Gets the current_page of this InlineResponseDefault85.  # noqa: E501
-
-
-        :return: The current_page of this InlineResponseDefault85.  # noqa: E501
-        :rtype: int
-        """
-        return self._current_page
-
-    @current_page.setter
-    def current_page(self, current_page):
-        """Sets the current_page of this InlineResponseDefault85.
-
-
-        :param current_page: The current_page of this InlineResponseDefault85.  # noqa: E501
-        :type: int
-        """
-
-        self._current_page = current_page
-
-    @property
-    def current_offset(self):
-        """Gets the current_offset of this InlineResponseDefault85.  # noqa: E501
-
-
-        :return: The current_offset of this InlineResponseDefault85.  # noqa: E501
-        :rtype: int
-        """
-        return self._current_offset
-
-    @current_offset.setter
-    def current_offset(self, current_offset):
-        """Sets the current_offset of this InlineResponseDefault85.
-
-
-        :param current_offset: The current_offset of this InlineResponseDefault85.  # noqa: E501
-        :type: int
-        """
-
-        self._current_offset = current_offset
-
-    @property
-    def records_requested(self):
-        """Gets the records_requested of this InlineResponseDefault85.  # noqa: E501
-
-
-        :return: The records_requested of this InlineResponseDefault85.  # noqa: E501
-        :rtype: int
-        """
-        return self._records_requested
-
-    @records_requested.setter
-    def records_requested(self, records_requested):
-        """Sets the records_requested of this InlineResponseDefault85.
-
-
-        :param records_requested: The records_requested of this InlineResponseDefault85.  # noqa: E501
-        :type: int
-        """
-
-        self._records_requested = records_requested
-
-    @property
-    def records_returned(self):
-        """Gets the records_returned of this InlineResponseDefault85.  # noqa: E501
-
-
-        :return: The records_returned of this InlineResponseDefault85.  # noqa: E501
-        :rtype: int
-        """
-        return self._records_returned
-
-    @records_returned.setter
-    def records_returned(self, records_returned):
-        """Sets the records_returned of this InlineResponseDefault85.
-
-
-        :param records_returned: The records_returned of this InlineResponseDefault85.  # noqa: E501
-        :type: int
-        """
-
-        self._records_returned = records_returned
-
-    @property
-    def total_records(self):
-        """Gets the total_records of this InlineResponseDefault85.  # noqa: E501
-
-
-        :return: The total_records of this InlineResponseDefault85.  # noqa: E501
-        :rtype: int
-        """
-        return self._total_records
-
-    @total_records.setter
-    def total_records(self, total_records):
-        """Sets the total_records of this InlineResponseDefault85.
-
-
-        :param total_records: The total_records of this InlineResponseDefault85.  # noqa: E501
-        :type: int
-        """
-
-        self._total_records = total_records
 
     @property
     def execution_time(self):
@@ -230,7 +74,7 @@ class InlineResponseDefault85(object):
 
 
         :return: The results of this InlineResponseDefault85.  # noqa: E501
-        :rtype: list[SimpleUser]
+        :rtype: list[UserResponse]
         """
         return self._results
 
@@ -240,7 +84,7 @@ class InlineResponseDefault85(object):
 
 
         :param results: The results of this InlineResponseDefault85.  # noqa: E501
-        :type: list[SimpleUser]
+        :type: list[UserResponse]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

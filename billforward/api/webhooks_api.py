@@ -42,7 +42,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param Webhook body:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param Webhook body:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault102',  # noqa: E501
+            response_type='InlineResponseDefault101',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -135,7 +135,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param LegacyCreateWebhookRequest body:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -156,7 +156,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param LegacyCreateWebhookRequest body:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -210,7 +210,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault102',  # noqa: E501
+            response_type='InlineResponseDefault101',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -233,7 +233,7 @@ class WebhooksApi(object):
         :param str order_by:
         :param str order:
         :param bool include_retired:
-        :return: InlineResponseDefault101
+        :return: InlineResponseDefault100
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -259,7 +259,7 @@ class WebhooksApi(object):
         :param str order_by:
         :param str order:
         :param bool include_retired:
-        :return: InlineResponseDefault101
+        :return: InlineResponseDefault100
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -320,7 +320,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault101',  # noqa: E501
+            response_type='InlineResponseDefault100',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -338,7 +338,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param list[str] organizations:
-        :return: InlineResponseDefault103
+        :return: InlineResponseDefault102
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -359,7 +359,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param list[str] organizations:
-        :return: InlineResponseDefault103
+        :return: InlineResponseDefault102
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -410,7 +410,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault103',  # noqa: E501
+            response_type='InlineResponseDefault102',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -429,7 +429,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str webhook_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -451,7 +451,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str webhook_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -508,7 +508,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault102',  # noqa: E501
+            response_type='InlineResponseDefault101',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -527,7 +527,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str webhook_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -549,7 +549,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str webhook_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -606,7 +606,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault102',  # noqa: E501
+            response_type='InlineResponseDefault101',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -624,7 +624,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param Webhook body:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -645,7 +645,7 @@ class WebhooksApi(object):
 
         :param async_req bool
         :param Webhook body:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -699,7 +699,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault102',  # noqa: E501
+            response_type='InlineResponseDefault101',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -718,7 +718,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str verification_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -740,7 +740,7 @@ class WebhooksApi(object):
         :param async_req bool
         :param str verification_id: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault102
+        :return: InlineResponseDefault101
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -797,7 +797,7 @@ class WebhooksApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault102',  # noqa: E501
+            response_type='InlineResponseDefault101',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

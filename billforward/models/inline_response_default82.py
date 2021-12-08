@@ -29,7 +29,7 @@ class InlineResponseDefault82(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[TokenizationPreAuth]'
+        'results': 'list[Profile]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault82(object):
 
 
         :return: The results of this InlineResponseDefault82.  # noqa: E501
-        :rtype: list[TokenizationPreAuth]
+        :rtype: list[Profile]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault82(object):
 
 
         :param results: The results of this InlineResponseDefault82.  # noqa: E501
-        :type: list[TokenizationPreAuth]
+        :type: list[Profile]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

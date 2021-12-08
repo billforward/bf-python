@@ -42,7 +42,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param UserCreateRequest body:
-        :return: InlineResponseDefault84
+        :return: InlineResponseDefault83
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -63,7 +63,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param UserCreateRequest body:
-        :return: InlineResponseDefault84
+        :return: InlineResponseDefault83
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -117,7 +117,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault84',  # noqa: E501
+            response_type='InlineResponseDefault83',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -228,7 +228,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param UserCreateRequest body:
-        :return: InlineResponseDefault84
+        :return: InlineResponseDefault83
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -249,7 +249,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param UserCreateRequest body:
-        :return: InlineResponseDefault84
+        :return: InlineResponseDefault83
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -303,7 +303,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault84',  # noqa: E501
+            response_type='InlineResponseDefault83',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -431,7 +431,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param list[str] organizations:
-        :return: InlineResponseDefault86
+        :return: InlineResponseDefault85
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -452,7 +452,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param list[str] organizations:
-        :return: InlineResponseDefault86
+        :return: InlineResponseDefault85
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -503,7 +503,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault86',  # noqa: E501
+            response_type='InlineResponseDefault85',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -520,7 +520,7 @@ class SecurityApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponseDefault87
+        :return: InlineResponseDefault86
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -540,7 +540,7 @@ class SecurityApi(object):
         >>> result = thread.get()
 
         :param async_req bool
-        :return: InlineResponseDefault87
+        :return: InlineResponseDefault86
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -588,7 +588,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault87',  # noqa: E501
+            response_type='InlineResponseDefault86',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -805,7 +805,7 @@ class SecurityApi(object):
         :param int records:
         :param str order_by:
         :param str order:
-        :return: InlineResponseDefault85
+        :return: InlineResponseDefault84
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -830,7 +830,7 @@ class SecurityApi(object):
         :param int records:
         :param str order_by:
         :param str order:
-        :return: InlineResponseDefault85
+        :return: InlineResponseDefault84
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -889,7 +889,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault85',  # noqa: E501
+            response_type='InlineResponseDefault84',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -993,7 +993,7 @@ class SecurityApi(object):
         :param async_req bool
         :param str email: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault88
+        :return: InlineResponseDefault87
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1015,7 +1015,7 @@ class SecurityApi(object):
         :param async_req bool
         :param str email: (required)
         :param list[str] organizations:
-        :return: InlineResponseDefault88
+        :return: InlineResponseDefault87
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1072,7 +1072,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault88',  # noqa: E501
+            response_type='InlineResponseDefault87',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1090,7 +1090,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param UserInviteRequest body:
-        :return: InlineResponseDefault84
+        :return: InlineResponseDefault83
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1111,7 +1111,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param UserInviteRequest body:
-        :return: InlineResponseDefault84
+        :return: InlineResponseDefault83
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1165,7 +1165,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault84',  # noqa: E501
+            response_type='InlineResponseDefault83',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1183,7 +1183,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param OpenIdUserLinkRequest body:
-        :return: InlineResponseDefault89
+        :return: InlineResponseDefault88
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1204,7 +1204,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param OpenIdUserLinkRequest body:
-        :return: InlineResponseDefault89
+        :return: InlineResponseDefault88
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1258,7 +1258,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault89',  # noqa: E501
+            response_type='InlineResponseDefault88',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1483,7 +1483,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param PasswordResetCodeRequest body:
-        :return: InlineResponseDefault90
+        :return: InlineResponseDefault89
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1504,7 +1504,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param PasswordResetCodeRequest body:
-        :return: InlineResponseDefault90
+        :return: InlineResponseDefault89
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1558,7 +1558,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault90',  # noqa: E501
+            response_type='InlineResponseDefault89',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1676,7 +1676,7 @@ class SecurityApi(object):
         :param str email: (required)
         :param UpdateEmailRequest body:
         :param list[str] organizations:
-        :return: InlineResponseDefault86
+        :return: InlineResponseDefault85
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1699,7 +1699,7 @@ class SecurityApi(object):
         :param str email: (required)
         :param UpdateEmailRequest body:
         :param list[str] organizations:
-        :return: InlineResponseDefault86
+        :return: InlineResponseDefault85
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1762,7 +1762,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault86',  # noqa: E501
+            response_type='InlineResponseDefault85',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1875,7 +1875,7 @@ class SecurityApi(object):
         :param str email: (required)
         :param UpdateUserInfoRequest body:
         :param list[str] organizations:
-        :return: InlineResponseDefault91
+        :return: InlineResponseDefault90
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1898,7 +1898,7 @@ class SecurityApi(object):
         :param str email: (required)
         :param UpdateUserInfoRequest body:
         :param list[str] organizations:
-        :return: InlineResponseDefault91
+        :return: InlineResponseDefault90
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -1961,7 +1961,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault91',  # noqa: E501
+            response_type='InlineResponseDefault90',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -1981,7 +1981,7 @@ class SecurityApi(object):
         :param str email: (required)
         :param UpdatePasswordRequest body:
         :param list[str] organizations:
-        :return: InlineResponseDefault92
+        :return: InlineResponseDefault91
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2004,7 +2004,7 @@ class SecurityApi(object):
         :param str email: (required)
         :param UpdatePasswordRequest body:
         :param list[str] organizations:
-        :return: InlineResponseDefault92
+        :return: InlineResponseDefault91
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2067,7 +2067,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault92',  # noqa: E501
+            response_type='InlineResponseDefault91',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),
@@ -2085,7 +2085,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param PasswordUpdateWithResetCodeRequest body:
-        :return: InlineResponseDefault92
+        :return: InlineResponseDefault91
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2106,7 +2106,7 @@ class SecurityApi(object):
 
         :param async_req bool
         :param PasswordUpdateWithResetCodeRequest body:
-        :return: InlineResponseDefault92
+        :return: InlineResponseDefault91
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -2160,7 +2160,7 @@ class SecurityApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='InlineResponseDefault92',  # noqa: E501
+            response_type='InlineResponseDefault91',  # noqa: E501
             auth_settings=auth_settings,
             async_req=params.get('async_req'),
             _return_http_data_only=params.get('_return_http_data_only'),

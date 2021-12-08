@@ -35,7 +35,7 @@ class InlineResponseDefault87(object):
         'records_returned': 'int',
         'total_records': 'int',
         'execution_time': 'int',
-        'results': 'list[OrganizationLiteView]'
+        'results': 'list[UserResponse]'
     }
 
     attribute_map = {
@@ -230,7 +230,7 @@ class InlineResponseDefault87(object):
 
 
         :return: The results of this InlineResponseDefault87.  # noqa: E501
-        :rtype: list[OrganizationLiteView]
+        :rtype: list[UserResponse]
         """
         return self._results
 
@@ -240,7 +240,7 @@ class InlineResponseDefault87(object):
 
 
         :param results: The results of this InlineResponseDefault87.  # noqa: E501
-        :type: list[OrganizationLiteView]
+        :type: list[UserResponse]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501

@@ -29,7 +29,7 @@ class InlineResponseDefault83(object):
     """
     swagger_types = {
         'execution_time': 'int',
-        'results': 'list[Profile]'
+        'results': 'list[UserCreationResponse]'
     }
 
     attribute_map = {
@@ -74,7 +74,7 @@ class InlineResponseDefault83(object):
 
 
         :return: The results of this InlineResponseDefault83.  # noqa: E501
-        :rtype: list[Profile]
+        :rtype: list[UserCreationResponse]
         """
         return self._results
 
@@ -84,7 +84,7 @@ class InlineResponseDefault83(object):
 
 
         :param results: The results of this InlineResponseDefault83.  # noqa: E501
-        :type: list[Profile]
+        :type: list[UserCreationResponse]
         """
         if results is None:
             raise ValueError("Invalid value for `results`, must not be `None`")  # noqa: E501
