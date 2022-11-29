@@ -3,23 +3,25 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**created** | **datetime** | { \&quot;description\&quot; : \&quot;The UTC DateTime when the object was created.\&quot;, \&quot;verbs\&quot;:[] } | [optional] 
-**id** | **str** | {\&quot;description\&quot;:\&quot;ID of an existing charge to add to the invoice \&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**name** | **str** | {\&quot;description\&quot;:\&quot;Friendly name given to the charge to help identify it.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**description** | **str** | {\&quot;description\&quot;:\&quot;\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**currency** | **str** | { \&quot;description\&quot; : \&quot;Currency of the invoice specified by a three character ISO 4217 currency code.\&quot;, \&quot;verbs\&quot;:[\&quot;GET\&quot;] } | [optional] 
-**amount** | **float** | {\&quot;description\&quot;:\&quot;Monetary amount for which to charge. Used only for ad-hoc charges i.e charges not associated with any pricing component. Applicable if pricingComponent is NOT defined\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**tax_amount** | **bool** | {\&quot;default\&quot;:false,\&quot;description\&quot;:\&quot;Applicable if amount is specified and indicates whether or not to apply tax in addition to the value specified.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;true&lt;/span&gt; &amp;mdash; Tax will be added on top of the nominal price specified in amount &amp;mdash; in accordance with any taxation strategies you have defined.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;false&lt;/span&gt; &amp;mdash; No tax will be applied on top of the price specified in amount.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] [default to False]
-**period_start** | **datetime** | {\&quot;default\&quot;:\&quot;Now\&quot;,\&quot;description\&quot;:\&quot;Start of the interval to which the charge applies. This can be used to apply a charge across partial or multiple periods. Pro-rating the price of pricingComponents purchased\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**period_end** | **datetime** | {\&quot;default\&quot;:\&quot;(End of current period)\&quot;,\&quot;description\&quot;:\&quot;(Applicable only if &#x60;pricingComponent&#x60; is defined)&lt;br&gt;End of the interval to which the charge applies. Used in pro-rata calculation\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**invoicing_type** | **str** | {\&quot;default\&quot;:\&quot;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Aggregated&lt;/span&gt;\&quot;,\&quot;description\&quot;:\&quot;Applicable if adding a charge to the subscription.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Immediate&lt;/span&gt; &amp;mdash; Generate straight-away an invoice containing these charges.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Aggregated&lt;/span&gt; &amp;mdash; Add these charges to the next invoice &amp;mdash; for example the invoice raised at the current period&#39;s end.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**charge_type** | **str** | {\&quot;default\&quot;:\&quot;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Debit&lt;/span&gt;\&quot;,\&quot;description\&quot;:\&quot;Whether this charge represents an increase or decrease in invoice cost&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Credit&lt;/span&gt; &amp;mdash; This results in a reduction to the invoice cost&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Debit&lt;/span&gt; &amp;mdash; This will increase the invoice cost\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**trial** | **bool** | {\&quot;default\&quot;:\&quot;false\&quot;,\&quot;description\&quot;:\&quot;Whether the charge is meant in the context of a trial.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;false&lt;/span&gt; &amp;mdash; This is a non-trial charge, so funds will be sought from the customer.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;true&lt;/span&gt; &amp;mdash; This is a trial charge, soThe charge can be considered &#39;Paid&#39; without taking any funds from the customer.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] [default to False]
-**remaining_credit_behaviour** | **str** | {\&quot;default\&quot;:\&quot;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Rollover&lt;/span&gt;\&quot;,\&quot;description\&quot;:\&quot;Defines the behaviour applied to any outstanding credit resulting from the application of the charge.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Rollover&lt;/span&gt; &amp;mdash; Outstanding credit is returned to the accounts credit pool.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;Discard&lt;/span&gt; &amp;mdash; Outstanding credit is lost.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | 
-**pricing_component** | **str** | {\&quot;description\&quot;:\&quot;Specifies that this charge is for consumption of some quantity of this pricing component (whose name or ID can be provided).&lt;br&gt;If left blank:&lt;br&gt;The charge will be created as &#39;ad-hoc&#39;. That is: a monetary lump sum, associated with no pricing component\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**pricing_component_value** | **int** | {\&quot;description\&quot;:\&quot;The value consumed of the pricing component which this charge concerns.Required if pricingComponent is defined\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
-**dry_run** | **bool** | {\&quot;default\&quot;:false,\&quot;description\&quot;:\&quot;Changes described in the response:&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;true&lt;/span&gt; &amp;mdash; Are not actually performed; your subscription remains unchanged, no billing events run, and no invoices are executed.&lt;br&gt;&lt;span class&#x3D;\\\&quot;label label-default\\\&quot;&gt;false&lt;/span&gt; &amp;mdash; Are actually performed and committed.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] [default to False]
+**created** | **datetime** |  | [optional] 
+**id** | **str** |  | [optional] 
+**organization_id** | **str** |  | [optional] 
+**name** | **str** |  | [optional] 
+**description** | **str** |  | [optional] 
+**currency** | [**CreditNoteCurrency**](CreditNoteCurrency.md) |  | [optional] 
+**amount** | **float** |  | [optional] 
+**tax_amount** | **bool** |  | [optional] 
+**period_start** | **datetime** |  | [optional] 
+**period_end** | **datetime** |  | [optional] 
+**invoicing_type** | **str** |  | [optional] 
+**charge_type** | **str** |  | [optional] 
+**trial** | **bool** |  | [optional] 
+**remaining_credit_behaviour** | **str** |  | 
+**pricing_component** | **str** |  | [optional] 
+**pricing_component_value** | **int** |  | [optional] 
+**dry_run** | **bool** |  | [optional] 
+**invoice_state** | **str** |  | [optional] 
+**void_on_failure** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 

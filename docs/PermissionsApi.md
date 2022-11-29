@@ -1,113 +1,110 @@
 # billforward.PermissionsApi
 
-All URIs are relative to *https://localhost:8080/RestAPI*
+All URIs are relative to *https://app.billforward.net/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_permission**](PermissionsApi.md#create_permission) | **POST** /permissions | Create a new permission.
-[**get_all_permissions**](PermissionsApi.md#get_all_permissions) | **GET** /permissions | Retrieves a collection of all permissions. By default 10 values are returned. Records are returned in natural order.
-[**get_available_actions_for_resource**](PermissionsApi.md#get_available_actions_for_resource) | **GET** /permissions/resources/{resource} | Retrieves all the available actions for the specified resource.
-[**get_available_resources**](PermissionsApi.md#get_available_resources) | **GET** /permissions/resources | Retrieves all available resource.
-[**get_permission_by_id**](PermissionsApi.md#get_permission_by_id) | **GET** /permissions/{permission-ID} | Retrieves a single permission, specified by the ID parameter.
-[**revoke_permission**](PermissionsApi.md#revoke_permission) | **DELETE** /permissions/{permission-ID} | Revokes a permission
-
+[**create_permission**](PermissionsApi.md#create_permission) | **POST** /permissions | 
+[**get_all_permissions**](PermissionsApi.md#get_all_permissions) | **GET** /permissions | 
+[**get_available_actions_for_resource**](PermissionsApi.md#get_available_actions_for_resource) | **GET** /permissions/resources/{resource} | 
+[**get_available_resources**](PermissionsApi.md#get_available_resources) | **GET** /permissions/resources | 
+[**get_permission_by_id**](PermissionsApi.md#get_permission_by_id) | **GET** /permissions/{permission-ID} | 
+[**revoke_permission**](PermissionsApi.md#revoke_permission) | **DELETE** /permissions/{permission-ID} | 
 
 # **create_permission**
-> BFPermissionPagedMetadata create_permission(permission_request)
+> InlineResponseDefault45 create_permission(body=body)
 
-Create a new permission.
 
-{\"nickname\":\"Create a new permission\",\"request\":\"createPermissionRequest.html\",\"response\":\"createPermissionResponse.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.PermissionsApi()
-permission_request = billforward.BillingEntityBase() # BillingEntityBase | 
 
-try: 
-    # Create a new permission.
-    api_response = api_instance.create_permission(permission_request)
+# create an instance of the API class
+api_instance = billforward.PermissionsApi(billforward.ApiClient(configuration))
+body = billforward.CreatePermissionRequest() # CreatePermissionRequest |  (optional)
+
+try:
+    api_response = api_instance.create_permission(body=body)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling PermissionsApi->create_permission: %s\n" % e
+    print("Exception when calling PermissionsApi->create_permission: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **permission_request** | [**BillingEntityBase**](BillingEntityBase.md)|  | 
+ **body** | [**CreatePermissionRequest**](CreatePermissionRequest.md)|  | [optional] 
 
 ### Return type
 
-[**BFPermissionPagedMetadata**](BFPermissionPagedMetadata.md)
+[**InlineResponseDefault45**](InlineResponseDefault45.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: text/xml, application/xml, application/json
+ - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_all_permissions**
-> BFPermissionPagedMetadata get_all_permissions(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
+> InlineResponseDefault44 get_all_permissions(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
 
-Retrieves a collection of all permissions. By default 10 values are returned. Records are returned in natural order.
 
-{\"nickname\":\"Retrieve all permissions\",\"response\":\"getPermissionAll.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.PermissionsApi()
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
-offset = 0 # int | The offset from the first subscription to return. (optional) (default to 0)
-records = 10 # int | The maximum number of subscriptions to return. (optional) (default to 10)
-order_by = 'created' # str | Specify a field used to order the result set. (optional) (default to created)
-order = 'DESC' # str | Ihe direction of any ordering, either ASC or DESC. (optional) (default to DESC)
-include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
 
-try: 
-    # Retrieves a collection of all permissions. By default 10 values are returned. Records are returned in natural order.
+# create an instance of the API class
+api_instance = billforward.PermissionsApi(billforward.ApiClient(configuration))
+organizations = ['organizations_example'] # list[str] |  (optional)
+offset = 0 # int |  (optional) (default to 0)
+records = 10 # int |  (optional) (default to 10)
+order_by = 'created' # str |  (optional) (default to created)
+order = 'DESC' # str |  (optional) (default to DESC)
+include_retired = false # bool |  (optional) (default to false)
+
+try:
     api_response = api_instance.get_all_permissions(organizations=organizations, offset=offset, records=records, order_by=order_by, order=order, include_retired=include_retired)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling PermissionsApi->get_all_permissions: %s\n" % e
+    print("Exception when calling PermissionsApi->get_all_permissions: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
- **offset** | **int**| The offset from the first subscription to return. | [optional] [default to 0]
- **records** | **int**| The maximum number of subscriptions to return. | [optional] [default to 10]
- **order_by** | **str**| Specify a field used to order the result set. | [optional] [default to created]
- **order** | **str**| Ihe direction of any ordering, either ASC or DESC. | [optional] [default to DESC]
- **include_retired** | **bool**| Whether retired subscriptions should be returned. | [optional] [default to false]
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
+ **offset** | **int**|  | [optional] [default to 0]
+ **records** | **int**|  | [optional] [default to 10]
+ **order_by** | **str**|  | [optional] [default to created]
+ **order** | **str**|  | [optional] [default to DESC]
+ **include_retired** | **bool**|  | [optional] [default to false]
 
 ### Return type
 
-[**BFPermissionPagedMetadata**](BFPermissionPagedMetadata.md)
+[**InlineResponseDefault44**](InlineResponseDefault44.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -117,30 +114,29 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_available_actions_for_resource**
-> PermissionActionEntityPagedMetadata get_available_actions_for_resource(resource, organizations=organizations)
+> InlineResponseDefault46 get_available_actions_for_resource(resource, organizations=organizations)
 
-Retrieves all the available actions for the specified resource.
 
-{\"nickname\":\"Retrieve available actions\",\"response\":\"getAvailableActions.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.PermissionsApi()
-resource = 'resource_example' # str | 
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
-try: 
-    # Retrieves all the available actions for the specified resource.
+# create an instance of the API class
+api_instance = billforward.PermissionsApi(billforward.ApiClient(configuration))
+resource = 'resource_example' # str | 
+organizations = ['organizations_example'] # list[str] |  (optional)
+
+try:
     api_response = api_instance.get_available_actions_for_resource(resource, organizations=organizations)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling PermissionsApi->get_available_actions_for_resource: %s\n" % e
+    print("Exception when calling PermissionsApi->get_available_actions_for_resource: %s\n" % e)
 ```
 
 ### Parameters
@@ -148,96 +144,94 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **resource** | **str**|  | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
 
 ### Return type
 
-[**PermissionActionEntityPagedMetadata**](PermissionActionEntityPagedMetadata.md)
+[**InlineResponseDefault46**](InlineResponseDefault46.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_available_resources**
-> PermissionResourceEntityPagedMetadata get_available_resources(organizations=organizations)
+> InlineResponseDefault47 get_available_resources(organizations=organizations)
 
-Retrieves all available resource.
 
-{\"nickname\":\"Retrieve available resources\",\"response\":\"getAvailableResources.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.PermissionsApi()
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
-try: 
-    # Retrieves all available resource.
+# create an instance of the API class
+api_instance = billforward.PermissionsApi(billforward.ApiClient(configuration))
+organizations = ['organizations_example'] # list[str] |  (optional)
+
+try:
     api_response = api_instance.get_available_resources(organizations=organizations)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling PermissionsApi->get_available_resources: %s\n" % e
+    print("Exception when calling PermissionsApi->get_available_resources: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
 
 ### Return type
 
-[**PermissionResourceEntityPagedMetadata**](PermissionResourceEntityPagedMetadata.md)
+[**InlineResponseDefault47**](InlineResponseDefault47.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_permission_by_id**
-> BFPermissionPagedMetadata get_permission_by_id(permission_id, organizations=organizations, include_retired=include_retired)
+> InlineResponseDefault45 get_permission_by_id(permission_id, organizations=organizations, include_retired=include_retired)
 
-Retrieves a single permission, specified by the ID parameter.
 
-{\"nickname\":\"Retrieve a permission\",\"response\":\"getPermissionByID.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.PermissionsApi()
-permission_id = 'permission_id_example' # str | 
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
-include_retired = false # bool | Whether retired subscriptions should be returned. (optional) (default to false)
 
-try: 
-    # Retrieves a single permission, specified by the ID parameter.
+# create an instance of the API class
+api_instance = billforward.PermissionsApi(billforward.ApiClient(configuration))
+permission_id = 'permission_id_example' # str | 
+organizations = ['organizations_example'] # list[str] |  (optional)
+include_retired = false # bool |  (optional) (default to false)
+
+try:
     api_response = api_instance.get_permission_by_id(permission_id, organizations=organizations, include_retired=include_retired)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling PermissionsApi->get_permission_by_id: %s\n" % e
+    print("Exception when calling PermissionsApi->get_permission_by_id: %s\n" % e)
 ```
 
 ### Parameters
@@ -245,49 +239,48 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **permission_id** | **str**|  | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
- **include_retired** | **bool**| Whether retired subscriptions should be returned. | [optional] [default to false]
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
+ **include_retired** | **bool**|  | [optional] [default to false]
 
 ### Return type
 
-[**BFPermissionPagedMetadata**](BFPermissionPagedMetadata.md)
+[**InlineResponseDefault45**](InlineResponseDefault45.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
- - **Content-Type**: text/plain
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **revoke_permission**
-> BFPermissionPagedMetadata revoke_permission(permission_id, organizations=organizations)
+> InlineResponseDefault45 revoke_permission(permission_id, organizations=organizations)
 
-Revokes a permission
 
-{\"nickname\":\"Revoke permission\",\"response\":\"revokePermission.html\",\"request\":\"revokePErmissionRequest.html\"}
 
-### Example 
+### Example
 ```python
+from __future__ import print_function
 import time
 import billforward
 from billforward.rest import ApiException
 from pprint import pprint
 
-# create an instance of the API class
-api_instance = billforward.PermissionsApi()
-permission_id = 'permission_id_example' # str | 
-organizations = ['organizations_example'] # list[str] | A list of organization-IDs used to restrict the scope of API calls. (optional)
 
-try: 
-    # Revokes a permission
+# create an instance of the API class
+api_instance = billforward.PermissionsApi(billforward.ApiClient(configuration))
+permission_id = 'permission_id_example' # str | 
+organizations = ['organizations_example'] # list[str] |  (optional)
+
+try:
     api_response = api_instance.revoke_permission(permission_id, organizations=organizations)
     pprint(api_response)
 except ApiException as e:
-    print "Exception when calling PermissionsApi->revoke_permission: %s\n" % e
+    print("Exception when calling PermissionsApi->revoke_permission: %s\n" % e)
 ```
 
 ### Parameters
@@ -295,19 +288,19 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **permission_id** | **str**|  | 
- **organizations** | [**list[str]**](str.md)| A list of organization-IDs used to restrict the scope of API calls. | [optional] 
+ **organizations** | [**list[str]**](str.md)|  | [optional] 
 
 ### Return type
 
-[**BFPermissionPagedMetadata**](BFPermissionPagedMetadata.md)
+[**InlineResponseDefault45**](InlineResponseDefault45.md)
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../README.md#bearerAuth)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json
+ - **Content-Type**: Not defined
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

@@ -3,9 +3,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**created** | **datetime** | { \&quot;description\&quot; : \&quot;The UTC DateTime when the object was created.\&quot;, \&quot;verbs\&quot;:[] } | [optional] 
-**resume** | **datetime** | {\&quot;default\&quot;:\&quot;(No resumption is scheduled)\&quot;,\&quot;description\&quot;:\&quot;Schedules the frozen subscription to resume at some time.\&quot;,\&quot;verbs\&quot;:[\&quot;POST\&quot;,\&quot;GET\&quot;]} | [optional] 
+**created** | **datetime** |  | [optional] 
+**resume** | **datetime** |  | [optional] 
+**new_subscription_start** | **datetime** |  | [optional] 
+**new_subscription_state** | **str** |  | [optional] 
+**organization_id** | **str** |  | [optional] 
+**subscription_id** | **str** |  | [optional] 
+**dry_run** | **bool** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
-
 
